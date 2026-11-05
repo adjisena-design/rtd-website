@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rama Trimitra Development Group — Rumah Subsidi Palembang</title>
+<meta name="description" content="Developer rumah subsidi di Palembang dan Ogan Ilir. Lebih dari 3.200 unit diserahkan sejak 2020. Lihat proyek, spesifikasi lengkap, dan simulasi angsuran KPR.">
+<meta name="theme-color" content="#faf6ee">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rama Trimitra Development Group — Rumah Subsidi Palembang">
+<meta property="og:description" content="Dibangun untuk ditinggali lama. Spesifikasi lengkap dan angsuran yang ditulis apa adanya.">
+<meta property="og:image" content="img/green-nature.jpg">
+<meta property="og:locale" content="id_ID">
+
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<a class="lewati" href="#utama">Lompat ke isi utama</a>
+
+<!-- ============================================================ NAVIGASI -->
+<header class="nav" id="nav">
+  <div class="nav__isi">
+    <a class="nav__logo" href="#" aria-label="Rama Trimitra Development Group, beranda">
+      <img src="img/rtd-logo-navy.png" alt="Rama Trimitra Development Group" width="150" height="47">
+    </a>
+
+    <button class="nav__tombol" id="navTombol" aria-expanded="false" aria-controls="navMenu" aria-label="Buka menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+
+    <ul class="nav__menu" id="navMenu">
+      <li><a href="#proyek" class="aktif">Proyek</a></li>
+      <li><a href="#simulasi">Simulasi KPR</a></li>
+      <li><a href="#cara">Cara Membeli</a></li>
+      <li><a href="#tentang">Tentang RTD</a></li>
+      <li><a class="tbl tbl--utama nav__cta" href="#kontak">Hubungi Pemasaran</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="utama">
+
+<!-- ================================================================= HERO -->
+<section class="hero">
+  <div class="isi">
+    <span class="label">Developer Rumah Subsidi · Palembang &amp; Ogan Ilir</span>
+    <h1 class="hero__judul">Rumah pertama, <span class="redup">dikerjakan</span> dengan benar.</h1>
+    <p class="hero__sub">
+      Lebih dari 3.200 keluarga sudah menerima kuncinya sejak 2020. Spesifikasi kami tulis lengkap,
+      angsuran kami tulis apa adanya — supaya Anda bisa menghitung sendiri sebelum memutuskan.
+    </p>
+
+    <div class="tab" role="group" aria-label="Saring menurut jenis produk">
+      <button type="button" data-cari-tipe="semua" aria-pressed="true">Semua Proyek</button>
+      <button type="button" data-cari-tipe="subsidi" aria-pressed="false">Rumah Subsidi</button>
+      <button type="button" data-cari-tipe="komersil" aria-pressed="false">Rumah Komersil</button>
+    </div>
+
+    <form class="cari" id="formCari" role="search">
+      <label class="lewati" for="cariLokasi">Lokasi</label>
+      <select id="cariLokasi">
+        <option value="">Semua lokasi</option>
+        <option value="Gandus">Gandus</option>
+        <option value="Kenten">Kenten</option>
+        <option value="Sematang Borang">Sematang Borang</option>
+        <option value="Pangkalan Benteng">Pangkalan Benteng</option>
+        <option value="Merah Mata">Merah Mata</option>
+        <option value="Indralaya">Indralaya</option>
+      </select>
+      <span class="cari__garis" aria-hidden="true"></span>
+      <label class="lewati" for="cariAngsuran">Angsuran maksimal</label>
+      <select id="cariAngsuran">
+        <option value="">Angsuran berapa pun</option>
+        <option value="1100000">Sampai Rp 1,1 juta / bulan</option>
+        <option value="1400000">Sampai Rp 1,4 juta / bulan</option>
+        <option value="2000000">Sampai Rp 2 juta / bulan</option>
+      </select>
+      <button class="cari__kirim" type="submit" aria-label="Cari proyek">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+      </button>
+    </form>
+
+    <div class="hero__grid">
+      <div class="hero__gbr">
+        <img src="img/green-nature.jpg" alt="Render fasad rumah tipe 36/84 di perumahan The Green Nature, dinding putih dengan aksen bata ekspos dan atap metal abu gelap" width="967" height="340">
+        <div class="kartu-apung">
+          <span class="kategori">Rumah Subsidi</span>
+          <h3>The Green Nature</h3>
+          <p>Pangkalan Benteng · Tipe 36/84</p>
+          <div class="kartu-apung__harga">
+            <div>
+              <b>Rp 1.072.000</b>
+              <p>per bulan · tenor 20 tahun</p>
+            </div>
+            <a class="bulat" href="#proyek" aria-label="Lihat semua proyek">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 style="font-size:clamp(26px,3.4vw,34px)">Yang kami bangun, <span class="redup">berdiri lebih dulu</span></h2>
+        <p style="margin-top:16px;color:var(--tinta-700)">
+          Material yang kami pakai sama di setiap proyek: pondasi bata merah dengan plat setempat,
+          struktur beton bertulang, atap genteng metal, dan jalan komplek cor beton. Tidak ada versi
+          yang lebih murah diam-diam untuk perumahan tertentu.
+        </p>
+        <blockquote class="kutip">
+          Harga dan angsuran tiga tenor kami cantumkan di setiap brosur sejak awal. Pembeli berhak
+          menghitung sendiri sebelum datang ke kantor.
+          <cite>Prinsip kerja RTD Group</cite>
+        </blockquote>
+        <p style="margin-top:24px"><a class="tbl tbl--halus" href="#spesifikasi">Lihat spesifikasi lengkap →</a></p>
+      </div>
+    </div>
+
+    <!-- ============================================================= ANGKA -->
+    <div class="angka-pita">
+      <div class="angka-grid">
+        <div class="angka"><b>3.200+</b><span>Unit diserahkan</span></div>
+        <div class="angka"><b>18</b><span>Proyek sejak 2020</span></div>
+        <div class="angka"><b>10</b><span>Proyek aktif dijual</span></div>
+        <div class="angka"><b>2</b><span>Kabupaten/kota</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================== ALASAN -->
+<section class="bagian" aria-labelledby="alasanJudul">
+  <div class="isi">
+    <div class="alasan-grid">
+      <div class="kepala" style="margin-bottom:0">
+        <span class="label">Kenapa RTD</span>
+        <h2 id="alasanJudul">Developer yang <span class="redup">tidak menyembunyikan apa pun</span></h2>
+        <p>
+          Membeli rumah subsidi berarti menukar tabungan dan dua puluh tahun penghasilan dengan sesuatu
+          yang sering belum berdiri. Tiga hal berikut yang kami lakukan supaya Anda tidak perlu menebak.
+        </p>
+      </div>
+
+      <div class="alasan-daftar">
+        <article class="alasan">
+          <div class="alasan__ikon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l2 2 4-4"/><path d="M12 3 4 7v6c0 4.5 3.4 7.4 8 8 4.6-.6 8-3.5 8-8V7Z"/></svg>
+          </div>
+          <div>
+            <h3>Spesifikasi dua belas baris, lengkap</h3>
+            <p>Dari pondasi sampai jalan komplek, ditulis utuh di setiap brosur dan di situs ini. Kalau sebuah proyek berbeda dari standar, perbedaannya kami tulis — bukan kami hilangkan.</p>
+          </div>
+        </article>
+
+        <article class="alasan">
+          <div class="alasan__ikon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 7h8M8 11h8M8 15h4"/></svg>
+          </div>
+          <div>
+            <h3>Angsuran tiga tenor, bukan satu angka</h3>
+            <p>Sepuluh, lima belas, dan dua puluh tahun ditampilkan bersama. Angsuran tanpa tenor adalah informasi yang menyesatkan, dan kami tidak memakainya.</p>
+          </div>
+        </article>
+
+        <article class="alasan">
+          <div class="alasan__ikon" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V9l8-5 8 5v11"/><path d="M9 20v-6h6v6"/></svg>
+          </div>
+          <div>
+            <h3>Satu standar untuk semua proyek</h3>
+            <p>Material, fasilitas dasar, dan cara kerja tim sama di sepuluh perumahan kami. Nama proyeknya berbeda, developernya satu.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================== PROYEK -->
+<section class="bagian" id="proyek" aria-labelledby="proyekJudul">
+  <div class="isi">
+    <div class="kepala">
+      <span class="label">Proyek</span>
+      <h2 id="proyekJudul">Sepuluh perumahan <span class="redup">yang sedang kami jual</span></h2>
+      <p>Semuanya di Palembang dan Ogan Ilir. Angsuran yang tercantum adalah yang terendah, pada tenor 20 tahun.</p>
+    </div>
+
+    <div class="saring" role="group" aria-label="Saring proyek">
+      <button type="button" class="tbl tbl--kedua" data-saring="semua" aria-pressed="true">Semua</button>
+      <button type="button" class="tbl tbl--kedua" data-saring="subsidi" aria-pressed="false">Rumah Subsidi</button>
+      <button type="button" class="tbl tbl--kedua" data-saring="komersil" aria-pressed="false">Rumah Komersil</button>
+      <button type="button" class="tbl tbl--kedua" data-saring="gandus" aria-pressed="false">Gandus</button>
+      <button type="button" class="tbl tbl--kedua" data-saring="ogan-ilir" aria-pressed="false">Ogan Ilir</button>
+    </div>
+
+    <div class="proyek-grid" id="proyekGrid" aria-live="polite"></div>
+
+    <p class="catatan" style="margin-top:32px">
+      Harga, angsuran, dan ketersediaan unit dapat berubah sewaktu-waktu. Angka pada halaman ini
+      mengikuti brosur yang berlaku dan perlu dikonfirmasi ke kantor pemasaran sebelum pemesanan.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================= SIMULASI -->
+<section class="bagian simulasi" id="simulasi" aria-labelledby="simJudul">
+  <div class="isi">
+    <div class="kepala">
+      <span class="label">Simulasi KPR</span>
+      <h2 id="simJudul">Hitung dulu, <span class="redup">baru datang ke kantor</span></h2>
+      <p>Geser angkanya sampai ketemu cicilan yang sanggup Anda bayar tiap bulan selama bertahun-tahun.</p>
+    </div>
+
+    <div class="sim-grid">
+      <form class="sim-form" id="formSim">
+        <div class="kolom">
+          <label for="simHarga">Harga rumah</label>
+          <div class="kolom__nilai" id="nilaiHarga">Rp 166.000.000</div>
+          <input type="range" id="simHarga" min="150000000" max="500000000" step="1000000" value="166000000"
+                 aria-describedby="nilaiHarga">
+        </div>
+
+        <div class="kolom">
+          <label for="simDp">Uang muka (DP)</label>
+          <div class="kolom__nilai" id="nilaiDp">Rp 5.700.000 <span style="font-size:14px;font-weight:500;color:var(--tinta-500)" id="nilaiDpPersen">3,4%</span></div>
+          <input type="range" id="simDp" min="0" max="30" step="0.5" value="3.4" aria-describedby="nilaiDp">
+        </div>
+
+        <div class="kolom">
+          <label for="simBunga">Suku bunga per tahun</label>
+          <div class="kolom__nilai" id="nilaiBunga">5%</div>
+          <input type="range" id="simBunga" min="5" max="12" step="0.25" value="5" aria-describedby="nilaiBunga">
+          <p class="bantu">KPR subsidi FLPP memakai bunga tetap 5% sepanjang tenor. Di atas 5% berlaku untuk KPR non-subsidi.</p>
+        </div>
+
+        <div class="kolom">
+          <span class="kolom__label" id="labelTenor" style="display:block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta-500);margin-bottom:8px">Tenor</span>
+          <div class="pilih-tenor" role="group" aria-labelledby="labelTenor">
+            <button type="button" data-tenor="10" aria-pressed="false">10 tahun</button>
+            <button type="button" data-tenor="15" aria-pressed="false">15 tahun</button>
+            <button type="button" data-tenor="20" aria-pressed="true">20 tahun</button>
+          </div>
+        </div>
+      </form>
+
+      <div class="hasil">
+        <span class="hasil__label">Perkiraan Angsuran</span>
+        <div class="hasil__besar" id="hasilAngsuran" aria-live="polite">Rp 1.057.800<span class="hasil__satuan"> / bulan</span></div>
+
+        <div class="hasil__rinci">
+          <div class="hasil__baris"><span>Harga rumah</span><b id="rinciHarga">Rp 166.000.000</b></div>
+          <div class="hasil__baris"><span>Uang muka</span><b id="rinciDp">Rp 5.700.000</b></div>
+          <div class="hasil__baris"><span>Plafon KPR</span><b id="rinciPlafon">Rp 160.300.000</b></div>
+          <div class="hasil__baris"><span>Tenor</span><b id="rinciTenor">20 tahun · 240 angsuran</b></div>
+          <div class="hasil__baris"><span>Total yang dibayar</span><b id="rinciTotal">Rp 253.872.000</b></div>
+        </div>
+
+        <a class="tbl" href="#kontak">Tanyakan kelayakan KPR saya</a>
+      </div>
+    </div>
+
+    <p class="catatan">
+      Perhitungan memakai metode anuitas dan bersifat perkiraan. Angka final ditetapkan bank penyalur
+      pada saat akad, dan belum termasuk biaya provisi, asuransi, notaris, dan pajak. Syarat dan ketentuan berlaku.
+    </p>
+  </div>
+</section>
+
+<!-- ========================================================== SPESIFIKASI -->
+<section class="bagian" id="spesifikasi" aria-labelledby="spekJudul">
+  <div class="isi">
+    <div class="kepala">
+      <span class="label">Spesifikasi Standar</span>
+      <h2 id="spekJudul">Dua belas baris yang <span class="redup">berlaku di semua proyek</span></h2>
+      <p>Urutannya tidak kami ubah antarproyek, supaya Anda bisa membandingkan baris yang sama di posisi yang sama.</p>
+    </div>
+
+    <div class="spek-grid">
+      <table class="spek-tabel">
+        <caption class="lewati">Spesifikasi bangunan standar RTD Group</caption>
+        <tbody>
+          <tr><th scope="row">Pondasi</th><td>Bata merah + plat setempat</td></tr>
+          <tr><th scope="row">Struktur</th><td>Beton bertulang</td></tr>
+          <tr><th scope="row">Dinding</th><td>Bata merah diplester, plamir, finishing cat</td></tr>
+          <tr><th scope="row">Lantai</th><td>Keramik 40 × 40, kamar mandi keramik 20 × 20</td></tr>
+          <tr><th scope="row">Daun pintu</th><td>Kayu kelas II</td></tr>
+          <tr><th scope="row">Pintu kamar mandi</th><td>PVC standar</td></tr>
+          <tr><th scope="row">Daun jendela</th><td>Aluminium + kaca 5 mm</td></tr>
+          <tr><th scope="row">Penutup atap</th><td>Genteng metal polos</td></tr>
+          <tr><th scope="row">Plafon</th><td>Rangka hollow + silica board</td></tr>
+          <tr><th scope="row">Listrik</th><td>1.300 watt</td></tr>
+          <tr><th scope="row">Air</th><td>Sumur gali atau PDAM, sesuai proyek</td></tr>
+          <tr><th scope="row">Jalan komplek</th><td>Cor beton</td></tr>
+        </tbody>
+      </table>
+
+      <div class="spek-gbr">
+        <img src="img/contoh-denah.jpg" alt="Denah rumah tipe 36 dengan dua kamar tidur, satu kamar mandi, ruang tamu, dapur, dan carport" width="900" height="700">
+        <p class="catatan">Denah tipe 36. Ukuran tercantum pada brosur masing-masing proyek.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================= CARA -->
+<section class="bagian" id="cara" aria-labelledby="caraJudul">
+  <div class="isi">
+    <div class="kepala">
+      <span class="label">Cara Membeli</span>
+      <h2 id="caraJudul">Lima langkah <span class="redup">dari tanya sampai terima kunci</span></h2>
+      <p>Untuk sebagian besar pembeli kami, ini rumah pertama. Berikut urutannya supaya tidak ada kejutan.</p>
+    </div>
+
+    <div class="langkah-grid">
+      <article class="langkah">
+        <div class="langkah__no" aria-hidden="true"></div>
+        <h3>Pilih unit</h3>
+        <p>Datang ke lokasi atau hubungi pemasaran. Lihat rumah contoh, pilih blok dan nomor unit yang masih tersedia.</p>
+      </article>
+      <article class="langkah">
+        <div class="langkah__no" aria-hidden="true"></div>
+        <h3>Booking</h3>
+        <p>Bayar tanda jadi. Unit dikunci atas nama Anda dan tidak ditawarkan ke pembeli lain.</p>
+      </article>
+      <article class="langkah">
+        <div class="langkah__no" aria-hidden="true"></div>
+        <h3>Berkas KPR</h3>
+        <p>KTP, KK, surat nikah, slip gaji atau surat keterangan usaha, rekening koran, NPWP, dan surat keterangan belum memiliki rumah.</p>
+      </article>
+      <article class="langkah">
+        <div class="langkah__no" aria-hidden="true"></div>
+        <h3>Analisa bank</h3>
+        <p>Bank penyalur memeriksa kelayakan. Hasilnya keluar dalam hitungan minggu, dan kami kabari apa pun hasilnya.</p>
+      </article>
+      <article class="langkah">
+        <div class="langkah__no" aria-hidden="true"></div>
+        <h3>Akad dan serah terima</h3>
+        <p>Tanda tangan akad kredit di hadapan notaris, lalu serah terima kunci sesuai jadwal yang disepakati.</p>
+      </article>
+    </div>
+
+    <p class="catatan" style="margin-top:32px">
+      Syarat utama KPR subsidi: warga negara Indonesia, berusia minimal 21 tahun atau sudah menikah,
+      belum pernah memiliki rumah, belum pernah menerima subsidi perumahan dari pemerintah, dan
+      penghasilan sesuai batas yang berlaku. Ketentuan ditetapkan pemerintah dan bank penyalur,
+      serta dapat berubah — tanyakan yang terbaru ke kantor pemasaran kami.
+    </p>
+  </div>
+</section>
+
+<!-- ============================================================== TENTANG -->
+<section class="bagian" id="tentang" aria-labelledby="tentangJudul">
+  <div class="isi">
+    <div class="alasan-grid">
+      <div>
+        <span class="label">Tentang RTD</span>
+        <h2 id="tentangJudul" style="font-size:clamp(30px,4vw,42px)">Satu induk, <span class="redup">sepuluh perumahan</span></h2>
+        <p style="margin-top:20px;color:var(--tinta-700)">
+          Rama Trimitra Development Group adalah pengembang perumahan yang berbasis di Palembang,
+          Sumatera Selatan. Sejak 2020 kami membangun dan menyerahkan lebih dari 3.200 unit rumah,
+          sebagian besar rumah subsidi untuk keluarga yang membeli rumah pertamanya.
+        </p>
+        <p style="margin-top:16px;color:var(--tinta-700)">
+          Proyek kami tersebar di Gandus, Kenten, Sematang Borang, Pangkalan Benteng, Merah Mata,
+          dan Indralaya Utara. Nama perumahannya berbeda-beda, tetapi standar material, fasilitas
+          dasar, dan cara kerja timnya satu.
+        </p>
+        <p style="margin-top:24px"><a class="tbl tbl--halus" href="#proyek">Lihat seluruh proyek →</a></p>
+      </div>
+      <div>
+        <img src="img/tag-tahap-3.jpg" alt="Deret rumah di perumahan Taman Asri Gandus 2, jalan komplek cor beton dengan pohon di kiri kanan" style="width:100%;height:auto;border-radius:var(--r-lg);aspect-ratio:16/10;object-fit:cover" width="1165" height="351">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================================================== KONTAK -->
+<section class="bagian" id="kontak" aria-labelledby="kontakJudul">
+  <div class="isi">
+    <div class="kontak-grid">
+      <div>
+        <span class="label">Kontak</span>
+        <h2 id="kontakJudul" style="font-size:clamp(30px,4vw,42px)">Hubungi pemasaran</h2>
+        <p style="margin-top:16px;color:var(--tinta-700);max-width:46ch">
+          Tim kami menghubungi balik di hari kerja yang sama. Belum tahu proyek mana yang cocok juga
+          tidak apa-apa — pilih saja “belum tahu”, nanti kami bantu dari penghasilan dan lokasi kerja Anda.
+        </p>
+
+        <div style="margin-top:32px;display:grid;gap:16px">
+          <div>
+            <span class="label" style="margin-bottom:4px">Kantor Pemasaran</span>
+            <p>Jl. Letjen Harun Sohar, Kebun Bunga,<br>Kec. Sukarami, Kota Palembang, Sumatera Selatan</p>
+          </div>
+          <div>
+            <span class="label" style="margin-bottom:4px">WhatsApp</span>
+            <p><a href="https://wa.me/6282384299234" style="font-weight:700">0823-8429-9234</a></p>
+          </div>
+          <div>
+            <span class="label" style="margin-bottom:4px">Instagram</span>
+            <p><a href="https://instagram.com/ramadevelopmentplg">@ramadevelopmentplg</a></p>
+          </div>
+        </div>
+      </div>
+
+      <form class="form" id="formKontak" novalidate>
+        <div>
+          <label for="fNama" style="display:block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta-500);margin-bottom:8px">Nama</label>
+          <input type="text" id="fNama" name="nama" placeholder="Nama lengkap" required autocomplete="name">
+        </div>
+        <div>
+          <label for="fWa" style="display:block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta-500);margin-bottom:8px">Nomor WhatsApp</label>
+          <input type="tel" id="fWa" name="wa" inputmode="numeric" placeholder="0812-0000-0000" required autocomplete="tel">
+          <p class="bantu">Dipakai hanya untuk membalas pertanyaan Anda.</p>
+        </div>
+        <div>
+          <label for="fProyek" style="display:block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--tinta-500);margin-bottom:8px">Proyek yang diminati</label>
+          <select id="fProyek" name="proyek"></select>
+        </div>
+        <button class="tbl tbl--utama" type="submit">Kirim</button>
+        <p class="sukses" id="pesanSukses" hidden role="status">
+          Terima kasih. Tim kami menghubungi Anda di hari kerja yang sama.
+        </p>
+        <p class="bantu">
+          Data Anda tidak dibagikan ke pihak lain dan tidak dipakai untuk menawarkan produk di luar RTD.
+        </p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- =============================================================== FOOTER -->
+<footer class="footer">
+  <div class="isi">
+    <div class="footer__grid">
+      <div>
+        <img src="img/rtd-logo-krem.png" alt="Rama Trimitra Development Group" width="170" height="53">
+        <p>Jl. Letjen Harun Sohar, Kebun Bunga,<br>Kec. Sukarami, Kota Palembang,<br>Sumatera Selatan</p>
+      </div>
+      <div>
+        <h4>Kantor Pemasaran</h4>
+        <ul>
+          <li><a href="https://wa.me/6282384299234">0823-8429-9234</a></li>
+          <li><a href="mailto:trimitrarama@gmail.com">trimitrarama@gmail.com</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Ikuti Kami</h4>
+        <ul>
+          <li><a href="https://instagram.com/ramadevelopmentplg">@ramadevelopmentplg</a></li>
+          <li><a href="https://rumahidamankita.co.id">rumahidamankita.co.id</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__kaki">
+      <p>
+        Gambar dalam situs ini merupakan ilustrasi. Spesifikasi, harga, dan ketersediaan unit dapat
+        berubah sewaktu-waktu. Informasi terbaru dapat dikonfirmasi langsung ke kantor pemasaran.
+        Syarat dan ketentuan berlaku. © <span id="tahun">2026</span> Rama Trimitra Development Group.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
