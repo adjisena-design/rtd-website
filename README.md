@@ -12,13 +12,17 @@ Buka `index.html` di peramban dan situs langsung jalan.
 | Bagian | Isi |
 | --- | --- |
 | Hero | Judul, penyaring cepat, render utama, kartu proyek mengambang |
-| Angka | Unit diserahkan, jumlah proyek, cakupan wilayah |
+| Angka | Unit portofolio, jumlah proyek, cakupan wilayah |
 | Kenapa RTD | Tiga alasan: spesifikasi lengkap, angsuran tiga tenor, satu standar |
-| Proyek | Sepuluh perumahan, bisa disaring menurut kategori dan daerah |
+| Proyek | Sepuluh perumahan yang dijual, bisa disaring menurut kategori dan daerah |
 | Simulasi KPR | Kalkulator anuitas: harga, DP, bunga, tenor |
 | Spesifikasi | Dua belas baris standar RTD, plus denah |
 | Cara Membeli | Lima langkah dari pilih unit sampai serah terima |
-| Tentang RTD | Profil singkat |
+| Rekam Jejak | Sepuluh perumahan yang sudah terbangun, plus ruko |
+| Penghargaan | Lima belas penghargaan dari Bank BTN dan BTN Syariah |
+| Legalitas | Akta, SK Kemenkumham, NIB, NPWP, SIUJK, direktur, komisaris |
+| Testimoni | Empat testimoni bernama dari mitra dan bank penyalur |
+| Tentang RTD | Profil, visi, misi, sembilan nama tim manajemen |
 | Kontak | Formulir tiga kolom yang meneruskan ke WhatsApp pemasaran |
 
 ## Susunan berkas
@@ -26,15 +30,39 @@ Buka `index.html` di peramban dan situs langsung jalan.
 ```
 index.html              seluruh markah halaman
 assets/css/style.css    token warna, tipografi, jarak, dan semua gaya
-assets/js/app.js        data proyek, penyaring, kalkulator KPR, navigasi
+assets/js/app.js        semua data (proyek, portofolio, legalitas, penghargaan,
+                        testimoni, tim) + penyaring, kalkulator KPR, navigasi
 img/                    logo, render proyek, denah, favicon
 ```
 
-## Cara mengubah data proyek
+## Dari mana datanya
 
-Semua data proyek ada di satu tempat: konstanta `DATA_PROYEK` di bagian atas
-`assets/js/app.js`. Tidak perlu menyentuh berkas lain untuk menambah, menghapus,
-atau memperbarui proyek.
+Dua sumber, keduanya milik RTD:
+
+- **Sepuluh brosur proyek 2026** — spesifikasi, tipe unit, fasilitas, dan satu-satunya
+  tabel harga lengkap yang tersedia (The Green Nature).
+- **Company Profile RTD Group 2026** — portofolio 20 perumahan dengan jumlah unit dan
+  lokasi, legalitas holding, 15 penghargaan, 4 testimoni, visi-misi, dan tim manajemen.
+
+Gambar dipotong ulang dari PDF brosur pada 150 dpi.
+
+## Cara mengubah datanya
+
+Semua data ada di bagian atas `assets/js/app.js` sebagai konstanta. Tidak perlu
+menyentuh berkas lain.
+
+| Konstanta | Isi |
+| --- | --- |
+| `DATA_PROYEK` | Sepuluh proyek yang sedang dijual |
+| `DATA_PORTOFOLIO` | Perumahan yang sudah terbangun |
+| `DATA_RUKO` | Proyek ruko |
+| `DATA_LEGALITAS` | Legalitas holding |
+| `DATA_PENGHARGAAN` | Daftar penghargaan |
+| `DATA_TESTIMONI` | Testimoni |
+| `DATA_TIM` | Tim manajemen |
+
+Pita angka di hero dihitung otomatis dari `DATA_PROYEK` dan `DATA_PORTOFOLIO` —
+menambah proyek akan memperbarui "20 proyek" dan "3.808 unit" dengan sendirinya.
 
 ```js
 {
@@ -65,17 +93,21 @@ memuat tabel harga penuh. Sembilan proyek lainnya menunggu konfirmasi.
 
 1. **Harga dan angsuran sembilan proyek.** Isi `harga`, `dp`, dan `angsuran20` di
    `DATA_PROYEK` begitu pemasaran mengonfirmasi.
-2. **Formulir kontak belum punya peladen.** Saat ini formulir membuka WhatsApp dengan
+2. **Status "3.808 unit" perlu ditegaskan.** Angka itu adalah total unit dalam portofolio
+   menurut company profile, bukan jumlah yang sudah serah terima. Kalau pemasaran
+   mengonfirmasi semuanya sudah diserahkan, kalimatnya bisa dinaikkan jadi klaim
+   serah terima — sampai itu terjadi, biarkan apa adanya.
+3. **Formulir kontak belum punya peladen.** Saat ini formulir membuka WhatsApp dengan
    pesan yang sudah terisi. Untuk menyimpan prospek ke basis data atau mengirim surel,
    ganti bagian `form.addEventListener('submit', …)` di `app.js`.
-3. **Logo masih raster.** `img/rtd-logo-navy.png` dan `rtd-logo-krem.png` berukuran
+4. **Logo masih raster.** `img/rtd-logo-navy.png` dan `rtd-logo-krem.png` berukuran
    1704 × 529 px. Untuk layar beresolusi tinggi sebaiknya diganti SVG.
-4. **Gambar berasal dari brosur cetak** dan dipotong ulang dari PDF, jadi resolusinya
+5. **Gambar berasal dari brosur cetak** dan dipotong ulang dari PDF, jadi resolusinya
    terbatas. Render asli dari tim desain akan jauh lebih tajam.
-5. **Foto rumah terbangun belum ada.** Render menjual rencana; foto rumah yang sudah
+6. **Foto rumah terbangun belum ada.** Render menjual rencana; foto rumah yang sudah
    dihuni menjual bukti. Ini aset paling bernilai yang bisa ditambahkan.
-6. **Casa Adiva** belum punya render bersih — potongan yang ada masih terbatas.
-7. **Domain.** Situs lama `rumahidamankita.co.id` masih tercantum di footer. Saat pindah
+7. **Casa Adiva** belum punya render bersih — potongan yang ada masih terbatas.
+8. **Domain.** Situs lama `rumahidamankita.co.id` masih tercantum di footer. Saat pindah
    ke domain bernama RTD, alihkan domain lama ke yang baru, jangan dimatikan — tautan
    lama masih beredar di brosur cetak yang sudah tersebar.
 

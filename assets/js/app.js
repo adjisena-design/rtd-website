@@ -20,6 +20,7 @@
      lokasi    kelurahan/kecamatan, kota
      daerah    "gandus" | "ogan-ilir" | "palembang-lain"  (untuk penyaring)
      tipe      "36/84" (bangunan/tanah)
+     unit      jumlah unit dalam proyek, menurut company profile 2026
      kt, km    jumlah kamar tidur dan kamar mandi
      harga     harga jual dalam rupiah, atau null kalau belum dikonfirmasi
      dp        uang muka dalam rupiah, atau null
@@ -37,7 +38,7 @@
 
 const DATA_PROYEK = [
   {
-    id: 'green-nature', nama: 'The Green Nature', tahap: null,
+    id: 'green-nature', unit: 106, nama: 'The Green Nature', tahap: null,
     kategori: 'subsidi', warna: 'var(--proyek-hutan)',
     lokasi: 'Pangkalan Benteng', daerah: 'palembang-lain',
     tipe: '36/84', kt: 2, km: 1,
@@ -45,7 +46,7 @@ const DATA_PROYEK = [
     klaim: null, status: 'tersedia', gbr: 'green-nature.jpg'
   },
   {
-    id: 'tag-tahap-3', nama: 'Taman Asri Gandus 2', tahap: 'Tahap 3',
+    id: 'tag-tahap-3', unit: 249, nama: 'Taman Asri Gandus 2', tahap: 'Tahap 3',
     kategori: 'subsidi', warna: 'var(--proyek-laut)',
     lokasi: 'Gandus, Palembang', daerah: 'gandus',
     tipe: '36/84', kt: 2, km: 1,
@@ -53,7 +54,7 @@ const DATA_PROYEK = [
     klaim: 'DP all in 3 juta', status: 'tersedia', gbr: 'tag-tahap-3.jpg'
   },
   {
-    id: 'tag-tahap-4', nama: 'Taman Asri Gandus 2', tahap: 'Tahap 4',
+    id: 'tag-tahap-4', unit: 251, nama: 'Taman Asri Gandus 2', tahap: 'Tahap 4',
     kategori: 'subsidi', warna: 'var(--proyek-laut)',
     lokasi: 'Gandus, Palembang', daerah: 'gandus',
     tipe: '36/84', kt: 2, km: 1,
@@ -61,7 +62,7 @@ const DATA_PROYEK = [
     klaim: 'DP all in 3 juta', status: 'tersedia', gbr: 'tag-tahap-4.jpg'
   },
   {
-    id: 'tag-tahap-5', nama: 'Taman Asri Gandus 2', tahap: 'Tahap 5',
+    id: 'tag-tahap-5', unit: 334, nama: 'Taman Asri Gandus 2', tahap: 'Tahap 5',
     kategori: 'subsidi', warna: 'var(--proyek-laut)',
     lokasi: 'Gandus, Palembang', daerah: 'gandus',
     tipe: '36/84', kt: 2, km: 1,
@@ -69,7 +70,7 @@ const DATA_PROYEK = [
     klaim: 'Angsuran mulai 1 jutaan', status: 'tersedia', gbr: 'tag-tahap-5.jpg'
   },
   {
-    id: 'tag-signature', nama: 'TAG Signature', tahap: null,
+    id: 'tag-signature', unit: 126, nama: 'TAG Signature', tahap: null,
     kategori: 'komersil', warna: 'var(--proyek-batu)',
     lokasi: 'Jl. Sofyan Kenawas, Gandus, Palembang', daerah: 'gandus',
     tipe: '36/84', kt: 2, km: 1,
@@ -77,7 +78,7 @@ const DATA_PROYEK = [
     klaim: 'Hubungi pemasaran untuk harga', status: 'tersedia', gbr: 'tag-signature.jpg'
   },
   {
-    id: 'green-village', nama: 'The Green Village', tahap: null,
+    id: 'green-village', unit: 270, nama: 'The Green Village', tahap: null,
     kategori: 'subsidi', warna: 'var(--proyek-daun)',
     lokasi: 'Merah Mata', daerah: 'palembang-lain',
     tipe: '36/99', kt: 2, km: 1,
@@ -85,7 +86,7 @@ const DATA_PROYEK = [
     klaim: 'Angsuran mulai 1 juta, langsung huni', status: 'tersedia', gbr: 'green-village.jpg'
   },
   {
-    id: 'grand-athmar-indralaya', nama: 'Grand Athmar Indralaya', tahap: null,
+    id: 'grand-athmar-indralaya', unit: 298, nama: 'Grand Athmar Indralaya', tahap: null,
     kategori: 'subsidi', warna: 'var(--proyek-kayu)',
     lokasi: 'Desa Tanjung Baru, Indralaya Utara, Ogan Ilir', daerah: 'ogan-ilir',
     tipe: '36/96', kt: 2, km: 1,
@@ -93,7 +94,7 @@ const DATA_PROYEK = [
     klaim: 'DP mulai 1 juta', status: 'tersedia', gbr: 'grand-athmar-indralaya.jpg'
   },
   {
-    id: 'grand-athmar-sematang', nama: 'Grand Athmar Sematang Borang', tahap: null,
+    id: 'grand-athmar-sematang', unit: 206, nama: 'Grand Athmar Sematang Borang', tahap: null,
     kategori: 'subsidi', warna: 'var(--proyek-kayu)',
     lokasi: 'Sematang Borang, Palembang', daerah: 'palembang-lain',
     tipe: '36/98', kt: 2, km: 1,
@@ -101,7 +102,7 @@ const DATA_PROYEK = [
     klaim: 'Gratis pemasangan air PDAM', status: 'tersedia', gbr: 'grand-athmar-sematang.jpg'
   },
   {
-    id: 'kartika-mataram', nama: 'Kartika Mataram Residence', tahap: 'Tahap 2',
+    id: 'kartika-mataram', unit: 570, nama: 'Kartika Mataram Residence', tahap: 'Tahap 2',
     kategori: 'subsidi', warna: 'var(--proyek-bata)',
     lokasi: 'Palembang', daerah: 'palembang-lain',
     tipe: '36/84', kt: 2, km: 1,
@@ -109,13 +110,116 @@ const DATA_PROYEK = [
     klaim: 'Angsuran mulai 1 jutaan', status: 'tersedia', gbr: 'kartika-mataram.jpg'
   },
   {
-    id: 'casa-adiva', nama: 'Casa Adiva', tahap: null,
+    id: 'casa-adiva', unit: 17, nama: 'Casa Adiva', tahap: null,
     kategori: 'komersil', warna: 'var(--proyek-tanah)',
     lokasi: 'Suka Maju, Kenten', daerah: 'palembang-lain',
     tipe: '65/85', kt: 3, km: 2,
     harga: null, dp: 0,
     klaim: 'Town house 2 lantai · DP 0, booking 5 juta', status: 'tersedia', gbr: 'casa-adiva.jpg'
   }
+];
+
+/* --------------------------------------------------------------------------
+   PORTOFOLIO — proyek yang sudah terbangun dan tidak lagi dijual.
+   Sumber: Company Profile RTD Group 2026. Ditampilkan sebagai rekam jejak.
+   -------------------------------------------------------------------------- */
+
+const DATA_PORTOFOLIO = [
+  { nama: 'Kartika Mataram Residence',       tahap: 'Tahap 1', area: 'Talang Kelapa, Banyuasin',  tipe: '36/91', unit: 150 },
+  { nama: 'Taman Asri Gandus 2',             tahap: 'Tahap 1', area: 'Gandus, Palembang',         tipe: '36/96', unit: 150 },
+  { nama: 'Taman Asri Gandus 2',             tahap: 'Tahap 2', area: 'Gandus, Palembang',         tipe: '36/84', unit: 267 },
+  { nama: 'Surya Akbar Gemilang',            tahap: null,      area: 'Demang Lebar Daun, Palembang', tipe: '36/91', unit: 317 },
+  { nama: 'Grand Talang Betutu Indah',       tahap: null,      area: 'Talang Betutu, Palembang',  tipe: '36/84', unit: 108 },
+  { nama: 'Palem Emas 1',                    tahap: null,      area: 'Talang Betutu, Palembang',  tipe: '36/84', unit: 61  },
+  { nama: 'Palem Emas 2',                    tahap: null,      area: 'Talang Betutu, Palembang',  tipe: '36/90', unit: 108 },
+  { nama: 'Grand Pangkalan Benteng Indah',   tahap: null,      area: 'Talang Kelapa, Banyuasin',  tipe: '36/84', unit: 103 },
+  { nama: 'Alam Hijau 3',                    tahap: 'dua tahap', area: 'Gandus, Palembang',       tipe: '36/84', unit: 117, proyek: 2 }
+];
+
+/* Ruko, dicatat terpisah karena bukan rumah tinggal. */
+const DATA_RUKO = [
+  { nama: 'Ruko Grand Athmar Indralaya', area: 'Indralaya Utara, Ogan Ilir', tipe: '4×12 / 4×20 m', unit: 37 }
+];
+
+/* --------------------------------------------------------------------------
+   LEGALITAS HOLDING — Company Profile RTD Group 2026
+   -------------------------------------------------------------------------- */
+
+const DATA_LEGALITAS = [
+  { label: 'Akta Pendirian Perusahaan', nilai: 'No. 27',                              tgl: '15 Oktober 2020' },
+  { label: 'SK Kemenkumham',            nilai: 'AHU-0054067.AH.01.01.TAHUN 2020',     tgl: '19 Oktober 2020' },
+  { label: 'NIB',                       nilai: '0220510240235',                       tgl: '3 Desember 2020' },
+  { label: 'TDP',                       nilai: '060614601853',                        tgl: '1 Oktober 2023' },
+  { label: 'NPWP',                      nilai: '86.139.188.6-301.000',                tgl: null },
+  { label: 'SIUJK',                     nilai: '1-1671-2-00156-324222',               tgl: '19 April 2024' },
+  { label: 'Sertifikat Keanggotaan PI', nilai: '02.03.2020.102',                      tgl: '21 November 2024' },
+  { label: 'Direktur',                  nilai: 'M. Junestrada Diem',                  tgl: null },
+  { label: 'Komisaris',                 nilai: 'Hj. Meriana Arsyad',                  tgl: null }
+];
+
+/* --------------------------------------------------------------------------
+   PENGHARGAAN — seluruhnya dari Bank BTN dan BTN Syariah
+   -------------------------------------------------------------------------- */
+
+const DATA_PENGHARGAAN = [
+  { tahun: '2025', nama: 'The Best Developer Yasa Griya' },
+  { tahun: '2025', nama: 'The Best Developer Subsidi' },
+  { tahun: '2024', nama: 'The Best Commercial Financing Developer' },
+  { tahun: '2024', nama: 'Pengembang Realisasi Terbanyak KCPS' },
+  { tahun: '2024', nama: 'Performance Pengembang Pembiayaan Konstruksi BTN iB di atas 15 M' },
+  { tahun: '2024', nama: 'Pengembang Terloyal' },
+  { tahun: '2024', nama: 'Investor Recovery Asset BTN KC Syariah Palembang' },
+  { tahun: '2024', nama: 'Penghargaan Akad Terbanyak Peringkat 3' },
+  { tahun: '2023', nama: 'Mitra Pengembang — Perumahan dengan Sarana dan Prasarana Terbaik' },
+  { tahun: '2023', nama: 'Mitra Pengembang — Kinerja Pembiayaan Konstruksi Terbaik' },
+  { tahun: '2023', nama: 'Mitra Pengembang — Kontribusi Realisasi Pembiayaan Konstruksi Terbaik' },
+  { tahun: '2023', nama: 'Mitra Pengembang — Kontribusi Realisasi KCPS' },
+  { tahun: '2023', nama: 'Mitra Pengembang — Realisasi Akad Terbanyak KPR BTN Bersubsidi iB' },
+  { tahun: '2023', nama: 'Mitra Pengembang — Terkolaboratif' },
+  { tahun: null,   nama: 'Developer dengan kontribusi untuk Bank BTN Syariah' }
+];
+
+/* --------------------------------------------------------------------------
+   TESTIMONI — Company Profile RTD Group 2026
+   -------------------------------------------------------------------------- */
+
+const DATA_TESTIMONI = [
+  {
+    isi: 'Sebagai salah satu pengembang properti terdepan di Kota Palembang, RTD Group telah membuktikan diri tidak hanya sebagai developer yang membangun hunian, tetapi juga sebagai market leader dalam pengembangan kawasan yang berkelanjutan. Kepercayaan perbankan, termasuk rating Platinum dari Bank BTN dan BTN Syariah, menjadi bukti nyata atas kapabilitas mereka dalam manajemen keuangan.',
+    nama: 'Asti Kumala Sari',
+    jabatan: 'Branch Manager PT Bank Syariah Nasional Tbk, Kantor Cabang Palembang'
+  },
+  {
+    isi: 'Kekuatan sinergi dan kolaborasi yang tinggi, itulah kalimat yang tepat menggambarkan budaya kerja RTD Group. RTD Group sangat fokus terhadap kualitas bangunan dan filtering konsumen, sehingga mampu menciptakan kawasan hunian yang baik dan lingkungan yang harmonis.',
+    nama: 'M. Saktiardy Wijaya',
+    jabatan: 'Commercial, Small and Medium Financing Head, Bank BTN Kantor Cabang Syariah Palembang'
+  },
+  {
+    isi: 'RTD Group adalah pengembang rumah subsidi yang menawarkan skema pembelian sesuai kebutuhan konsumen dengan kualitas bangunan yang melebihi standar.',
+    nama: 'Ferdiyan Ganesha, S.H., M.H., C.M.',
+    jabatan: 'Kreator Kelacare Hukum'
+  },
+  {
+    isi: 'RTD Group merupakan solusi investasi properti bagi semua konsumen yang ingin memiliki investasi properti yang berkualitas dan amanah.',
+    nama: 'Dr. Firmansyah Arifin, S.E., M.M., Ak., C.A., C.S.R.S.',
+    jabatan: 'Direktur CV Ghanim Amanah · Anggota IAI'
+  }
+];
+
+/* --------------------------------------------------------------------------
+   TIM MANAJEMEN — Company Profile RTD Group 2026
+   -------------------------------------------------------------------------- */
+
+const DATA_TIM = [
+  { nama: 'M. Junestrada Diem',  jabatan: 'Director' },
+  { nama: 'Huda Assalam',        jabatan: 'Director' },
+  { nama: 'Ade Saputra',         jabatan: 'Operational Manager' },
+  { nama: 'Teddy Wijaya',        jabatan: 'Field Manager' },
+  { nama: 'Romi Febriansyah',    jabatan: 'Marketing Manager' },
+  { nama: 'Putra Ady Kesuma',    jabatan: 'Finance Manager' },
+  { nama: 'Yoga Juniansyah',     jabatan: 'HRGA Manager' },
+  { nama: 'Nosvita Sari',        jabatan: 'Administrasi Supervisor' },
+  { nama: 'M. Tio Amartha',      jabatan: 'Field Supervisor' }
 ];
 
 const TEKS_STATUS = { tersedia: 'Tersedia', booking: 'Booking', terjual: 'Terjual' };
@@ -401,10 +505,85 @@ function pasangKontak() {
   });
 }
 
+
+/* ----------------------------------------------------- Bagian tambahan -- */
+
+function gambarPortofolio() {
+  const tb = $('#portofolioTubuh');
+  if (!tb) return;
+  const baris = [];
+
+  DATA_PORTOFOLIO.forEach(p => {
+    const nama = p.tahap ? `${p.nama} <span class="redup2">${p.tahap}</span>` : p.nama;
+    baris.push(`<tr><td>${nama}</td><td>${p.area}</td><td class="angka-sel">${p.tipe}</td><td class="angka-sel"><b>${p.unit}</b> unit</td></tr>`);
+  });
+  DATA_RUKO.forEach(p => {
+    baris.push(`<tr><td>${p.nama}</td><td>${p.area}</td><td class="angka-sel">${p.tipe}</td><td class="angka-sel"><b>${p.unit}</b> unit</td></tr>`);
+  });
+  tb.innerHTML = baris.join('');
+
+  const total = DATA_PORTOFOLIO.reduce((a, p) => a + p.unit, 0);
+  const el = $('#portofolioTotal');
+  if (el) el.textContent = total.toLocaleString('id-ID');
+}
+
+function gambarLegalitas() {
+  const tb = $('#legalTubuh');
+  if (!tb) return;
+  tb.innerHTML = DATA_LEGALITAS.map(l =>
+    `<tr><th scope="row">${l.label}</th><td><span class="nilai">${l.nilai}</span>` +
+    (l.tgl ? `<span class="tgl">${l.tgl}</span>` : '') + `</td></tr>`
+  ).join('');
+}
+
+function gambarPenghargaan() {
+  const ul = $('#penghargaanDaftar');
+  if (!ul) return;
+  ul.innerHTML = DATA_PENGHARGAAN.map(p =>
+    `<li><span class="tahun">${p.tahun || '—'}</span><span>${p.nama}</span></li>`
+  ).join('');
+}
+
+function gambarTestimoni() {
+  const wrap = $('#testimoniDaftar');
+  if (!wrap) return;
+  wrap.innerHTML = DATA_TESTIMONI.map(t => `
+    <figure class="testi">
+      <blockquote>${t.isi}</blockquote>
+      <figcaption><b>${t.nama}</b><span>${t.jabatan}</span></figcaption>
+    </figure>`).join('');
+}
+
+function gambarTim() {
+  const wrap = $('#timDaftar');
+  if (!wrap) return;
+  wrap.innerHTML = DATA_TIM.map(t =>
+    `<div class="orang"><b>${t.nama}</b><span>${t.jabatan}</span></div>`
+  ).join('');
+}
+
+/** Jumlahkan unit dari seluruh portofolio untuk pita angka. */
+function gambarAngka() {
+  const aktif = DATA_PROYEK.reduce((a, p) => a + (p.unit || 0), 0);
+  const lama  = DATA_PORTOFOLIO.reduce((a, p) => a + p.unit, 0);
+  const el = $('#angkaUnit');
+  if (el) el.textContent = (aktif + lama).toLocaleString('id-ID');
+  const jml = DATA_PROYEK.length +
+              DATA_PORTOFOLIO.reduce((a, p) => a + (p.proyek || 1), 0);
+  const ep = $('#angkaProyek');
+  if (ep) ep.textContent = String(jml);
+}
+
 /* ----------------------------------------------------------------- Mulai -- */
 
 document.addEventListener('DOMContentLoaded', () => {
   gambarProyek();
+  gambarPortofolio();
+  gambarLegalitas();
+  gambarPenghargaan();
+  gambarTestimoni();
+  gambarTim();
+  gambarAngka();
   pasangSaring();
   pasangPencarian();
   pasangSimulasi();

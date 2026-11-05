@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Rama Trimitra Development Group — Rumah Subsidi Palembang</title>
-<meta name="description" content="Developer rumah subsidi di Palembang dan Ogan Ilir. Lebih dari 3.200 unit diserahkan sejak 2020. Lihat proyek, spesifikasi lengkap, dan simulasi angsuran KPR.">
+<meta name="description" content="Developer rumah subsidi di Palembang, Banyuasin, dan Ogan Ilir. 20 perumahan dan 3.808 unit sejak 2020. Lihat proyek, spesifikasi lengkap, dan simulasi angsuran KPR.">
 <meta name="theme-color" content="#faf6ee">
 
 <meta property="og:type" content="website">
@@ -38,6 +38,7 @@
       <li><a href="#proyek" class="aktif">Proyek</a></li>
       <li><a href="#simulasi">Simulasi KPR</a></li>
       <li><a href="#cara">Cara Membeli</a></li>
+      <li><a href="#rekam-jejak">Rekam Jejak</a></li>
       <li><a href="#tentang">Tentang RTD</a></li>
       <li><a class="tbl tbl--utama nav__cta" href="#kontak">Hubungi Pemasaran</a></li>
     </ul>
@@ -49,10 +50,10 @@
 <!-- ================================================================= HERO -->
 <section class="hero">
   <div class="isi">
-    <span class="label">Developer Rumah Subsidi · Palembang &amp; Ogan Ilir</span>
+    <span class="label">Developer Rumah Subsidi · Palembang, Banyuasin &amp; Ogan Ilir</span>
     <h1 class="hero__judul">Rumah pertama, <span class="redup">dikerjakan</span> dengan benar.</h1>
     <p class="hero__sub">
-      Lebih dari 3.200 keluarga sudah menerima kuncinya sejak 2020. Spesifikasi kami tulis lengkap,
+      Dua puluh perumahan dan 3.808 unit sejak 2020. Spesifikasi kami tulis lengkap,
       angsuran kami tulis apa adanya — supaya Anda bisa menghitung sendiri sebelum memutuskan.
     </p>
 
@@ -124,10 +125,10 @@
     <!-- ============================================================= ANGKA -->
     <div class="angka-pita">
       <div class="angka-grid">
-        <div class="angka"><b>3.200+</b><span>Unit diserahkan</span></div>
-        <div class="angka"><b>18</b><span>Proyek sejak 2020</span></div>
+        <div class="angka"><b id="angkaUnit">3.808</b><span>Unit dalam portofolio</span></div>
+        <div class="angka"><b id="angkaProyek">20</b><span>Proyek perumahan sejak 2020</span></div>
         <div class="angka"><b>10</b><span>Proyek aktif dijual</span></div>
-        <div class="angka"><b>2</b><span>Kabupaten/kota</span></div>
+        <div class="angka"><b>3</b><span>Kota dan kabupaten</span></div>
       </div>
     </div>
   </div>
@@ -353,27 +354,134 @@
   </div>
 </section>
 
+
+<!-- =========================================================== REKAM JEJAK -->
+<section class="bagian" id="rekam-jejak" aria-labelledby="rekamJudul">
+  <div class="isi">
+    <div class="kepala">
+      <span class="label">Rekam Jejak</span>
+      <h2 id="rekamJudul">Sepuluh perumahan lagi <span class="redup">yang sudah terbangun</span></h2>
+      <p>Di luar sepuluh proyek yang sedang dijual, berikut perumahan yang sudah kami bangun dan serahkan sejak 2020.</p>
+    </div>
+
+    <div class="tabel-bungkus">
+      <table class="tabel-data">
+        <caption class="lewati">Daftar perumahan RTD Group yang sudah terbangun</caption>
+        <thead>
+          <tr><th scope="col">Perumahan</th><th scope="col">Lokasi</th><th scope="col">Tipe</th><th scope="col">Jumlah unit</th></tr>
+        </thead>
+        <tbody id="portofolioTubuh"></tbody>
+      </table>
+    </div>
+    <p class="catatan"><b id="portofolioTotal">1.381</b> unit rumah pada daftar di atas, ditambah 37 unit ruko, di luar sepuluh proyek yang sedang dijual. Alam Hijau 3 dibangun dalam dua tahap. Sumber: Company Profile RTD Group 2026.</p>
+  </div>
+</section>
+
+<!-- ========================================================== PENGHARGAAN -->
+<section class="bagian simulasi" id="penghargaan" aria-labelledby="pgJudul">
+  <div class="isi">
+    <div class="alasan-grid">
+      <div>
+        <span class="label">Penghargaan</span>
+        <h2 id="pgJudul" style="font-size:clamp(30px,4vw,42px)">Lima belas penghargaan, <span class="redup">semuanya dari bank penyalur</span></h2>
+        <p style="margin-top:20px;color:var(--tinta-700);max-width:48ch">
+          Penghargaan ini diberikan Bank BTN dan BTN Syariah — pihak yang memeriksa pembukuan,
+          kualitas konstruksi, dan ketepatan realisasi kami setiap tahun. Penilaiannya datang
+          dari lembaga yang menanggung risikonya, bukan dari kami sendiri.
+        </p>
+        <p style="margin-top:16px;color:var(--tinta-700);max-width:48ch">
+          Di antaranya rating <b>Platinum</b> dari Bank BTN dan BTN Syariah.
+        </p>
+      </div>
+      <ul class="pg-daftar" id="penghargaanDaftar"></ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ LEGALITAS -->
+<section class="bagian" id="legalitas" aria-labelledby="lgJudul">
+  <div class="isi">
+    <div class="spek-grid">
+      <div>
+        <span class="label">Legalitas</span>
+        <h2 id="lgJudul" style="font-size:clamp(30px,4vw,42px)">Nomornya <span class="redup">bisa Anda periksa sendiri</span></h2>
+        <p style="margin-top:20px;color:var(--tinta-700)">
+          PT Rama Trimitra Development Group berdiri 15 Oktober 2020. Berikut nomor legalitas
+          holding kami. Setiap proyek juga punya legalitasnya sendiri — IMB, PBG, peil banjir,
+          advice plan, SPPL, dan sertifikat yang sudah pecah per unit — dan bisa diminta ke
+          kantor pemasaran sebelum Anda memutuskan.
+        </p>
+        <p class="catatan" style="margin-top:20px">
+          Rumah subsidi yang dijual tanpa legalitas jelas adalah risiko terbesar bagi pembeli
+          pertama. Kami cantumkan nomornya supaya Anda bisa memeriksanya sendiri.
+        </p>
+      </div>
+      <div class="tabel-bungkus">
+        <table class="tabel-data tabel-legal">
+          <caption class="lewati">Legalitas PT Rama Trimitra Development Group</caption>
+          <tbody id="legalTubuh"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ TESTIMONI -->
+<section class="bagian" id="testimoni" aria-labelledby="tsJudul">
+  <div class="isi">
+    <div class="kepala">
+      <span class="label">Testimoni</span>
+      <h2 id="tsJudul">Apa kata <span class="redup">mitra dan bank penyalur</span></h2>
+    </div>
+    <div class="testi-grid" id="testimoniDaftar"></div>
+  </div>
+</section>
+
 <!-- ============================================================== TENTANG -->
 <section class="bagian" id="tentang" aria-labelledby="tentangJudul">
   <div class="isi">
     <div class="alasan-grid">
       <div>
         <span class="label">Tentang RTD</span>
-        <h2 id="tentangJudul" style="font-size:clamp(30px,4vw,42px)">Satu induk, <span class="redup">sepuluh perumahan</span></h2>
+        <h2 id="tentangJudul" style="font-size:clamp(30px,4vw,42px)">Satu induk, <span class="redup">dua puluh perumahan</span></h2>
         <p style="margin-top:20px;color:var(--tinta-700)">
-          Rama Trimitra Development Group adalah pengembang perumahan yang berbasis di Palembang,
-          Sumatera Selatan. Sejak 2020 kami membangun dan menyerahkan lebih dari 3.200 unit rumah,
-          sebagian besar rumah subsidi untuk keluarga yang membeli rumah pertamanya.
+          PT Rama Trimitra Development Group berdiri 15 Oktober 2020 dan berbasis di Palembang,
+          Sumatera Selatan. Sampai hari ini portofolio kami mencakup dua puluh perumahan dengan
+          total 3.808 unit rumah dan 37 unit ruko, sebagian besar rumah subsidi untuk keluarga
+          yang membeli rumah pertamanya.
         </p>
         <p style="margin-top:16px;color:var(--tinta-700)">
-          Proyek kami tersebar di Gandus, Kenten, Sematang Borang, Pangkalan Benteng, Merah Mata,
-          dan Indralaya Utara. Nama perumahannya berbeda-beda, tetapi standar material, fasilitas
-          dasar, dan cara kerja timnya satu.
+          Proyek kami tersebar di tiga wilayah: Kota Palembang (Gandus, Kenten, Sematang Borang,
+          Talang Betutu, Demang Lebar Daun), Kabupaten Banyuasin (Talang Kelapa, Pangkalan Benteng,
+          Merah Mata), dan Kabupaten Ogan Ilir (Indralaya Utara). Nama perumahannya berbeda-beda,
+          tetapi standar material, fasilitas dasar, dan cara kerja timnya satu.
         </p>
         <p style="margin-top:24px"><a class="tbl tbl--halus" href="#proyek">Lihat seluruh proyek →</a></p>
+
+        <div class="visi">
+          <div>
+            <span class="label">Visi</span>
+            <p>Memberi peluang bagi seluruh masyarakat Sumatera Selatan, khususnya Kota Palembang,
+            untuk mendapatkan kehidupan yang nyaman, aman, tenteram, dan sejahtera — memiliki
+            hunian yang layak dengan lingkungan yang bersih dan menyenangkan.</p>
+          </div>
+          <div>
+            <span class="label">Misi</span>
+            <ol>
+              <li>Menjadi pengembang properti yang transparan dan tepercaya, berkomitmen untuk berkembang, serta berlaku adil terhadap semua pemangku kepentingan.</li>
+              <li>Memenuhi kebutuhan pelanggan dengan produk dan pelayanan yang berkualitas dan inovatif.</li>
+              <li>Menciptakan hubungan kerja sama yang kuat dengan pelanggan dan mitra kerja.</li>
+            </ol>
+          </div>
+        </div>
       </div>
       <div>
         <img src="img/tag-tahap-3.jpg" alt="Deret rumah di perumahan Taman Asri Gandus 2, jalan komplek cor beton dengan pohon di kiri kanan" style="width:100%;height:auto;border-radius:var(--r-lg);aspect-ratio:16/10;object-fit:cover" width="1165" height="351">
+
+        <div class="tim">
+          <span class="label" style="margin-top:32px">Tim Manajemen</span>
+          <div class="tim-grid" id="timDaftar"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -394,7 +502,7 @@
         <div style="margin-top:32px;display:grid;gap:16px">
           <div>
             <span class="label" style="margin-bottom:4px">Kantor Pemasaran</span>
-            <p>Jl. Letjen Harun Sohar, Kebun Bunga,<br>Kec. Sukarami, Kota Palembang, Sumatera Selatan</p>
+            <p>Jl. Letjen Harun Sohar, Komplek Pergudangan<br>Palembang Star, Blok AA01–AA02, Kel. Kebun Bunga,<br>Kec. Sukarami, Kota Palembang, Sumatera Selatan 30961</p>
           </div>
           <div>
             <span class="label" style="margin-bottom:4px">WhatsApp</span>
@@ -441,7 +549,7 @@
     <div class="footer__grid">
       <div>
         <img src="img/rtd-logo-krem.png" alt="Rama Trimitra Development Group" width="170" height="53">
-        <p>Jl. Letjen Harun Sohar, Kebun Bunga,<br>Kec. Sukarami, Kota Palembang,<br>Sumatera Selatan</p>
+        <p>Jl. Letjen Harun Sohar, Komplek Pergudangan<br>Palembang Star, Blok AA01–AA02,<br>Kel. Kebun Bunga, Kec. Sukarami,<br>Kota Palembang, Sumatera Selatan 30961</p>
       </div>
       <div>
         <h4>Kantor Pemasaran</h4>
