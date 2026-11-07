@@ -117,6 +117,27 @@ tampil sebagai kartu tautan. YouTube memakai `youtube-nocookie.com`.
 
 GitHub Pages: Settings → Pages → Branch `main`, folder `/ (root)`.
 
+### Penting: naikkan nomor versi aset setiap kali mengubah CSS atau JS
+
+Tautan ke stylesheet dan skrip membawa nomor versi:
+
+```html
+<link rel="stylesheet" href="assets/css/style.css?v=2">
+<script src="assets/js/app.js?v=2"></script>
+```
+
+Tanpa itu, peramban pengunjung lama akan memakai `style.css` dan `app.js` dari
+cache sementara HTML-nya sudah baru — situs akan tampil tanpa gaya atau error.
+
+Setiap kali `assets/css/style.css` atau `assets/js/app.js` diubah, naikkan
+angkanya di semua berkas HTML:
+
+```bash
+# dari v=2 ke v=3
+grep -rl 'v=2' --include='*.html' . | xargs sed -i '' 's/?v=2/?v=3/g'   # macOS
+grep -rl 'v=2' --include='*.html' . | xargs sed -i    's/?v=2/?v=3/g'   # Linux
+```
+
 ## Aksesibilitas
 
 Teks isian 16px, area sentuh minimal 44 × 44 px, kontras teks minimal 4,5:1,
