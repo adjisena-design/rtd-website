@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hubungi Kami — Rama Trimitra Development Group</title>
+<meta name="description" content="Hubungi kantor pemasaran PT Rama Trimitra Development Group di Palembang. WhatsApp 0823-8429-9234.">
+<meta name="theme-color" content="#0f2033">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hubungi Kami — Rama Trimitra Development Group">
+<meta property="og:description" content="Hubungi kantor pemasaran PT Rama Trimitra Development Group di Palembang. WhatsApp 0823-8429-9234.">
+<meta property="og:image" content="img/green-nature.jpg">
+<meta property="og:locale" content="id_ID">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="lewati" href="#utama">Lompat ke isi utama</a>
+<header class="nav" id="nav">
+  <div class="nav__isi">
+    <a class="nav__logo" href="index.html" aria-label="Rama Trimitra Development Group, beranda">
+      <img src="img/rtd-logo-emas-navy.png" alt="Rama Trimitra Development Group" width="164" height="51">
+    </a>
+    <button class="nav__tombol" id="navTombol" aria-expanded="false" aria-controls="navMenu" aria-label="Buka menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <ul class="nav__menu" id="navMenu">
+      <li><a href="proyek/">Proyek</a></li>
+      <li><a href="index.html#simulasi">Simulasi KPR</a></li>
+      <li>
+        <button class="nav__tarik" aria-expanded="false" aria-haspopup="true">Tentang Kami
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul class="nav__sub">
+<li><a href="tentang.html">Profil &amp; Tim</a></li>
+<li><a href="legalitas.html">Legalitas</a></li>
+<li><a href="spesifikasi.html">Spesifikasi Standar</a></li>
+<li><a href="tentang.html#yayasan">Yayasan</a></li>
+        </ul>
+      </li>
+      <li><a href="berita.html">Berita &amp; Artikel</a></li>
+      <li><a href="karier.html">Karier</a></li>
+      <li class="nav__cta"><a class="tbl tbl--emas" href="kontak.html">Hubungi Kami</a></li>
+    </ul>
+  </div>
+</header>
+<main id="utama">
+
+<section class="bagian bagian--rapat">
+  <div class="isi">
+    <div class="kontak-grid">
+      <div>
+        <span class="label">Kontak</span>
+        <h2 style="font-size:clamp(34px,4.6vw,52px)">Hubungi kami</h2>
+        <p style="margin-top:16px;color:var(--tinta-700);font-size:17px;max-width:46ch">Tim kami menghubungi
+        balik di hari kerja yang sama. Belum tahu proyek mana yang cocok juga tidak apa-apa — pilih saja
+        “belum tahu”, nanti kami bantu dari penghasilan dan lokasi kerja Anda.</p>
+        <div style="margin-top:36px;display:grid;gap:24px">
+          <div><span class="label" style="margin-bottom:4px">Kantor Pemasaran</span>
+            <p>Jl. Letjen Harun Sohar, Komplek Pergudangan Palembang Star,<br>Blok AA01–AA02, Kel. Kebun Bunga,
+            Kec. Sukarami,<br>Kota Palembang, Sumatera Selatan 30961</p></div>
+          <div><span class="label" style="margin-bottom:4px">WhatsApp</span>
+            <p><a href="https://wa.me/6282384299234" style="font-weight:700;font-size:18px">0823-8429-9234</a></p></div>
+          <div><span class="label" style="margin-bottom:4px">Email</span>
+            <p><a href="mailto:trimitrarama@gmail.com">trimitrarama@gmail.com</a></p></div>
+          <div><span class="label" style="margin-bottom:4px">Media Sosial</span>
+            <p><a href="https://instagram.com/ramadevelopmentplg" target="_blank" rel="noopener">@ramadevelopmentplg</a> ·
+            <a href="https://www.youtube.com/channel/UCeFYjZ3-2V6sVQ38RNnYJ2Q" target="_blank" rel="noopener">YouTube RTD Group</a></p></div>
+        </div>
+      </div>
+      <form class="form" id="formKontak" novalidate>
+        <div><label for="fNama">Nama</label><input type="text" id="fNama" placeholder="Nama lengkap" required autocomplete="name"></div>
+        <div><label for="fWa">Nomor WhatsApp</label><input type="tel" id="fWa" inputmode="numeric" placeholder="0812-0000-0000" required autocomplete="tel">
+          <p class="bantu">Dipakai hanya untuk membalas pertanyaan Anda.</p></div>
+        <div><label for="fProyek">Proyek yang diminati</label><select id="fProyek"></select></div>
+        <div><label for="fPesan">Pesan (opsional)</label><textarea id="fPesan" placeholder="Pertanyaan atau kebutuhan Anda"></textarea></div>
+        <button class="tbl tbl--utama" type="submit">Kirim</button>
+        <p class="sukses" id="pesanSukses" hidden role="status">Terima kasih. Tim kami menghubungi Anda di hari kerja yang sama.</p>
+        <p class="bantu">Data Anda tidak dibagikan ke pihak lain dan tidak dipakai untuk menawarkan produk di luar RTD.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="isi">
+    <div class="footer__grid">
+      <div>
+        <img src="img/rtd-logo-emas-navy.png" alt="Rama Trimitra Development Group" width="180" height="56">
+        <p>Jl. Letjen Harun Sohar, Komplek Pergudangan<br>Palembang Star, Blok AA01–AA02,<br>Kel. Kebun Bunga, Kec. Sukarami,<br>Kota Palembang, Sumatera Selatan 30961</p>
+      </div>
+      <div>
+        <h4>Jelajahi</h4>
+        <ul>
+          <li><a href="proyek/">Proyek</a></li>
+          <li><a href="index.html#simulasi">Simulasi KPR</a></li>
+          <li><a href="index.html#cara">Cara Membeli</a></li>
+          <li><a href="berita.html">Berita &amp; Artikel</a></li>
+          <li><a href="karier.html">Karier</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Perusahaan</h4>
+        <ul>
+          <li><a href="tentang.html">Profil &amp; Tim</a></li>
+          <li><a href="legalitas.html">Legalitas</a></li>
+          <li><a href="spesifikasi.html">Spesifikasi Standar</a></li>
+          <li><a href="tentang.html#yayasan">Yayasan</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hubungi</h4>
+        <ul>
+          <li><a href="https://wa.me/6282384299234">0823-8429-9234</a></li>
+          <li><a href="mailto:trimitrarama@gmail.com">trimitrarama@gmail.com</a></li>
+          <li><a href="https://instagram.com/ramadevelopmentplg" target="_blank" rel="noopener">@ramadevelopmentplg</a></li>
+          <li><a href="https://www.youtube.com/channel/UCeFYjZ3-2V6sVQ38RNnYJ2Q" target="_blank" rel="noopener">YouTube RTD Group</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__kaki">
+      <p>Gambar dalam situs ini merupakan ilustrasi dan dokumentasi lapangan. Spesifikasi, harga, dan
+      ketersediaan unit dapat berubah sewaktu-waktu. Informasi terbaru dapat dikonfirmasi langsung ke
+      kantor pemasaran. Syarat dan ketentuan berlaku.
+      © <span id="tahun">2026</span> PT Rama Trimitra Development Group.</p>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

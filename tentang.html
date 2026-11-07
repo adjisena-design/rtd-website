@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tentang Kami — Rama Trimitra Development Group</title>
+<meta name="description" content="Profil PT Rama Trimitra Development Group: visi, misi, tim manajemen, dan Yayasan Al-Mukmin Darunnajah Center.">
+<meta name="theme-color" content="#0f2033">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tentang Kami — Rama Trimitra Development Group">
+<meta property="og:description" content="Profil PT Rama Trimitra Development Group: visi, misi, tim manajemen, dan Yayasan Al-Mukmin Darunnajah Center.">
+<meta property="og:image" content="img/green-nature.jpg">
+<meta property="og:locale" content="id_ID">
+<link rel="icon" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<a class="lewati" href="#utama">Lompat ke isi utama</a>
+<header class="nav" id="nav">
+  <div class="nav__isi">
+    <a class="nav__logo" href="index.html" aria-label="Rama Trimitra Development Group, beranda">
+      <img src="img/rtd-logo-emas-navy.png" alt="Rama Trimitra Development Group" width="164" height="51">
+    </a>
+    <button class="nav__tombol" id="navTombol" aria-expanded="false" aria-controls="navMenu" aria-label="Buka menu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+    <ul class="nav__menu" id="navMenu">
+      <li><a href="proyek/">Proyek</a></li>
+      <li><a href="index.html#simulasi">Simulasi KPR</a></li>
+      <li>
+        <button class="nav__tarik aktif" aria-expanded="false" aria-haspopup="true">Tentang Kami
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
+        </button>
+        <ul class="nav__sub">
+<li><a href="tentang.html" class="aktif">Profil &amp; Tim</a></li>
+<li><a href="legalitas.html">Legalitas</a></li>
+<li><a href="spesifikasi.html">Spesifikasi Standar</a></li>
+<li><a href="tentang.html#yayasan">Yayasan</a></li>
+        </ul>
+      </li>
+      <li><a href="berita.html">Berita &amp; Artikel</a></li>
+      <li><a href="karier.html">Karier</a></li>
+      <li class="nav__cta"><a class="tbl tbl--emas" href="kontak.html">Hubungi Kami</a></li>
+    </ul>
+  </div>
+</header>
+<main id="utama">
+
+<section class="bagian bagian--rapat">
+  <div class="isi">
+    <div class="kepala" style="max-width:800px">
+      <span class="label">Tentang Kami</span>
+      <h2 style="font-size:clamp(34px,4.8vw,56px)">Satu induk, <span class="redup">dua puluh perumahan</span></h2>
+      <p>PT Rama Trimitra Development Group berdiri 15 Oktober 2020 dan berbasis di Palembang, Sumatera
+      Selatan. Portofolio kami mencakup dua puluh perumahan dengan total 3.808 unit rumah dan 37 unit ruko,
+      sebagian besar rumah subsidi untuk keluarga yang membeli rumah pertamanya.</p>
+    </div>
+    <div class="angka-grid">
+      <div class="angka"><b id="angkaUnit">3.808</b><span>Unit dalam portofolio</span></div>
+      <div class="angka"><b id="angkaProyek">20</b><span>Perumahan sejak 2020</span></div>
+      <div class="angka"><b>3</b><span>Kota dan kabupaten</span></div>
+      <div class="angka"><b>15</b><span>Penghargaan Bank BTN</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="bagian bagian--krem">
+  <div class="isi">
+    <div class="visi-grid">
+      <div>
+        <span class="label">Visi</span>
+        <h2 style="font-size:clamp(24px,3vw,32px);line-height:1.25">Memberi peluang bagi seluruh masyarakat
+        Sumatera Selatan untuk memiliki hunian yang layak dengan lingkungan yang bersih dan menyenangkan.</h2>
+      </div>
+      <div>
+        <span class="label">Misi</span>
+        <ol class="misi">
+          <li>Menjadi pengembang properti yang transparan dan tepercaya, berkomitmen untuk berkembang, serta berlaku adil terhadap semua pemangku kepentingan.</li>
+          <li>Memenuhi kebutuhan pelanggan dengan produk dan pelayanan yang berkualitas dan inovatif.</li>
+          <li>Menciptakan hubungan kerja sama yang kuat dengan pelanggan dan mitra kerja.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bagian" id="tim" aria-labelledby="timJudul">
+  <div class="isi">
+    <div class="kepala">
+      <span class="label">Tim Manajemen</span>
+      <h2 id="timJudul">Orang-orang <span class="redup">yang menjalankannya</span></h2>
+    </div>
+    <div class="tim-grid" id="timDaftar"></div>
+  </div>
+</section>
+
+<section class="bagian bagian--navy" id="yayasan" aria-labelledby="yysJudul">
+  <div class="isi">
+    <div class="kepala">
+      <span class="label">Yayasan</span>
+      <h2 id="yysJudul">Yayasan Al-Mukmin <span class="redup">Darunnajah Center</span></h2>
+      <p>Di luar usaha properti, pendiri RTD Group juga menjalankan yayasan yang bergerak di bidang sosial,
+      keagamaan, pendidikan, dan kemanusiaan.</p>
+    </div>
+    <div class="sim-grid">
+      <div>
+        <p style="font-size:16px;color:rgba(250,246,238,.86)">Yayasan Al-Mukmin Darunnajah Center bertujuan
+        membantu mewujudkan generasi yang mandiri, cerdas, sejahtera, dan berdaya saing tinggi. Program
+        utamanya mencakup santunan dan pembinaan anak asuh serta pembangunan rumah bagi yang membutuhkan.</p>
+        <p style="font-size:16px;color:rgba(250,246,238,.86);margin-top:16px">Visinya: menjadikan lembaga
+        bernuansa Islami yang maju di bidang sosial, keagamaan, pendidikan, dan kemanusiaan, agar dapat
+        menghasilkan sumber daya insani yang unggul dan berdaya saing tinggi di era global.</p>
+        <div style="margin-top:32px;display:grid;gap:12px">
+          <div><span class="label" style="margin-bottom:4px">Kontak Yayasan</span>
+            <p style="color:rgba(250,246,238,.86)"><a href="https://wa.me/6282181646071">+62 821 8164 6071</a> ·
+            <a href="mailto:almukmindarunnajah@gmail.com">almukmindarunnajah@gmail.com</a> ·
+            <a href="https://instagram.com/almukmin.darunnajah" target="_blank" rel="noopener">@almukmin.darunnajah</a></p></div>
+        </div>
+      </div>
+      <div class="tabel-bungkus" style="background:rgba(250,246,238,.06);border-color:rgba(250,246,238,.18)">
+        <table class="tabel-data tabel-legal">
+          <caption class="lewati">Legalitas Yayasan Al-Mukmin Darunnajah Center</caption>
+          <tbody id="legalYayasanTubuh"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="isi">
+    <div class="footer__grid">
+      <div>
+        <img src="img/rtd-logo-emas-navy.png" alt="Rama Trimitra Development Group" width="180" height="56">
+        <p>Jl. Letjen Harun Sohar, Komplek Pergudangan<br>Palembang Star, Blok AA01–AA02,<br>Kel. Kebun Bunga, Kec. Sukarami,<br>Kota Palembang, Sumatera Selatan 30961</p>
+      </div>
+      <div>
+        <h4>Jelajahi</h4>
+        <ul>
+          <li><a href="proyek/">Proyek</a></li>
+          <li><a href="index.html#simulasi">Simulasi KPR</a></li>
+          <li><a href="index.html#cara">Cara Membeli</a></li>
+          <li><a href="berita.html">Berita &amp; Artikel</a></li>
+          <li><a href="karier.html">Karier</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Perusahaan</h4>
+        <ul>
+          <li><a href="tentang.html">Profil &amp; Tim</a></li>
+          <li><a href="legalitas.html">Legalitas</a></li>
+          <li><a href="spesifikasi.html">Spesifikasi Standar</a></li>
+          <li><a href="tentang.html#yayasan">Yayasan</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Hubungi</h4>
+        <ul>
+          <li><a href="https://wa.me/6282384299234">0823-8429-9234</a></li>
+          <li><a href="mailto:trimitrarama@gmail.com">trimitrarama@gmail.com</a></li>
+          <li><a href="https://instagram.com/ramadevelopmentplg" target="_blank" rel="noopener">@ramadevelopmentplg</a></li>
+          <li><a href="https://www.youtube.com/channel/UCeFYjZ3-2V6sVQ38RNnYJ2Q" target="_blank" rel="noopener">YouTube RTD Group</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__kaki">
+      <p>Gambar dalam situs ini merupakan ilustrasi dan dokumentasi lapangan. Spesifikasi, harga, dan
+      ketersediaan unit dapat berubah sewaktu-waktu. Informasi terbaru dapat dikonfirmasi langsung ke
+      kantor pemasaran. Syarat dan ketentuan berlaku.
+      © <span id="tahun">2026</span> PT Rama Trimitra Development Group.</p>
+    </div>
+  </div>
+</footer>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

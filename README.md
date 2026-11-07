@@ -1,135 +1,143 @@
-# Situs Rama Trimitra Development Group
+# rtd-website
 
-Situs satu halaman untuk RTD Group — pengembang rumah subsidi di Palembang dan Ogan Ilir.
-Dibangun dari panduan visual RTD: krem sebagai kanvas, navy sebagai tinta, amber sebagai
-aksen tunggal, Source Serif 4 untuk judul dan Plus Jakarta Sans untuk teks.
+Situs PT Rama Trimitra Development Group — pengembang perumahan di Palembang,
+Banyuasin, dan Ogan Ilir.
 
-HTML, CSS, dan JavaScript biasa. Tanpa kerangka kerja, tanpa proses build, tanpa dependensi.
-Buka `index.html` di peramban dan situs langsung jalan.
+HTML, CSS, dan JavaScript biasa. Tanpa kerangka kerja, tanpa dependensi, tanpa proses build.
 
-## Isi halaman
+## Menjalankan
 
-| Bagian | Isi |
+Buka `index.html` di peramban. Untuk menguji dengan peladen lokal:
+
+```bash
+python3 -m http.server 8000
+```
+
+Halaman detail proyek membaca `?id=` dari URL, jadi gunakan peladen lokal — bukan
+`file://` — saat menguji tautan antarhalaman.
+
+## Halaman
+
+| Berkas | Isi |
 | --- | --- |
-| Hero | Judul, penyaring cepat, render utama, kartu proyek mengambang |
-| Angka | Unit portofolio, jumlah proyek, cakupan wilayah |
-| Kenapa RTD | Tiga alasan: spesifikasi lengkap, angsuran tiga tenor, satu standar |
-| Proyek | Sepuluh perumahan yang dijual, bisa disaring menurut kategori dan daerah |
-| Simulasi KPR | Kalkulator anuitas: harga, DP, bunga, tenor |
-| Spesifikasi | Dua belas baris standar RTD, plus denah |
-| Cara Membeli | Lima langkah dari pilih unit sampai serah terima |
-| Rekam Jejak | Sepuluh perumahan yang sudah terbangun, plus ruko |
-| Penghargaan | Lima belas penghargaan dari Bank BTN dan BTN Syariah |
-| Legalitas | Akta, SK Kemenkumham, NIB, NPWP, SIUJK, direktur, komisaris |
-| Testimoni | Empat testimoni bernama dari mitra dan bank penyalur |
-| Tentang RTD | Profil, visi, misi, sembilan nama tim manajemen |
-| Kontak | Formulir tiga kolom yang meneruskan ke WhatsApp pemasaran |
+| `index.html` | Hero berputar, angka, proyek, penghargaan, testimoni, simulasi KPR, cara membeli, media sosial, kontak |
+| `proyek/index.html` | Semua proyek yang dijual + rekam jejak perumahan terbangun |
+| `proyek/detail.html?id=<id>` | Halaman satu proyek: foto, siteplan, spesifikasi, fasilitas, angsuran |
+| `tentang.html` | Profil, visi, misi, tim manajemen, yayasan |
+| `legalitas.html` | Legalitas holding dan mitra perbankan |
+| `spesifikasi.html` | Dua belas baris spesifikasi standar |
+| `berita.html` | Berita dan artikel |
+| `karier.html` | Lowongan kerja |
+| `kontak.html` | Formulir dan alamat |
 
-## Susunan berkas
+## Struktur
 
 ```
-index.html              seluruh markah halaman
-assets/css/style.css    token warna, tipografi, jarak, dan semua gaya
-assets/js/app.js        semua data (proyek, portofolio, legalitas, penghargaan,
-                        testimoni, tim) + penyaring, kalkulator KPR, navigasi
-img/                    logo, render proyek, denah, favicon
+assets/css/style.css    token dan gaya
+assets/js/app.js        semua data dan perilaku
+img/                    logo, render sampul, denah, favicon
+img/proyek/             foto unit dan siteplan per proyek
 ```
 
-## Dari mana datanya
+## Data
 
-Dua sumber, keduanya milik RTD:
-
-- **Sepuluh brosur proyek 2026** — spesifikasi, tipe unit, fasilitas, dan satu-satunya
-  tabel harga lengkap yang tersedia (The Green Nature).
-- **Company Profile RTD Group 2026** — portofolio 20 perumahan dengan jumlah unit dan
-  lokasi, legalitas holding, 15 penghargaan, 4 testimoni, visi-misi, dan tim manajemen.
-
-Gambar dipotong ulang dari PDF brosur pada 150 dpi.
-
-## Cara mengubah datanya
-
-Semua data ada di bagian atas `assets/js/app.js` sebagai konstanta. Tidak perlu
-menyentuh berkas lain.
+Semua data ada sebagai konstanta di bagian atas `assets/js/app.js`.
 
 | Konstanta | Isi |
 | --- | --- |
-| `DATA_PROYEK` | Sepuluh proyek yang sedang dijual |
-| `DATA_PORTOFOLIO` | Perumahan yang sudah terbangun |
-| `DATA_RUKO` | Proyek ruko |
-| `DATA_LEGALITAS` | Legalitas holding |
-| `DATA_PENGHARGAAN` | Daftar penghargaan |
-| `DATA_TESTIMONI` | Testimoni |
-| `DATA_TIM` | Tim manajemen |
+| `DATA_PROYEK` | Proyek yang dijual, termasuk galeri dan siteplan |
+| `DATA_PORTOFOLIO`, `DATA_RUKO` | Perumahan yang sudah terbangun |
+| `DATA_SPEK` | Dua belas baris spesifikasi standar |
+| `DATA_LEGALITAS`, `DATA_LEGALITAS_YAYASAN` | Legalitas holding dan yayasan |
+| `DATA_PENGHARGAAN_SOROT`, `DATA_PENGHARGAAN_LAIN` | Penghargaan |
+| `DATA_TESTIMONI`, `DATA_TIM` | Testimoni dan tim manajemen |
+| `DATA_REEL`, `DATA_YOUTUBE` | Tautan Instagram dan YouTube |
+| `DATA_BERITA`, `DATA_KARIER` | Berita dan lowongan |
+| `KONTAK` | Nomor WhatsApp, email, alamat |
 
-Pita angka di hero dihitung otomatis dari `DATA_PROYEK` dan `DATA_PORTOFOLIO` —
-menambah proyek akan memperbarui "20 proyek" dan "3.808 unit" dengan sendirinya.
+Angka pada pita hero dihitung dari `DATA_PROYEK` dan `DATA_PORTOFOLIO`, tidak ditulis manual.
+
+### Menambah proyek
+
+Tambahkan objek ke `DATA_PROYEK`, letakkan render sampul di `img/`, dan foto unit
+di `img/proyek/`.
 
 ```js
 {
-  id: 'green-nature',              // juga nama berkas gambar di img/
+  id: 'green-nature',              // dipakai di ?id= dan nama berkas
   nama: 'The Green Nature',
-  tahap: null,                     // "Tahap 3" bila ada; tahap bukan bagian dari nama
-  kategori: 'subsidi',             // 'subsidi' atau 'komersil'
-  warna: 'var(--proyek-hutan)',    // warna aksen, dikunci seumur proyek
+  tahap: null,                     // "Tahap 3" bila ada
+  kategori: 'subsidi',             // 'subsidi' | 'komersil'
+  warna: 'var(--proyek-hutan)',
   lokasi: 'Pangkalan Benteng',
-  daerah: 'palembang-lain',        // 'gandus' | 'ogan-ilir' | 'palembang-lain'
-  tipe: '36/84', kt: 2, km: 1,
+  alamat: 'Jl. ...',               // null bila belum dikonfirmasi
+  daerah: 'banyuasin',             // 'gandus' | 'ogan-ilir' | 'banyuasin' | 'palembang-lain'
+  tipe: '36/84', kt: 2, km: 1, unit: 106,
   harga: 166000000, dp: 5700000,
   angsuran20: 1072000,             // angka brosur; dipakai apa adanya bila diisi
   klaim: null,                     // dipakai bila harga masih null
   status: 'tersedia',              // 'tersedia' | 'booking' | 'terjual'
-  gbr: 'green-nature.jpg'
+  gbr: 'green-nature.jpg',
+  galeri: ['green-nature-1.jpg'],  // di img/proyek/; kosongkan bila belum ada
+  siteplan: 'green-nature-siteplan.jpg',
+  fasilitas: ['Musholla', 'Taman'],
+  spekBeda: { 'Air': 'PDAM' }      // hanya yang berbeda dari standar
 }
 ```
 
-**Aturan penting soal harga.** Isi `harga` hanya dengan angka yang sudah dikonfirmasi
-pemasaran. Selama `harga` bernilai `null`, kartu menampilkan kalimat dari brosur proyek
-tersebut lewat kolom `klaim`, ditambah ajakan menghubungi pemasaran — bukan angka karangan.
+`harga` diisi hanya dengan angka yang sudah dikonfirmasi pemasaran. Selama `null`,
+kartu menampilkan `klaim` dan ajakan menghubungi pemasaran.
 
-Saat ini hanya **The Green Nature** yang punya angka lengkap, karena hanya brosur itu yang
-memuat tabel harga penuh. Sembilan proyek lainnya menunggu konfirmasi.
+Galeri yang kosong otomatis menampilkan kotak "Foto menyusul", bukan ruang kosong.
 
-## Yang masih harus dikerjakan tim
+## Simulasi KPR
 
-1. **Harga dan angsuran sembilan proyek.** Isi `harga`, `dp`, dan `angsuran20` di
-   `DATA_PROYEK` begitu pemasaran mengonfirmasi.
-2. **Status "3.808 unit" perlu ditegaskan.** Angka itu adalah total unit dalam portofolio
-   menurut company profile, bukan jumlah yang sudah serah terima. Kalau pemasaran
-   mengonfirmasi semuanya sudah diserahkan, kalimatnya bisa dinaikkan jadi klaim
-   serah terima — sampai itu terjadi, biarkan apa adanya.
-3. **Formulir kontak belum punya peladen.** Saat ini formulir membuka WhatsApp dengan
-   pesan yang sudah terisi. Untuk menyimpan prospek ke basis data atau mengirim surel,
-   ganti bagian `form.addEventListener('submit', …)` di `app.js`.
-4. **Logo masih raster.** `img/rtd-logo-navy.png` dan `rtd-logo-krem.png` berukuran
-   1704 × 529 px. Untuk layar beresolusi tinggi sebaiknya diganti SVG.
-5. **Gambar berasal dari brosur cetak** dan dipotong ulang dari PDF, jadi resolusinya
-   terbatas. Render asli dari tim desain akan jauh lebih tajam.
-6. **Foto rumah terbangun belum ada.** Render menjual rencana; foto rumah yang sudah
-   dihuni menjual bukti. Ini aset paling bernilai yang bisa ditambahkan.
-7. **Casa Adiva** belum punya render bersih — potongan yang ada masih terbatas.
-8. **Domain.** Situs lama `rumahidamankita.co.id` masih tercantum di footer. Saat pindah
-   ke domain bernama RTD, alihkan domain lama ke yang baru, jangan dimatikan — tautan
-   lama masih beredar di brosur cetak yang sudah tersebar.
+Metode anuitas, dihitung di sisi klien:
 
-## Menayangkan dengan GitHub Pages
+```
+angsuran = P · i / (1 − (1 + i)^−n)
+```
 
-Settings → Pages → Source: `Deploy from a branch` → Branch: `main`, folder `/ (root)` → Save.
-Situs terbit di `https://adjisena-design.github.io/rtd-website/`.
+`P` plafon, `i` bunga bulanan, `n` jumlah angsuran. Bunga bawaan 5% mengikuti
+ketentuan KPR subsidi FLPP.
 
-Untuk domain sendiri, tambahkan berkas `CNAME` berisi nama domainnya dan arahkan DNS
-ke GitHub Pages.
+## Tipografi
+
+Inter, dimuat dari Google Fonts, dengan tumpukan cadangan
+`"Helvetica Neue", Helvetica, Arial`. Helvetica Neue sendiri tidak di-host karena
+berlisensi; Inter dipilih sebagai padanan bebas lisensi yang tampil sama di semua
+perangkat.
+
+## Sematan pihak ketiga
+
+Instagram memakai `embed.js` resmi. Bila skrip itu diblokir, blockquote-nya tetap
+tampil sebagai kartu tautan. YouTube memakai `youtube-nocookie.com`.
+
+## Penayangan
+
+GitHub Pages: Settings → Pages → Branch `main`, folder `/ (root)`.
 
 ## Aksesibilitas
 
-Yang sudah dipenuhi: teks isian 16px supaya peramban ponsel tidak memperbesar halaman
-sendiri; area sentuh minimal 44 × 44 px; kontras teks minimal 4,5:1; tanda fokus papan
-ketik di semua kendali; tautan lompat ke isi utama; setiap gambar punya teks alternatif
-yang menyebut nama proyek dan tipe unit; `prefers-reduced-motion` dihormati.
+Teks isian 16px, area sentuh minimal 44 × 44 px, kontras teks minimal 4,5:1,
+tanda fokus papan ketik pada semua kendali, tautan lompat ke isi utama, teks
+alternatif pada semua gambar, dan `prefers-reduced-motion` dihormati — termasuk
+menghentikan putaran hero.
 
-## Catatan hukum
+## Belum selesai
 
-Angka pada situs ini mengikuti brosur yang berlaku saat dibuat dan masih berstatus
-pratinjau. Simulasi KPR memakai metode anuitas dan bersifat perkiraan — angka final
-ditetapkan bank penyalur pada saat akad, dan belum termasuk biaya provisi, asuransi,
-notaris, dan pajak. Semua materi harus diperiksa pemasaran sebelum situs ditayangkan
-ke publik.
+- Harga dan angsuran sembilan proyek masih `null`, menunggu konfirmasi pemasaran.
+- Angka 3.808 unit adalah total portofolio, bukan jumlah serah terima.
+- Isi `berita.html` dan `karier.html` masih contoh.
+- Formulir kontak belum punya peladen; sementara meneruskan ke WhatsApp.
+- Logo masih PNG, perlu diganti SVG.
+- Render sampul dipotong dari PDF brosur, resolusinya terbatas. Render asli dari
+  tim desain akan jauh lebih tajam.
+- Siteplan baru tersedia untuk empat proyek; sisanya menampilkan "Siteplan menyusul".
+- Domain masih mengarah ke `rumahidamankita.co.id`.
+
+## Catatan
+
+Angka pada situs ini mengikuti brosur dan company profile yang berlaku saat dibuat,
+dan masih berstatus pratinjau. Semua materi perlu diperiksa pemasaran sebelum
+ditayangkan ke publik.
