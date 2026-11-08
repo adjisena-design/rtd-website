@@ -29,11 +29,12 @@
    siteplan    berkas siteplan di img/proyek/, atau null
    fasilitas   daftar fasilitas umum
    spekBeda    penyimpangan dari spesifikasi standar, mis. { Air: 'PDAM' }
+   peta        titik Google Maps { lat, lng, id: place_id } untuk peta di halaman proyek
    -------------------------------------------------------------------------- */
 
 const DATA_PROYEK = [
   {
-    id: 'green-nature', nama: 'The Green Nature', tahap: null,
+    id: 'green-nature', peta: { lat: -2.8927718, lng: 104.6681867, id: 'ChIJadlSWQBzOy4R3dPW1PWr-WA' }, nama: 'The Green Nature', tahap: null,
     kategori: 'subsidi', warna: 'var(--proyek-hutan)',
     lokasi: 'Pangkalan Benteng', alamat: 'Jl. Pangkalan Benteng, Sukamoro, Kec. Talang Kelapa, Kab. Banyuasin, Sumatera Selatan',
     daerah: 'banyuasin', tipe: '36/84', kt: 2, km: 1, unit: 106,
@@ -45,7 +46,7 @@ const DATA_PROYEK = [
     spekBeda: {}
   },
   {
-    id: 'tag-tahap-3', nama: 'Taman Asri Gandus 2', tahap: 'Tahap 3',
+    id: 'tag-tahap-3', peta: { lat: -2.9952323, lng: 104.6713739, id: 'ChIJy7dJKwCfOy4Rnf7UuAKL49U' }, nama: 'Taman Asri Gandus 2', tahap: 'Tahap 3',
     kategori: 'subsidi', warna: 'var(--proyek-laut)',
     lokasi: 'Gandus, Palembang', alamat: 'Jl. Talang Kemang RT 22 RW 06, Kel. Gandus, Kec. Gandus, Kota Palembang, Sumatera Selatan',
     daerah: 'gandus', tipe: '36/84', kt: 2, km: 1, unit: 249,
@@ -57,7 +58,7 @@ const DATA_PROYEK = [
     spekBeda: {}
   },
   {
-    id: 'tag-tahap-4', nama: 'Taman Asri Gandus 2', tahap: 'Tahap 4',
+    id: 'tag-tahap-4', peta: { lat: -2.9952323, lng: 104.6713739, id: 'ChIJy7dJKwCfOy4Rnf7UuAKL49U' }, nama: 'Taman Asri Gandus 2', tahap: 'Tahap 4',
     kategori: 'subsidi', warna: 'var(--proyek-laut)',
     lokasi: 'Gandus, Palembang', alamat: 'Jl. Talang Kemang RT 22 RW 06, Kel. Gandus, Kec. Gandus, Kota Palembang, Sumatera Selatan',
     daerah: 'gandus', tipe: '36/84', kt: 2, km: 1, unit: 251,
@@ -69,7 +70,7 @@ const DATA_PROYEK = [
     spekBeda: {}
   },
   {
-    id: 'tag-tahap-5', nama: 'Taman Asri Gandus 2', tahap: 'Tahap 5',
+    id: 'tag-tahap-5', peta: { lat: -2.9952323, lng: 104.6713739, id: 'ChIJy7dJKwCfOy4Rnf7UuAKL49U' }, nama: 'Taman Asri Gandus 2', tahap: 'Tahap 5',
     kategori: 'subsidi', warna: 'var(--proyek-laut)',
     lokasi: 'Gandus, Palembang', alamat: 'Jl. Talang Kemang RT 22 RW 06, Kel. Gandus, Kec. Gandus, Kota Palembang, Sumatera Selatan',
     daerah: 'gandus', tipe: '36/84', kt: 2, km: 1, unit: 334,
@@ -81,7 +82,7 @@ const DATA_PROYEK = [
     spekBeda: {}
   },
   {
-    id: 'tag-signature', nama: 'TAG Signature', tahap: null,
+    id: 'tag-signature', peta: { lat: -3.0018211, lng: 104.6738991, id: 'ChIJ3VVtBwCfOy4RhLZBPIoFUr4' }, nama: 'TAG Signature', tahap: null,
     kategori: 'komersil', warna: 'var(--proyek-batu)',
     lokasi: 'Gandus, Palembang', alamat: 'Jl. Sofyan Kenawas RT 21 RW 06, Kel. Gandus, Kec. Gandus, Kota Palembang, Sumatera Selatan',
     daerah: 'gandus', tipe: '36/84', kt: 2, km: 1, unit: 126,
@@ -93,9 +94,9 @@ const DATA_PROYEK = [
     spekBeda: {}
   },
   {
-    id: 'green-village', nama: 'The Green Village', tahap: null,
+    id: 'green-village', peta: { lat: -2.9198997, lng: 104.8536817, id: 'ChIJid9RfyN5Oy4RVZHMmQasqaY' }, nama: 'The Green Village', tahap: null,
     kategori: 'subsidi', warna: 'var(--proyek-daun)',
-    lokasi: 'Merah Mata, Banyuasin', alamat: null,
+    lokasi: 'Merah Mata, Banyuasin', alamat: '3VJ3+2FV, Lorong Belitung, Perajen, Kec. Banyuasin I, Kab. Banyuasin, Sumatera Selatan',
     daerah: 'banyuasin', tipe: '36/99', kt: 2, km: 1, unit: 270,
     harga: null, dp: null, angsuran20: null, klaim: 'Angsuran mulai 1 juta, langsung huni',
     status: 'tersedia', gbr: 'green-village.jpg',
@@ -105,7 +106,7 @@ const DATA_PROYEK = [
     spekBeda: {}
   },
   {
-    id: 'grand-athmar-indralaya', nama: 'Grand Athmar Indralaya', tahap: null,
+    id: 'grand-athmar-indralaya', peta: { lat: -3.2040328, lng: 104.6178108, id: 'ChIJ8YP2AAC9Oy4RYtZt0xDbQ7A' }, nama: 'Grand Athmar Indralaya', tahap: null,
     kategori: 'subsidi', warna: 'var(--proyek-kayu)',
     lokasi: 'Indralaya Utara, Ogan Ilir', alamat: 'Dusun II, Desa Tanjung Baru, Kec. Indralaya Utara, Kab. Ogan Ilir, Sumatera Selatan',
     daerah: 'ogan-ilir', tipe: '36/96', kt: 2, km: 1, unit: 298,
@@ -117,9 +118,9 @@ const DATA_PROYEK = [
     spekBeda: {}
   },
   {
-    id: 'grand-athmar-sematang', nama: 'Grand Athmar Sematang Borang', tahap: null,
+    id: 'grand-athmar-sematang', peta: { lat: -2.9122111, lng: 104.8194526, id: 'ChIJVfsGFKlxOy4R7eBf_eUW8Zg' }, nama: 'Grand Athmar Sematang Borang', tahap: null,
     kategori: 'subsidi', warna: 'var(--proyek-kayu)',
-    lokasi: 'Sematang Borang, Palembang', alamat: null,
+    lokasi: 'Sematang Borang, Palembang', alamat: 'Jl. Keramat Belido, Jl. Lumban Meranti, Mariana Ilir, Kec. Banyuasin I, Kab. Banyuasin, Sumatera Selatan',
     daerah: 'palembang-lain', tipe: '36/98', kt: 2, km: 1, unit: 206,
     harga: null, dp: null, angsuran20: null, klaim: 'Gratis pemasangan air PDAM',
     status: 'tersedia', gbr: 'grand-athmar-sematang.jpg',
@@ -129,7 +130,7 @@ const DATA_PROYEK = [
     spekBeda: { 'Air': 'PDAM, gratis biaya pemasangan' }
   },
   {
-    id: 'kartika-mataram', nama: 'Kartika Mataram Residence', tahap: 'Tahap 2',
+    id: 'kartika-mataram', peta: { lat: -2.8664404, lng: 104.7095115, id: 'ChIJ61BNFntzOy4RYsLfLzguqro' }, nama: 'Kartika Mataram Residence', tahap: 'Tahap 2',
     kategori: 'subsidi', warna: 'var(--proyek-bata)',
     lokasi: 'Talang Kelapa, Banyuasin', alamat: 'Jl. Mataram 2, Kec. Talang Kelapa, Kab. Banyuasin, Sumatera Selatan',
     daerah: 'banyuasin', tipe: '36/84', kt: 2, km: 1, unit: 570,
@@ -141,9 +142,9 @@ const DATA_PROYEK = [
     spekBeda: {}
   },
   {
-    id: 'casa-adiva', nama: 'Casa Adiva', tahap: null,
+    id: 'casa-adiva', peta: { lat: -2.9260484, lng: 104.7572331, id: 'ChIJKwXYawB3Oy4RdY5Fy6Wujxs' }, nama: 'Casa Adiva', tahap: null,
     kategori: 'komersil', warna: 'var(--proyek-tanah)',
-    lokasi: 'Suka Maju, Kenten', alamat: null,
+    lokasi: 'Suka Maju, Kenten', alamat: 'Jl. Puspa Negara, Suka Maju, Kec. Sako, Kota Palembang, Sumatera Selatan',
     daerah: 'palembang-lain', tipe: '65/85', kt: 3, km: 2, unit: 17,
     harga: null, dp: 0, angsuran20: null, klaim: 'Town house 2 lantai · DP 0, booking 5 juta',
     status: 'tersedia', gbr: 'casa-adiva.jpg',
@@ -372,7 +373,7 @@ const KONTAK = {
   waTampil: '0823-8429-9234',
   email: 'trimitrarama@gmail.com',
   ig: 'ramadevelopmentplg',
-  alamat: ['Jl. Letjen Harun Sohar, Komplek Pergudangan', 'Palembang Star, Blok AA01–AA02', 'Kel. Kebun Bunga, Kec. Sukarami', 'Kota Palembang, Sumatera Selatan 30961']
+  alamat: ['Komplek Pergudangan Palembang Star', 'Jl. Letjen Harun Sohar No. AA02 Blok AA01', 'Kel. Kebun Bunga, Kec. Sukarami', 'Kota Palembang, Sumatera Selatan 30961']
 };
 
 
@@ -914,7 +915,26 @@ function gambarDetail() {
           </div>
         </div>
       </div>
-    </section>`;
+    </section>
+
+    ${p.peta ? `<section class="bagian" aria-labelledby="lokasiJudul">
+      <div class="isi">
+        <div class="kepala">
+          <span class="label">Lokasi</span>
+          <h2 id="lokasiJudul">${esc(judulLengkap(p))}</h2>
+          ${p.alamat ? `<p>${esc(p.alamat)}</p>` : ''}
+        </div>
+        <div class="peta">
+          <iframe src="${sematPeta(p.peta)}" title="Peta lokasi ${esc(judulLengkap(p))}" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          <div class="peta__kartu">
+            <b>${esc(p.nama)}</b>
+            <span>${esc(p.lokasi)}</span>
+            <a class="tbl tbl--utama" href="${tautanPeta(p.peta, p.nama)}" target="_blank" rel="noopener">Buka di Google Maps</a>
+          </div>
+        </div>
+        <p style="margin-top:24px;text-align:center"><a class="tbl tbl--emas" href="https://wa.me/${KONTAK.wa}?text=${encodeURIComponent('Halo RTD, saya ingin bertanya lokasi ' + judulLengkap(p) + '.')}" target="_blank" rel="noopener">Tanya lokasi lewat WhatsApp</a></p>
+      </div>
+    </section>` : ''}`;
 
   gambarSpek('#pdSpek', p.spekBeda);
 }
@@ -958,6 +978,11 @@ function pasangGeser() {
     tandai();
   });
 }
+
+/* -------------------------------------------------------------- Peta -- */
+
+const tautanPeta = (pt, nama) => `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(nama)}&query_place_id=${pt.id}`;
+const sematPeta = pt => `https://maps.google.com/maps?q=${pt.lat},${pt.lng}&z=16&hl=id&output=embed`;
 
 /* ------------------------------------------------------------- Formulir -- */
 
