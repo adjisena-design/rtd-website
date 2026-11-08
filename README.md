@@ -25,6 +25,8 @@ Halaman detail proyek membaca `?id=` dari URL, jadi gunakan peladen lokal — bu
 | `proyek/detail.html?id=<id>` | Halaman satu proyek: foto, siteplan, spesifikasi, fasilitas, angsuran |
 | `tentang.html` | Profil, visi, misi, tim manajemen (direksi dan manajer) |
 | `tim.html?id=<id>` | Profil satu anggota tim beserta CV |
+| `galeri.html` | Album kegiatan (dari situs lama) |
+| `album.html?id=<id>` | Foto satu album dengan penampil layar penuh |
 | `yayasan.html` | Yayasan Al-Mukmin Darunnajah Center, tema biru muda dan putih; isi dan foto dari Company Profile Yayasan |
 | `legalitas.html` | Legalitas holding dan mitra perbankan |
 | `spesifikasi.html` | Dua belas baris spesifikasi standar |
@@ -133,6 +135,8 @@ alternatif pada semua gambar, dan `prefers-reduced-motion` dihormati — termasu
 menghentikan putaran hero.
 
 ## Belum selesai
+
+- Galeri baru memuat 100 dari 191 foto situs lama (9 dari 18 album; Akad Massal 8 dari 32). Album 2024–2026 belum dipindah.
 
 - Foto tim belum ada; kartu menampilkan inisial. CV baru lengkap untuk M. Junestrada Diem.
 - Hanya 6 dari 14 render 3D yang diambil (resolusi 1280 px dari pratinjau Drive).

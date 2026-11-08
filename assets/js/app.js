@@ -368,6 +368,36 @@ const DATA_YAYASAN_FOTO = [
   { f: 'penutup.jpg',    ket: 'Anak asuh LKSA Darul Falah' }
 ];
 
+
+/* Galeri kegiatan. Foto di img/galeri/<id>-<n>.jpg, n = 1..jumlah.
+   Sumber: rumahidamankita.co.id (situs lama). sampul: nomor foto untuk kartu album. */
+const DATA_GALERI = [
+  { id: 'akad-massal-2023', judul: 'Akad KPR Massal 2023', waktu: '27 September 2023', jumlah: 8, sampul: 8,
+    isi: ['Akad KPR massal bersama RTD Group di Grand Atyasa Convention Center Palembang berjalan lancar, berkat antusiasme dan ketertiban #SobatRTDGroup dalam mengikuti prosedur.',
+          'Terima kasih kepada Bank BTN, BTN Syariah, Bank BJB, dan para notaris yang ikut menyukseskan acara ini. Sampai bertemu di akad massal berikutnya.'] },
+  { id: 'hut-ri-78', judul: 'HUT RI ke-78', waktu: 'Agustus 2023', jumlah: 24, sampul: 4,
+    isi: ['Keseruan tim RTD Group menyambut Hari Kemerdekaan Indonesia ke-78 dengan lomba dan senam bersama di kantor.'] },
+  { id: 'grand-opening-tag2-tahap2', judul: 'Grand Opening Taman Asri Gandus 2 Tahap 2', waktu: 'Juli 2023', jumlah: 8, sampul: 1,
+    isi: ['Peresmian Perumahan Taman Asri Gandus 2 Tahap 2 dihadiri Bapak H. Herman Deru, Gubernur Sumatera Selatan.',
+          'Bersamaan dengan itu diresmikan pula Yayasan Al-Mukmin Darunnajah Center di Jl. TPH. Sofyan Kenawas, Perumahan Taman Asri Gandus 2 Tahap 2, Blok EA 04–EA 05.'] },
+  { id: 'employee-gathering-jogja-bandung', judul: 'Employee Gathering Jogja–Bandung', waktu: null, jumlah: 35, sampul: 1,
+    isi: ['Perjalanan tim RTD Group: Candi Prambanan, arung jeram di Sungai Elo, Museum Mini Sisa Hartaku, Pantai Parangtritis, Puncak Becici, HeHa Sky View, belanja oleh-oleh khas Jogja, lalu ke Bandung dan D’Castello.'] },
+  { id: 'eda-leadership', judul: 'EDA: Leadership & Service Excellence Training', waktu: null, jumlah: 16, sampul: 1,
+    isi: ['Employee Development Academy RTD Group: kelas service excellence oleh Carisna Aprianti, S.T.; public speaking & personal branding oleh M. Anggi Dwijaya, S.I.Kom.; asesmen psikologi oleh Gonny T. Wicaksono & tim Alugada; dan kelas kepemimpinan oleh Akhmad Gozali.'] },
+  { id: 'eda-damkar', judul: 'EDA: Pelatihan K3 bersama Damkar', waktu: null, jumlah: 3, sampul: 1,
+    isi: ['Pelatihan K3 dasar keadaan darurat dan penggunaan APAR bersama Dinas Pemadam Kebakaran Kota Palembang.'] },
+  { id: 'hut-ri-77', judul: 'HUT RI ke-77', waktu: '17 Agustus 2022', jumlah: 3, sampul: 1,
+    isi: ['Peringatan Hari Kemerdekaan Indonesia ke-77 bersama tim RTD Group.'] },
+  { id: 'marketing-gathering-saungbambu', judul: 'Marketing Gathering di Saung Bambu', waktu: null, jumlah: 2, sampul: 1, isi: [] },
+  { id: 'employee-gathering-bandung', judul: 'Employee Gathering Bandung', waktu: null, jumlah: 1, sampul: 1, isi: [] }
+];
+
+/* Tim pemasaran: nama saja. Manajer pemasaran sudah ada di DATA_TIM. */
+const DATA_PEMASARAN = ['Yuyun Safitri', 'Amirul Mukminin', 'Airin Pratiwi', 'Melin Herlina', 'M. Taufiq', 'Eka Pajar Sari',
+  'Herdudi', 'Amiril Teng', 'Haydar Putra', 'Ratzarwin Agusmen', 'Deus Muhaimin', 'Midis Purnando', 'Rian Pratama',
+  'M. Rommi Adi Dinata', 'Anjas Asmara', 'Imam Samudra', 'M. Sofyan Atsauri', 'Dina Nindi Yanti', 'Rofiko',
+  'Arfiaga Prabus', 'Reca Wulansari', 'Esthie Avrillia Anggrieni', 'Ricky Haris Munandar', 'Yudha Pramona'];
+
 const KONTAK = {
   wa: '6282384299234',
   waTampil: '0823-8429-9234',
@@ -945,6 +975,82 @@ function gambarDetail() {
   gambarSpek('#pdSpek', p.spekBeda);
 }
 
+/* ------------------------------------------------------------- Galeri -- */
+
+const fotoGaleri = (a, n) => `${AKAR}img/galeri/${a.id}-${n}.jpg`;
+
+function gambarAlbum() {
+  const w = $('#albumDaftar');
+  if (!w) return;
+  w.innerHTML = DATA_GALERI.map(a => `
+    <a class="album" href="album.html?id=${a.id}">
+      <span class="album__gbr"><img src="${fotoGaleri(a, a.sampul)}" alt="" loading="lazy"></span>
+      <span class="album__tx">
+        <span class="album__meta">${a.waktu ? esc(a.waktu) + ' · ' : ''}${a.jumlah} foto</span>
+        <b>${esc(a.judul)}</b>
+      </span>
+    </a>`).join('');
+}
+
+function gambarIsiAlbum() {
+  const w = $('#albumIsi');
+  if (!w) return;
+  const i = DATA_GALERI.findIndex(x => x.id === new URLSearchParams(location.search).get('id'));
+  const a = DATA_GALERI[i];
+  if (!a) { w.innerHTML = tidakAda('Galeri', 'galeri.html', 'Lihat semua album'); return; }
+  document.title = `${a.judul} — Galeri RTD Group`;
+  const no = Array.from({ length: a.jumlah }, (_, k) => k + 1);
+  const lain = DATA_GALERI.filter(x => x !== a).slice(0, 3);
+  w.innerHTML = `
+    <section class="page-hero page-hero--kecil">
+      <img class="page-hero__gbr" src="${fotoGaleri(a, a.sampul)}" alt="" fetchpriority="high">
+      <div class="isi page-hero__isi"><div class="page-hero__kotak">
+        <span class="label">Galeri Kegiatan${a.waktu ? ' · ' + esc(a.waktu) : ''}</span><h1>${esc(a.judul)}</h1>
+        <p>${a.jumlah} foto</p>
+      </div></div>
+    </section>
+    <section class="bagian bagian--rapat"><div class="isi">
+      <a class="tbl tbl--halus" href="galeri.html">← Semua album</a>
+      ${a.isi.length ? `<div class="baca" style="margin-bottom:var(--space-7)">${a.isi.map(x => `<p>${esc(x)}</p>`).join('')}</div>` : ''}
+      <div class="foto-grid">${no.map(n => `<button type="button" class="foto-grid__item" data-n="${n}" aria-label="Buka foto ${n} dari ${a.jumlah}">
+        <img src="${fotoGaleri(a, n)}" alt="" loading="lazy"></button>`).join('')}</div>
+    </div></section>
+    <section class="bagian bagian--krem bagian--rapat"><div class="isi">
+      <h2 class="tim-kelompok">Album lainnya</h2>
+      <div class="album-grid album-grid--kecil">${lain.map(x => `<a class="album" href="album.html?id=${x.id}">
+        <span class="album__gbr"><img src="${fotoGaleri(x, x.sampul)}" alt="" loading="lazy"></span>
+        <span class="album__tx"><span class="album__meta">${x.jumlah} foto</span><b>${esc(x.judul)}</b></span></a>`).join('')}</div>
+    </div></section>
+    <dialog class="kotak-foto" id="kotakFoto" aria-label="${esc(a.judul)}">
+      <img alt="">
+      <p class="kotak-foto__no" aria-live="polite"></p>
+      <button type="button" class="kotak-foto__tutup" aria-label="Tutup">×</button>
+      <button type="button" class="kotak-foto__geser kotak-foto__geser--kiri" data-arah="-1" aria-label="Foto sebelumnya">‹</button>
+      <button type="button" class="kotak-foto__geser kotak-foto__geser--kanan" data-arah="1" aria-label="Foto berikutnya">›</button>
+    </dialog>`;
+
+  const d = $('#kotakFoto'), img = $('img', d), lbl = $('.kotak-foto__no', d);
+  let cur = 1;
+  const tampil = n => { cur = (n - 1 + a.jumlah) % a.jumlah + 1; img.src = fotoGaleri(a, cur); img.alt = `${a.judul}, foto ${cur}`; lbl.textContent = `${cur} / ${a.jumlah}`; };
+  $('.foto-grid', w).addEventListener('click', e => { const b = e.target.closest('[data-n]'); if (!b) return; tampil(+b.dataset.n); d.showModal(); });
+  $$('[data-arah]', d).forEach(b => b.addEventListener('click', () => tampil(cur + +b.dataset.arah)));
+  $('.kotak-foto__tutup', d).addEventListener('click', () => d.close());
+  d.addEventListener('click', e => { if (e.target === d) d.close(); });
+  d.addEventListener('keydown', e => { if (e.key === 'ArrowRight') tampil(cur + 1); if (e.key === 'ArrowLeft') tampil(cur - 1); });
+  let x0 = null;
+  d.addEventListener('touchstart', e => { x0 = e.touches[0].clientX; }, { passive: true });
+  d.addEventListener('touchend', e => { if (x0 === null) return; const dx = e.changedTouches[0].clientX - x0; if (Math.abs(dx) > 40) tampil(cur + (dx < 0 ? 1 : -1)); x0 = null; });
+}
+
+function gambarPemasaran() {
+  const w = $('#timPemasaran');
+  if (!w) return;
+  const mgr = DATA_TIM.find(t => t.jabatan === 'Marketing Manager');
+  w.innerHTML = (mgr ? `<div class="pemasaran__orang pemasaran__orang--utama"><span class="pemasaran__inisial">${inisial(mgr.nama)}</span>
+      <span><b>${esc(mgr.nama)}</b><span>Marketing Manager</span></span></div>` : '') +
+    DATA_PEMASARAN.map(n => `<div class="pemasaran__orang"><span class="pemasaran__inisial">${inisial(n)}</span><span><b>${esc(n)}</b><span>Marketing</span></span></div>`).join('');
+}
+
 /* -------------------------------------------------- Kepala halaman siap -- */
 
 // Kotak kaca baru ditampilkan setelah gambar latarnya terurai. Tanpa ini,
@@ -961,7 +1067,7 @@ function pasangKepala() {
 
 /* ------------------------------------------------------- Geser di ponsel -- */
 
-const GESER = '.proyek-grid, .pg-sorot, .testi-grid, .langkah-grid, .yys-galeri, .yys-program, .yys-rumah, .berita-grid';
+const GESER = '.album-grid--kecil, .proyek-grid, .pg-sorot, .testi-grid, .langkah-grid, .yys-galeri, .yys-program, .yys-rumah, .berita-grid';
 
 // Titik penanda di bawah tiap baris geser. Hanya tampil di layar sempit (CSS).
 function pasangGeser() {
@@ -1039,6 +1145,9 @@ document.addEventListener('DOMContentLoaded', () => {
   gambarArtikel();
   gambarLowongan();
   gambarGaleriYayasan();
+  gambarAlbum();
+  gambarIsiAlbum();
+  gambarPemasaran();
   gambarDetail();
   pasangForm();
   pasangKepala();
