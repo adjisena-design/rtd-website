@@ -526,6 +526,8 @@ function pasangSaring(sel) {
     btn.setAttribute('aria-pressed', 'true');
     saringAktif = btn.dataset.saring;
     gambarProyek(sel);
+    $(sel).scrollLeft = 0;
+    pasangGeser();
   }));
 }
 
@@ -623,7 +625,7 @@ function gambarTim() {
 /* Kepala halaman kecil untuk halaman yang dibangun dari data (?id=). */
 const heroKecil = (gbr, label, judul, lede = '') => `
   <section class="page-hero page-hero--kecil">
-    <img class="page-hero__gbr" src="${AKAR}img/${gbr}" alt="" fetchpriority="high">
+    <img class="page-hero__gbr" src="${AKAR}img/${gbr}"${gbr.startsWith('hero/') ? ` srcset="${AKAR}img/${gbr.replace('.jpg', '-sm.jpg')} 820w, ${AKAR}img/${gbr} 1280w" sizes="100vw"` : ''} alt="" fetchpriority="high">
     <div class="isi page-hero__isi"><div class="page-hero__kotak">
       <span class="label">${label}</span><h1>${judul}</h1>${lede ? `<p>${lede}</p>` : ''}
     </div></div>
@@ -756,6 +758,8 @@ function gambarBerita() {
     if (!b) return;
     $$('[data-kat]', saring).forEach(x => x.setAttribute('aria-pressed', String(x === b)));
     $$('.nkartu', w).forEach(c => { c.hidden = b.dataset.kat !== 'Semua' && c.dataset.kategori !== b.dataset.kat; });
+    w.scrollLeft = 0;
+    pasangGeser();
   });
 }
 
@@ -915,6 +919,46 @@ function gambarDetail() {
   gambarSpek('#pdSpek', p.spekBeda);
 }
 
+/* -------------------------------------------------- Kepala halaman siap -- */
+
+// Kotak kaca baru ditampilkan setelah gambar latarnya terurai. Tanpa ini,
+// sesaat kotak tampak padat karena blur-nya belum punya gambar di belakangnya.
+function pasangKepala() {
+  $$('.page-hero').forEach(h => {
+    const img = $('.page-hero__gbr', h);
+    const siap = () => h.classList.add('siap');
+    if (!img || (img.complete && img.naturalWidth)) return siap();
+    (img.decode ? img.decode() : Promise.reject()).then(siap, () => { img.addEventListener('load', siap); img.addEventListener('error', siap); });
+    setTimeout(siap, 2500);
+  });
+}
+
+/* ------------------------------------------------------- Geser di ponsel -- */
+
+const GESER = '.proyek-grid, .pg-sorot, .testi-grid, .langkah-grid, .yys-galeri, .yys-program, .yys-rumah, .berita-grid';
+
+// Titik penanda di bawah tiap baris geser. Hanya tampil di layar sempit (CSS).
+function pasangGeser() {
+  $$(GESER).forEach(g => {
+    if (g.nextElementSibling && g.nextElementSibling.classList.contains('geser-titik')) g.nextElementSibling.remove();
+    const anak = [...g.children].filter(c => !c.hidden);
+    if (anak.length < 2) return;
+    const t = document.createElement('div');
+    t.className = 'geser-titik';
+    t.setAttribute('aria-hidden', 'true');
+    t.innerHTML = anak.map(() => '<i></i>').join('');
+    g.after(t);
+    const titik = [...t.children];
+    const tandai = () => {
+      const lebar = anak[0].getBoundingClientRect().width || 1;
+      const i = Math.min(anak.length - 1, Math.round(g.scrollLeft / (lebar + 12)));
+      titik.forEach((d, k) => d.classList.toggle('on', k === i));
+    };
+    g.onscroll = tandai;
+    tandai();
+  });
+}
+
 /* ------------------------------------------------------------- Formulir -- */
 
 function pasangForm() {
@@ -966,6 +1010,8 @@ document.addEventListener('DOMContentLoaded', () => {
   gambarGaleriYayasan();
   gambarDetail();
   pasangForm();
+  pasangKepala();
+  pasangGeser();
   const th = $('#tahun');
   if (th) th.textContent = new Date().getFullYear();
 });
