@@ -35,10 +35,10 @@
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
         </button>
         <ul class="nav__sub">
-<li><a href="tentang.html">Profil &amp; Tim</a></li>
+<li><a href="tentang.html">Profil &amp; Manajemen</a></li>
 <li><a href="legalitas.html">Legalitas</a></li>
 <li><a href="spesifikasi.html">Spesifikasi Standar</a></li>
-<li><a href="tentang.html#yayasan">Yayasan</a></li>
+<li><a href="yayasan.html">Yayasan</a></li>
         </ul>
       </li>
       <li><a href="berita.html">Berita &amp; Artikel</a></li>
@@ -49,28 +49,35 @@
 </header>
 <main id="utama">
 
-<section class="bagian bagian--rapat">
-  <div class="isi">
-    <div class="kepala">
+<section class="page-hero">
+  <img class="page-hero__gbr" src="img/hero/render-3.jpg" alt="" fetchpriority="high" style="object-position:center">
+  <div class="isi page-hero__isi">
+    <div class="page-hero__kotak">
       <span class="label">Karier</span>
-      <h2 style="font-size:clamp(34px,4.6vw,52px)">Bekerja <span class="redup">di RTD Group</span></h2>
-      <p>Kami membangun rumah pertama bagi ribuan keluarga di Sumatera Selatan. Kalau Anda ingin ikut
-      mengerjakannya, berikut posisi yang sedang kami buka.</p>
+      <h1>Bekerja <span class="redup">di RTD Group</span></h1>
+      <p>Kami membangun rumah pertama bagi ribuan keluarga di Sumatera Selatan. Kalau Anda ingin ikut mengerjakannya, berikut posisi yang sedang dibuka.</p>
     </div>
-    <div class="kotak-grid" id="karierDaftar"></div>
-    <p class="catatan" style="margin-top:32px">Daftar lowongan pada halaman ini masih contoh. Ganti dengan
-    lowongan asli lewat konstanta <code>DATA_KARIER</code> di <code>assets/js/app.js</code>.</p>
   </div>
 </section>
 
-<section class="bagian bagian--krem">
-  <div class="isi">
-    <div class="kepala">
-      <span class="label">Melamar</span>
-      <h2 style="font-size:clamp(28px,3.6vw,40px)">Tidak menemukan posisi <span class="redup">yang cocok?</span></h2>
-      <p>Kirimkan lamaran terbuka. Kami simpan dan hubungi ketika ada posisi yang sesuai.</p>
+<section class="bagian bagian--rapat">
+  <div class="isi karier-tata">
+    <div>
+      <h2 class="karier-judul">Posisi yang dibuka</h2>
+      <ul class="lowongan-daftar" id="karierDaftar"></ul>
+      <p class="catatan" style="margin-top:24px">Daftar lowongan pada halaman ini masih contoh. Ganti dengan
+      lowongan asli lewat konstanta <code>DATA_KARIER</code> di <code>assets/js/app.js</code>.</p>
     </div>
-    <p><a class="tbl tbl--utama" href="mailto:trimitrarama@gmail.com?subject=Lamaran%20Terbuka">Kirim lamaran lewat email</a></p>
+    <aside class="karier-alasan">
+      <span class="label">Kenapa RTD Group</span>
+      <ul>
+        <li>Pekerjaan yang hasilnya terlihat: rumah pertama bagi ribuan keluarga di Sumatera Selatan.</li>
+        <li>Proyek berjalan di tiga wilayah, jadi ruang belajarnya luas — dari lapangan sampai akad.</li>
+        <li>Tim kecil, keputusan cepat, dan atasan yang bisa Anda temui langsung.</li>
+        <li>Mitra perbankan nasional dengan rating Platinum.</li>
+      </ul>
+      <p>Tidak menemukan posisi yang cocok? <a href="mailto:trimitrarama@gmail.com?subject=Lamaran%20Terbuka">Kirim lamaran terbuka</a> — kami simpan dan hubungi ketika ada posisi yang sesuai.</p>
+    </aside>
   </div>
 </section>
 
@@ -95,10 +102,10 @@
       <div>
         <h4>Perusahaan</h4>
         <ul>
-          <li><a href="tentang.html">Profil &amp; Tim</a></li>
+          <li><a href="tentang.html">Profil &amp; Manajemen</a></li>
           <li><a href="legalitas.html">Legalitas</a></li>
           <li><a href="spesifikasi.html">Spesifikasi Standar</a></li>
-          <li><a href="tentang.html#yayasan">Yayasan</a></li>
+          <li><a href="yayasan.html">Yayasan</a></li>
           <li><a href="kontak.html">Kontak</a></li>
         </ul>
       </div>

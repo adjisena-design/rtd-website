@@ -23,11 +23,15 @@ Halaman detail proyek membaca `?id=` dari URL, jadi gunakan peladen lokal — bu
 | `index.html` | Hero berputar, angka, proyek, penghargaan, testimoni, simulasi KPR, cara membeli, media sosial, kontak |
 | `proyek/index.html` | Semua proyek yang dijual + rekam jejak perumahan terbangun |
 | `proyek/detail.html?id=<id>` | Halaman satu proyek: foto, siteplan, spesifikasi, fasilitas, angsuran |
-| `tentang.html` | Profil, visi, misi, tim manajemen, yayasan |
+| `tentang.html` | Profil, visi, misi, tim manajemen (direksi dan manajer) |
+| `tim.html?id=<id>` | Profil satu anggota tim beserta CV |
+| `yayasan.html` | Yayasan Al-Mukmin Darunnajah Center, tema hijau sendiri |
 | `legalitas.html` | Legalitas holding dan mitra perbankan |
 | `spesifikasi.html` | Dua belas baris spesifikasi standar |
-| `berita.html` | Berita dan artikel |
-| `karier.html` | Lowongan kerja |
+| `berita.html` | Sorotan + kartu berita dengan saring kategori |
+| `artikel.html?id=<id>` | Satu berita |
+| `karier.html` | Daftar lowongan + kenapa RTD |
+| `lowongan.html?id=<id>` | Satu lowongan |
 | `kontak.html` | Formulir dan alamat |
 
 ## Struktur
@@ -36,6 +40,10 @@ Halaman detail proyek membaca `?id=` dari URL, jadi gunakan peladen lokal — bu
 assets/css/style.css    token dan gaya
 assets/js/app.js        semua data dan perilaku
 img/                    logo, render sampul, denah, favicon
+img/hero/               render 3D dari Drive (Foto Proyek 3D), dipakai di semua kepala halaman
+img/sosial/             poster reel Instagram
+img/tim/                foto tim (isi `foto` di DATA_TIM)
+img/yayasan/            foto kegiatan yayasan (isi DATA_YAYASAN_FOTO)
 img/proyek/             foto unit dan siteplan per proyek
 ```
 
@@ -125,6 +133,10 @@ alternatif pada semua gambar, dan `prefers-reduced-motion` dihormati — termasu
 menghentikan putaran hero.
 
 ## Belum selesai
+
+- Foto tim belum ada; kartu menampilkan inisial. CV baru lengkap untuk M. Junestrada Diem.
+- Foto kegiatan yayasan belum ada; galeri menampilkan kotak "Foto kegiatan menyusul".
+- Hanya 6 dari 14 render 3D yang diambil (resolusi 1280 px dari pratinjau Drive).
 
 - Harga dan angsuran sembilan proyek masih `null`, menunggu konfirmasi pemasaran.
 - Angka 3.808 unit adalah total portofolio, bukan jumlah serah terima.
