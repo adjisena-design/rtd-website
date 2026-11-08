@@ -891,29 +891,35 @@ function gambarDetail() {
       </div>
     </section>
 
-    <section class="bagian bagian--krem">
+    <section class="bagian bagian--krem" aria-labelledby="kawasanJudul">
       <div class="isi">
-        <div class="sim-grid">
-          <div>
-            <span class="label">Spesifikasi Bangunan</span>
-            <h2 style="font-size:clamp(26px,3.2vw,36px)">Standar RTD${Object.keys(p.spekBeda).length ? ', dengan satu penyesuaian' : ', tanpa pengecualian'}</h2>
-            <table class="spek-tabel" style="margin-top:24px"><tbody id="pdSpek"></tbody></table>
-            <p style="margin-top:20px"><a class="tbl tbl--halus" href="${AKAR}spesifikasi.html">Lihat penjelasan tiap baris →</a></p>
-          </div>
-          <div>
-            <span class="label">Fasilitas Umum</span>
-            <ul style="list-style:none;padding:0;margin:16px 0 0;display:grid;gap:10px">
-              ${p.fasilitas.map(f => `<li style="display:flex;gap:12px;align-items:baseline;font-size:15px">
-                <span style="color:${p.warna};font-weight:800">—</span>${esc(f)}</li>`).join('')}
-            </ul>
-            ${p.siteplan ? `
-              <span class="label" style="margin-top:40px">Siteplan</span>
-              <img src="${AKAR}img/proyek/${p.siteplan}" alt="Siteplan ${esc(judulLengkap(p))}"
-                   style="border-radius:var(--r-lg);border:1px solid var(--garis-halus);background:#fff" loading="lazy">`
-              : `<span class="label" style="margin-top:40px">Siteplan</span>
-                 <div class="pd-kosong" style="aspect-ratio:4/3">Siteplan menyusul</div>`}
-          </div>
+        <div class="kepala">
+          <span class="label">Kawasan</span>
+          <h2 id="kawasanJudul">Fasilitas dan siteplan</h2>
+          <p>${p.fasilitas.length} fasilitas umum di dalam ${esc(judulLengkap(p))}${p.siteplan ? ', beserta pembagian bloknya.' : '.'}</p>
         </div>
+        <div class="kawasan${p.siteplan ? '' : ' kawasan--tanpa-siteplan'}">
+          <ul class="fasilitas" aria-label="Fasilitas umum">
+            ${p.fasilitas.map(f => `<li><span style="background:${p.warna}"></span>${esc(f)}</li>`).join('')}
+          </ul>
+          ${p.siteplan
+            ? `<figure class="siteplan"><img src="${AKAR}img/proyek/${p.siteplan}" alt="Siteplan ${esc(judulLengkap(p))}" loading="lazy">
+                 <figcaption>Siteplan ${esc(judulLengkap(p))}. Ketersediaan blok terbaru dapat ditanyakan ke pemasaran.</figcaption></figure>`
+            : `<div class="siteplan siteplan--kosong"><b>Siteplan menyusul</b>
+                 <span>Minta siteplan dan blok yang masih tersedia langsung ke pemasaran.</span>
+                 <a class="tbl tbl--kedua" href="https://wa.me/${KONTAK.wa}?text=${encodeURIComponent('Halo RTD, saya ingin meminta siteplan ' + judulLengkap(p) + '.')}" target="_blank" rel="noopener">Minta siteplan lewat WhatsApp</a></div>`}
+        </div>
+      </div>
+    </section>
+
+    <section class="bagian" aria-labelledby="spekJudul">
+      <div class="isi">
+        <div class="kepala">
+          <span class="label">Spesifikasi Bangunan</span>
+          <h2 id="spekJudul">Standar RTD${Object.keys(p.spekBeda).length ? ', dengan satu penyesuaian' : ', tanpa pengecualian'}</h2>
+          <p>Dua belas baris yang sama di semua proyek. <a class="tbl tbl--halus" href="${AKAR}spesifikasi.html">Lihat penjelasan tiap baris →</a></p>
+        </div>
+        <table class="spek-tabel spek-tabel--dua"><tbody id="pdSpek"></tbody></table>
       </div>
     </section>
 
