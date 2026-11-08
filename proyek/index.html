@@ -35,10 +35,10 @@
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
         </button>
         <ul class="nav__sub">
-<li><a href="../tentang.html">Profil &amp; Tim</a></li>
+<li><a href="../tentang.html">Profil &amp; Manajemen</a></li>
 <li><a href="../legalitas.html">Legalitas</a></li>
 <li><a href="../spesifikasi.html">Spesifikasi Standar</a></li>
-<li><a href="../tentang.html#yayasan">Yayasan</a></li>
+<li><a href="../yayasan.html">Yayasan</a></li>
         </ul>
       </li>
       <li><a href="../berita.html">Berita &amp; Artikel</a></li>
@@ -49,14 +49,19 @@
 </header>
 <main id="utama">
 
+<section class="page-hero">
+  <img class="page-hero__gbr" src="../img/hero/render-1.jpg" alt="" fetchpriority="high" style="object-position:center">
+  <div class="isi page-hero__isi">
+    <div class="page-hero__kotak">
+      <span class="label">Proyek</span>
+      <h1>Sepuluh perumahan <span class="redup">yang sedang dijual</span></h1>
+      <p>Di Palembang, Banyuasin, dan Ogan Ilir. Pilih salah satu untuk melihat foto unit, siteplan, spesifikasi, dan fasilitasnya.</p>
+    </div>
+  </div>
+</section>
+
 <section class="bagian bagian--rapat">
   <div class="isi">
-    <div class="kepala">
-      <span class="label">Proyek</span>
-      <h2 style="font-size:clamp(34px,4.6vw,52px)">Sepuluh perumahan <span class="redup">yang sedang dijual</span></h2>
-      <p>Di Palembang, Banyuasin, dan Ogan Ilir. Klik salah satu untuk melihat foto unit, siteplan,
-      spesifikasi, dan fasilitasnya.</p>
-    </div>
     <div class="saring" role="group" aria-label="Saring proyek">
       <button type="button" class="tbl tbl--kedua" data-saring="semua" aria-pressed="true">Semua</button>
       <button type="button" class="tbl tbl--kedua" data-saring="subsidi" aria-pressed="false">Rumah Subsidi</button>
@@ -70,23 +75,21 @@
   </div>
 </section>
 
-<section class="bagian bagian--krem">
-  <div class="isi">
-    <div class="kepala">
+<section class="rekam" aria-labelledby="rekamJudul">
+  <img class="rekam__gbr" src="../img/hero/render-4.jpg" alt="" loading="lazy">
+  <div class="isi rekam__grid">
+    <div class="rekam__kepala">
       <span class="label">Rekam Jejak</span>
-      <h2 style="font-size:clamp(30px,4vw,44px)">Sepuluh perumahan lagi <span class="redup">yang sudah terbangun</span></h2>
+      <h2 id="rekamJudul">Sepuluh perumahan lagi <span class="redup">yang sudah terbangun</span></h2>
       <p>Di luar sepuluh proyek yang sedang dijual, berikut perumahan yang sudah kami bangun dan serahkan sejak 2020.</p>
+      <dl class="rekam__angka">
+        <div><dt>Unit rumah</dt><dd id="portofolioTotal">1.381</dd></div>
+        <div><dt>Perumahan</dt><dd id="portofolioJumlah">10</dd></div>
+        <div><dt>Unit ruko</dt><dd id="rukoTotal">37</dd></div>
+      </dl>
+      <p class="catatan">Alam Hijau 3 dibangun dalam dua tahap. Sumber: Company Profile RTD Group 2026.</p>
     </div>
-    <div class="tabel-bungkus">
-      <table class="tabel-data">
-        <caption class="lewati">Daftar perumahan RTD Group yang sudah terbangun</caption>
-        <thead><tr><th scope="col">Perumahan</th><th scope="col">Lokasi</th><th scope="col">Tipe</th><th scope="col">Jumlah unit</th></tr></thead>
-        <tbody id="portofolioTubuh"></tbody>
-      </table>
-    </div>
-    <p class="catatan"><b id="portofolioTotal">1.381</b> unit rumah pada daftar di atas, ditambah 37 unit ruko,
-    di luar sepuluh proyek yang sedang dijual. Alam Hijau 3 dibangun dalam dua tahap.
-    Sumber: Company Profile RTD Group 2026.</p>
+    <ol class="rekam__daftar" id="portofolioDaftar" aria-label="Perumahan RTD Group yang sudah terbangun"></ol>
   </div>
 </section>
 
@@ -111,10 +114,10 @@
       <div>
         <h4>Perusahaan</h4>
         <ul>
-          <li><a href="../tentang.html">Profil &amp; Tim</a></li>
+          <li><a href="../tentang.html">Profil &amp; Manajemen</a></li>
           <li><a href="../legalitas.html">Legalitas</a></li>
           <li><a href="../spesifikasi.html">Spesifikasi Standar</a></li>
-          <li><a href="../tentang.html#yayasan">Yayasan</a></li>
+          <li><a href="../yayasan.html">Yayasan</a></li>
           <li><a href="../kontak.html">Kontak</a></li>
         </ul>
       </div>

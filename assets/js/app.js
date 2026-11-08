@@ -256,24 +256,57 @@ const DATA_TESTIMONI = [
   }
 ];
 
+/* Tim manajemen. foto: berkas di img/tim/ atau null (tampil inisial).
+   cv: bagian riwayat; kosongkan bila belum ada, halaman profil menampilkan "menyusul". */
 const DATA_TIM = [
-  { nama: 'M. Junestrada Diem', jabatan: 'Director', utama: true,
-    ket: 'Memimpin RTD Group sejak pendiriannya pada 2020. Juga pendiri dan pembina Yayasan Al-Mukmin Darunnajah Center.' },
-  { nama: 'Huda Assalam',       jabatan: 'Director' },
-  { nama: 'Ade Saputra',        jabatan: 'Operational Manager' },
-  { nama: 'Teddy Wijaya',       jabatan: 'Field Manager' },
-  { nama: 'Romi Febriansyah',   jabatan: 'Marketing Manager' },
-  { nama: 'Putra Ady Kesuma',   jabatan: 'Finance Manager' },
-  { nama: 'Yoga Juniansyah',    jabatan: 'HRGA Manager' },
-  { nama: 'Nosvita Sari',       jabatan: 'Administrasi Supervisor' },
-  { nama: 'M. Tio Amartha',     jabatan: 'Field Supervisor' }
+  { id: 'junestrada-diem', nama: 'Dr. M. Junestrada Diem, A.Md.Par., S.E., M.Si.', panggil: 'M. Junestrada Diem',
+    jabatan: 'Direktur dan Pemilik', direksi: true, foto: null,
+    bio: [
+      'Mendirikan dan memimpin RTD Group sejak 2020. Sebelumnya hampir sepuluh tahun di Bank Tabungan Negara Kantor Cabang Syariah Palembang, memimpin unit pembiayaan konsumer KPR, pendanaan komersial, dan mutu layanan.',
+      'Sejak 2018 menjadi dosen tetap di FEBI UIN Raden Fatah Palembang. Pendidikannya berlapis dari perhotelan, manajemen pemasaran, sampai doktor ilmu manajemen sumber daya manusia. Juga pendiri dan pembina Yayasan Al-Mukmin Darunnajah Center.'
+    ],
+    cv: [
+      { judul: 'Pendidikan', isi: [
+        ['2026', 'Program Doktor Ilmu Manajemen (SDM), Pascasarjana Universitas Sriwijaya'],
+        ['2014', 'Magister Ilmu Manajemen (SDM), Pascasarjana Universitas Sriwijaya'],
+        ['2004', 'Sarjana Manajemen Pemasaran, Fakultas Ekonomi Universitas Sriwijaya'],
+        ['2000', 'Perhotelan, Sekolah Tinggi Pariwisata Bandung (NHI)']
+      ]},
+      { judul: 'Pengalaman kerja', isi: [
+        ['2020 – sekarang', 'Direktur, PT Rama Trimitra Development'],
+        ['2018 – sekarang', 'Dosen Tetap Non-ASN, FEBI UIN Raden Fatah Palembang'],
+        ['2019 – 2020', 'Operational Manager, PT Sumatera Agung Perkasa dan PT Lestari Propertindo Mandiri'],
+        ['2008 – 2017', 'Mortgage Consumer Financing Unit Head, Consumer Commercial Funding Unit Head, dan Service Quality Unit Head, PT Bank Tabungan Negara (Persero) Tbk KC Syariah Palembang'],
+        ['2007 – 2008', 'Operational Manager, PT Dwi Pantara Tour & Travel Palembang'],
+        ['2005 – 2008', 'Supervisor, PT Sriwijaya Air Palembang'],
+        ['2005 – 2022', 'Pengajar Kepariwisataan dan Motivasi Kerja, LKPP Palembang']
+      ]},
+      { judul: 'Organisasi', isi: [
+        ['2018 – 2024', 'Pembina DEMAF, KORSA, IPPF, LABS, dan PAKIES FEBI UIN Raden Fatah Palembang'],
+        ['2011 – 2015', 'Bidang Diklat, HPI DPC Sumatera Selatan'],
+        ['2007 – 2010', 'Koordinator Bidang Organisasi, HPI DPC Sumatera Selatan'],
+        ['2007 – 2009', 'Ketua Umum Ikatan Bujang Gadis Kampus Sumatera Selatan'],
+        ['2011, 2013', 'Juri Duta Bahasa Sumatera Selatan']
+      ]}
+    ] },
+  { id: 'huda-assalam', nama: 'Huda Assalam', jabatan: 'Direktur dan Pemilik', direksi: true, foto: null,
+    bio: ['Bersama M. Junestrada Diem memiliki dan memimpin RTD Group. Juga pendiri dan pembina Yayasan Al-Mukmin Darunnajah Center.'],
+    cv: [] },
+  { id: 'ade-saputra',      nama: 'Ade Saputra',      jabatan: 'Operational Manager',     foto: null, bio: [], cv: [] },
+  { id: 'teddy-wijaya',     nama: 'Teddy Wijaya',     jabatan: 'Field Manager',           foto: null, bio: [], cv: [] },
+  { id: 'romi-febriansyah', nama: 'Romi Febriansyah', jabatan: 'Marketing Manager',       foto: null, bio: [], cv: [] },
+  { id: 'putra-ady-kesuma', nama: 'Putra Ady Kesuma', jabatan: 'Finance Manager',         foto: null, bio: [], cv: [] },
+  { id: 'yoga-juniansyah',  nama: 'Yoga Juniansyah',  jabatan: 'HRGA Manager',            foto: null, bio: [], cv: [] },
+  { id: 'nosvita-sari',     nama: 'Nosvita Sari',     jabatan: 'Administrasi Supervisor', foto: null, bio: [], cv: [] },
+  { id: 'm-tio-amartha',    nama: 'M. Tio Amartha',   jabatan: 'Field Supervisor',        foto: null, bio: [], cv: [] }
 ];
 
+/* Reel Instagram. gbr: poster di img/sosial/, diambil dari reel itu sendiri. */
 const DATA_REEL = [
-  { url: 'https://www.instagram.com/reel/DfZQnz0TMTq/', judul: 'Progres pembangunan', ket: 'Reel Instagram' },
-  { url: 'https://www.instagram.com/reel/DfWkUTDTqxS/', judul: 'Unit siap huni',      ket: 'Reel Instagram' },
-  { url: 'https://www.instagram.com/reel/DfPEaIcT2hV/', judul: 'Lingkungan perumahan', ket: 'Reel Instagram' },
-  { url: 'https://www.instagram.com/reel/DfHq5ijTEKy/', judul: 'Serah terima unit',   ket: 'Reel Instagram' }
+  { url: 'https://www.instagram.com/reel/DfZQnz0TMTq/', judul: 'Pindah ke rumah baru',  akun: 'ramadevelopmentplg',  gbr: 'reel-1.jpg' },
+  { url: 'https://www.instagram.com/reel/DfWkUTDTqxS/', judul: 'Kerja, kerja, kerja',   akun: 'ramadevelopmentplg',  gbr: 'reel-2.jpg' },
+  { url: 'https://www.instagram.com/reel/DfPEaIcT2hV/', judul: 'Townhouse Casa Adiva',  akun: 'rumahbaguspalembang', gbr: 'reel-3.jpg' },
+  { url: 'https://www.instagram.com/reel/DfHq5ijTEKy/', judul: 'Cerita dari kantor',    akun: 'ramadevelopmentplg',  gbr: 'reel-4.jpg' }
 ];
 
 const DATA_YOUTUBE = {
@@ -287,21 +320,51 @@ const DATA_YOUTUBE = {
 
 /* Berita dan karier: contoh isi. Ganti dengan materi asli sebelum ditayangkan. */
 const DATA_BERITA = [
-  { tanggal: '2026-10-28', kategori: 'Proyek', judul: 'The Green Village memasuki tahap serah terima pertama',
-    ringkas: 'Unit tahap pertama di Merah Mata mulai diserahkan kepada pembeli. Contoh isi — ganti dengan berita asli.' },
-  { tanggal: '2026-09-15', kategori: 'Penghargaan', judul: 'RTD Group menerima The Best Developer Subsidi 2025',
-    ringkas: 'Penghargaan diberikan Bank BTN atas kinerja penyaluran KPR bersubsidi. Contoh isi — ganti dengan berita asli.' },
-  { tanggal: '2026-08-02', kategori: 'Panduan', judul: 'Syarat dan berkas KPR subsidi yang perlu disiapkan',
-    ringkas: 'Panduan singkat bagi pembeli rumah pertama. Contoh isi — ganti dengan artikel asli.' }
+  { id: 'green-village-serah-terima', tanggal: '2026-10-28', kategori: 'Proyek', utama: true, gbr: 'hero/render-3.jpg',
+    judul: 'The Green Village memasuki tahap serah terima pertama',
+    ringkas: 'Unit tahap pertama di Merah Mata mulai diserahkan kepada pembeli.',
+    isi: ['Contoh isi — ganti dengan berita asli. Unit tahap pertama di The Green Village, Merah Mata, mulai diserahkan kepada pembeli bulan ini.',
+          'Serah terima dilakukan setelah akad kredit dan pemeriksaan unit bersama pembeli.'] },
+  { id: 'best-developer-subsidi-2025', tanggal: '2026-09-15', kategori: 'Penghargaan', gbr: 'hero/render-1.jpg',
+    judul: 'RTD Group menerima The Best Developer Subsidi 2025',
+    ringkas: 'Penghargaan diberikan Bank BTN atas kinerja penyaluran KPR bersubsidi.',
+    isi: ['Contoh isi — ganti dengan berita asli. Bank BTN memberikan penghargaan The Best Developer Subsidi 2025 kepada RTD Group.'] },
+  { id: 'syarat-kpr-subsidi', tanggal: '2026-08-02', kategori: 'Panduan', gbr: 'hero/render-4.jpg',
+    judul: 'Syarat dan berkas KPR subsidi yang perlu disiapkan',
+    ringkas: 'Panduan singkat bagi pembeli rumah pertama.',
+    isi: ['Contoh isi — ganti dengan artikel asli. Siapkan KTP, KK, surat nikah, slip gaji atau surat keterangan usaha, rekening koran, NPWP, dan surat keterangan belum memiliki rumah.'] },
+  { id: 'gerbang-tag-2', tanggal: '2026-07-10', kategori: 'Proyek', gbr: 'hero/render-5.jpg',
+    judul: 'Gerbang baru Taman Asri Gandus 2 mulai dibangun',
+    ringkas: 'Gerbang utama dan pos keamanan untuk tahap 3 dan 4.',
+    isi: ['Contoh isi — ganti dengan berita asli.'] }
 ];
 
+/* Lowongan: contoh isi. buka: false untuk lowongan yang sudah ditutup. */
 const DATA_KARIER = [
-  { posisi: 'Marketing Executive', tipe: 'Penuh waktu', lokasi: 'Palembang',
-    ringkas: 'Memasarkan unit di proyek Gandus dan Banyuasin, mendampingi pembeli sampai akad. Contoh lowongan.' },
-  { posisi: 'Site Supervisor', tipe: 'Penuh waktu', lokasi: 'Indralaya, Ogan Ilir',
-    ringkas: 'Mengawasi mutu pekerjaan dan ketepatan jadwal di lapangan. Contoh lowongan.' },
-  { posisi: 'Drafter', tipe: 'Penuh waktu', lokasi: 'Palembang',
-    ringkas: 'Menyiapkan gambar kerja, denah, dan siteplan untuk proyek berjalan. Contoh lowongan.' }
+  { id: 'marketing-executive', posisi: 'Marketing Executive', tipe: 'Penuh waktu', lokasi: 'Palembang', buka: true,
+    ringkas: 'Memasarkan unit di proyek Gandus dan Banyuasin, mendampingi pembeli sampai akad.',
+    tugas: ['Menindaklanjuti calon pembeli dari pameran, media sosial, dan kantor pemasaran.', 'Mendampingi pembeli menyiapkan berkas KPR sampai akad.'],
+    syarat: ['Minimal SMA/SMK sederajat.', 'Berpengalaman di penjualan properti menjadi nilai tambah.', 'Memiliki kendaraan sendiri.'] },
+  { id: 'site-supervisor', posisi: 'Site Supervisor', tipe: 'Penuh waktu', lokasi: 'Indralaya, Ogan Ilir', buka: true,
+    ringkas: 'Mengawasi mutu pekerjaan dan ketepatan jadwal di lapangan.',
+    tugas: ['Mengawasi pekerjaan kontraktor sesuai spesifikasi standar RTD.', 'Menyusun laporan progres mingguan.'],
+    syarat: ['Minimal D3 Teknik Sipil.', 'Bersedia ditempatkan di lokasi proyek.'] },
+  { id: 'drafter', posisi: 'Drafter', tipe: 'Penuh waktu', lokasi: 'Palembang', buka: false,
+    ringkas: 'Menyiapkan gambar kerja, denah, dan siteplan untuk proyek berjalan.',
+    tugas: ['Menyiapkan gambar kerja dan siteplan.'], syarat: ['Menguasai AutoCAD.'] }
+];
+
+/* Foto kegiatan yayasan di img/yayasan/, dari Company Profile Yayasan. */
+const DATA_YAYASAN_FOTO = [
+  { f: 'belajar.jpg',    ket: 'Kegiatan belajar di LKSA Darul Falah' },
+  { f: 'sedekah-subuh.jpg', ket: 'Program Sedekah Subuh' },
+  { f: 'belajar-2.jpg',  ket: 'Belajar bersama anak asuh' },
+  { f: 'bakti-1.jpg',    ket: 'Bakti sosial yayasan' },
+  { f: 'wakaf.jpg',      ket: 'Wakaf Al-Qur’an' },
+  { f: 'belajar-3.jpg',  ket: 'Pembinaan agama' },
+  { f: 'bakti-2.jpg',    ket: 'Bakti sosial yayasan' },
+  { f: 'yatim.jpg',      ket: 'Belanja bersama anak yatim' },
+  { f: 'penutup.jpg',    ket: 'Anak asuh LKSA Darul Falah' }
 ];
 
 const KONTAK = {
@@ -312,7 +375,6 @@ const KONTAK = {
   alamat: ['Jl. Letjen Harun Sohar, Komplek Pergudangan', 'Palembang Star, Blok AA01–AA02', 'Kel. Kebun Bunga, Kec. Sukarami', 'Kota Palembang, Sumatera Selatan 30961']
 };
 
-const TEKS_STATUS = { tersedia: 'Tersedia', booking: 'Booking', terjual: 'Terjual' };
 
 /* ------------------------------------------------------------- Pembantu -- */
 
@@ -346,6 +408,9 @@ const AKAR = location.pathname.includes('/proyek/') ? '../' : '';
 
 function pasangNavigasi() {
   const nav = $('#nav'), tombol = $('#navTombol');
+  const gulir = () => nav.classList.toggle('nav--gulir', scrollY > 8);
+  addEventListener('scroll', gulir, { passive: true });
+  gulir();
   if (tombol) {
     tombol.addEventListener('click', () => {
       const buka = nav.classList.toggle('buka');
@@ -426,10 +491,7 @@ function kartuProyek(p) {
     <a class="kartu" href="${AKAR}proyek/detail.html?id=${p.id}">
       <img class="kartu__gbr" src="${AKAR}img/${p.gbr}" alt="Render rumah tipe ${p.tipe} di perumahan ${esc(judulLengkap(p))}" loading="lazy" width="1200" height="750">
       <div class="kartu__isi">
-        <div class="kartu__atas">
-          <span class="kategori">${p.kategori === 'subsidi' ? 'Rumah Subsidi' : 'Rumah Komersil'}</span>
-          <span class="cip"><i style="background:var(--status-${p.status})"></i>${TEKS_STATUS[p.status]}</span>
-        </div>
+        <span class="kategori">${p.kategori === 'subsidi' ? 'Rumah Subsidi' : 'Rumah Komersil'}</span>
         <h3>${esc(p.nama)}</h3>
         <div class="kartu__garis" style="background:${p.warna}"></div>
         <p class="kartu__lok">${esc(p.lokasi)}${p.tahap ? ' · ' + esc(p.tahap) : ''} · ${p.unit} unit</p>
@@ -536,18 +598,65 @@ function gambarTestimoni() {
     </figure>`).join('');
 }
 
+const fotoTim = (t, cls = '') => t.foto
+  ? `<img class="${cls}" src="${AKAR}img/tim/${t.foto}" alt="" loading="lazy">`
+  : `<span class="${cls} foto-kosong" aria-hidden="true">${inisial(t.panggil || t.nama)}</span>`;
+
 function gambarTim() {
-  const w = $('#timDaftar');
+  const d = $('#timDireksi'), w = $('#timDaftar');
+  if (d) d.innerHTML = DATA_TIM.filter(t => t.direksi).map(t => `
+    <a class="orang orang--besar" href="tim.html?id=${t.id}">
+      ${fotoTim(t, 'orang__foto')}
+      <span class="orang__tx">
+        <b>${esc(t.panggil || t.nama)}</b><span>${esc(t.jabatan)}</span>
+        <span class="orang__ringkas">${esc(t.bio[0] || '')}</span>
+        <span class="orang__aksi">Lihat profil →</span>
+      </span>
+    </a>`).join('');
+  if (w) w.innerHTML = DATA_TIM.filter(t => !t.direksi).map(t => `
+    <a class="orang" href="tim.html?id=${t.id}">
+      ${fotoTim(t, 'orang__foto')}
+      <span class="orang__tx"><b>${esc(t.nama)}</b><span>${esc(t.jabatan)}</span></span>
+    </a>`).join('');
+}
+
+/* Kepala halaman kecil untuk halaman yang dibangun dari data (?id=). */
+const heroKecil = (gbr, label, judul, lede = '') => `
+  <section class="page-hero page-hero--kecil">
+    <img class="page-hero__gbr" src="${AKAR}img/${gbr}" alt="" fetchpriority="high">
+    <div class="isi page-hero__isi"><div class="page-hero__kotak">
+      <span class="label">${label}</span><h1>${judul}</h1>${lede ? `<p>${lede}</p>` : ''}
+    </div></div>
+  </section>`;
+
+const tidakAda = (apa, balik, teks) => `${heroKecil('hero/render-2.jpg', apa, 'Tidak ditemukan')}
+  <div class="isi bagian"><p>Tautannya mungkin keliru. <a href="${balik}">${teks}</a>.</p></div>`;
+
+function gambarProfilTim() {
+  const w = $('#profilTim');
   if (!w) return;
-  w.innerHTML = DATA_TIM.map(t => t.utama ? `
-    <div class="orang orang--utama">
-      <div class="inisial" aria-hidden="true">${inisial(t.nama)}</div>
-      <div><b>${esc(t.nama)}</b><span>${esc(t.jabatan)}</span><p>${esc(t.ket)}</p></div>
-    </div>` : `
-    <div class="orang">
-      <div class="inisial" aria-hidden="true">${inisial(t.nama)}</div>
-      <b>${esc(t.nama)}</b><span>${esc(t.jabatan)}</span>
-    </div>`).join('');
+  const t = DATA_TIM.find(x => x.id === new URLSearchParams(location.search).get('id'));
+  if (!t) { w.innerHTML = tidakAda('Profil', 'tentang.html#tim', 'Kembali ke tim manajemen'); return; }
+  document.title = `${t.panggil || t.nama} — Rama Trimitra Development Group`;
+  const lain = DATA_TIM.filter(x => x !== t).slice(0, 4);
+  w.innerHTML = `${heroKecil('hero/render-2.jpg', t.direksi ? 'Direksi' : 'Tim Manajemen', esc(t.panggil || t.nama), (t.panggil ? esc(t.nama) + ' · ' : '') + esc(t.jabatan))}
+    <section class="bagian bagian--rapat"><div class="isi profil">
+      <aside class="profil__sisi">${fotoTim(t, 'profil__foto')}
+        <a class="tbl tbl--kedua" href="tentang.html#tim">← Semua tim</a></aside>
+      <div class="profil__isi">
+        ${t.bio.length ? t.bio.map(b => `<p class="profil__bio">${esc(b)}</p>`).join('') : '<p class="profil__bio">Profil lengkap menyusul.</p>'}
+        <h2 class="profil__cv-judul">Riwayat</h2>
+        ${t.cv.length ? t.cv.map(c => `
+          <div class="cv"><h3>${esc(c.judul)}</h3>
+            <ol>${c.isi.map(([th, ket]) => `<li><span>${esc(th)}</span><p>${esc(ket)}</p></li>`).join('')}</ol></div>`).join('')
+          : '<div class="pd-kosong cv-kosong">CV menyusul</div>'}
+      </div>
+    </div></section>
+    <section class="bagian bagian--krem bagian--rapat"><div class="isi">
+      <h2 class="tim-kelompok">Anggota tim lainnya</h2>
+      <div class="tim-grid tim-grid--4">${lain.map(x => `<a class="orang" href="tim.html?id=${x.id}">${fotoTim(x, 'orang__foto')}
+        <span class="orang__tx"><b>${esc(x.panggil || x.nama)}</b><span>${esc(x.jabatan)}</span></span></a>`).join('')}</div>
+    </div></section>`;
 }
 
 function gambarLegalitas(sel, data) {
@@ -559,16 +668,20 @@ function gambarLegalitas(sel, data) {
 }
 
 function gambarPortofolio() {
-  const tb = $('#portofolioTubuh');
-  if (!tb) return;
-  const baris = DATA_PORTOFOLIO.map(p =>
-    `<tr><td>${esc(p.nama)}${p.tahap ? ` <span style="color:var(--tinta-500)">${esc(p.tahap)}</span>` : ''}</td>
-         <td>${esc(p.area)}</td><td class="angka-sel">${p.tipe}</td><td class="angka-sel"><b>${p.unit}</b> unit</td></tr>`)
-    .concat(DATA_RUKO.map(p =>
-    `<tr><td>${esc(p.nama)}</td><td>${esc(p.area)}</td><td class="angka-sel">${p.tipe}</td><td class="angka-sel"><b>${p.unit}</b> unit</td></tr>`));
-  tb.innerHTML = baris.join('');
-  const t = $('#portofolioTotal');
-  if (t) t.textContent = DATA_PORTOFOLIO.reduce((a, p) => a + p.unit, 0).toLocaleString('id-ID');
+  const ol = $('#portofolioDaftar');
+  if (!ol) return;
+  const semua = DATA_PORTOFOLIO.concat(DATA_RUKO.map(r => ({ ...r, ruko: true })));
+  const maks = Math.max(...semua.map(p => p.unit));
+  ol.innerHTML = semua.map(p => `
+    <li class="rekam__baris">
+      <div class="rekam__nama"><b>${esc(p.nama)}</b>${p.tahap ? `<span>${esc(p.tahap)}</span>` : ''}</div>
+      <div class="rekam__meta">${esc(p.area)} · ${p.ruko ? 'Ruko ' : 'Tipe '}${p.tipe}</div>
+      <div class="rekam__unit"><i style="width:${(p.unit / maks * 100).toFixed(1)}%"></i><b>${p.unit}</b> unit</div>
+    </li>`).join('');
+  const isi = (id, v) => { const e = $(id); if (e) e.textContent = v.toLocaleString('id-ID'); };
+  isi('#portofolioTotal', DATA_PORTOFOLIO.reduce((a, p) => a + p.unit, 0));
+  isi('#portofolioJumlah', DATA_PORTOFOLIO.reduce((a, p) => a + (p.proyek || 1), 0));
+  isi('#rukoTotal', DATA_RUKO.reduce((a, p) => a + p.unit, 0));
 }
 
 function gambarSpek(sel, beda = {}) {
@@ -580,65 +693,129 @@ function gambarSpek(sel, beda = {}) {
   }).join('');
 }
 
+const ikonMain = '<svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M8 5.5v13l11-6.5z" fill="currentColor"/></svg>';
+
 function gambarReel() {
   const w = $('#reelDaftar');
   if (!w) return;
-
-  // Sematan resmi Instagram. Bila skrip Instagram gagal dimuat — diblokir
-  // jaringan kantor, misalnya — blockquote ini tetap tampil sebagai tautan.
   w.innerHTML = DATA_REEL.map(r => `
-    <blockquote class="instagram-media" data-instgrm-permalink="${r.url}"
-      data-instgrm-version="14" data-instgrm-captioned>
-      <a href="${r.url}" target="_blank" rel="noopener">
-        <b>${esc(r.judul)}</b><span>${esc(r.ket)} · buka di Instagram</span>
-      </a>
-    </blockquote>`).join('');
-
-  const src = 'https://www.instagram.com/embed.js';
-  if (!document.querySelector(`script[src="${src}"]`)) {
-    const sc = document.createElement('script');
-    sc.async = true; sc.src = src;
-    document.body.appendChild(sc);
-  } else if (window.instgrm) {
-    window.instgrm.Embeds.process();
-  }
+    <a class="media-kartu media-kartu--reel" href="${r.url}" target="_blank" rel="noopener">
+      <img src="${AKAR}img/sosial/${r.gbr}" alt="" loading="lazy" width="540" height="960">
+      <span class="media-kartu__main">${ikonMain}</span>
+      <span class="media-kartu__kaki"><b>${esc(r.judul)}</b><span>@${esc(r.akun)} · Instagram</span></span>
+    </a>`).join('');
 }
 
+// Video dimuat hanya saat diklik: tiga iframe YouTube sekaligus memberatkan halaman.
 function gambarYoutube() {
   const w = $('#ytDaftar');
   if (!w) return;
   w.innerHTML = DATA_YOUTUBE.video.map(v => `
-    <div class="yt">
-      <iframe src="https://www.youtube-nocookie.com/embed/${v.id}" title="${esc(v.judul)}"
-        loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <div class="yt__judul">${esc(v.judul)}</div>
-    </div>`).join('');
+    <button type="button" class="media-kartu media-kartu--yt" data-yt="${v.id}" aria-label="Putar video: ${esc(v.judul)}">
+      <img src="https://i.ytimg.com/vi/${v.id}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360">
+      <span class="media-kartu__main">${ikonMain}</span>
+      <span class="media-kartu__kaki"><b>${esc(v.judul)}</b><span>YouTube</span></span>
+    </button>`).join('');
+  w.addEventListener('click', e => {
+    const b = e.target.closest('[data-yt]');
+    if (!b) return;
+    const v = DATA_YOUTUBE.video.find(x => x.id === b.dataset.yt);
+    b.outerHTML = `<div class="media-kartu media-kartu--yt media-kartu--putar"><iframe src="https://www.youtube-nocookie.com/embed/${v.id}?autoplay=1" title="${esc(v.judul)}"
+      allow="autoplay; encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>`;
+  });
   const k = $('#ytKanal');
   if (k) k.href = DATA_YOUTUBE.kanal;
 }
 
+const tglPanjang = t => new Date(t).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' });
+
+const kartuBerita = (b, utama = false) => `
+  <a class="nkartu${utama ? ' nkartu--utama' : ''}" href="artikel.html?id=${b.id}" data-kategori="${esc(b.kategori)}">
+    <span class="nkartu__gbr"><img src="${AKAR}img/${b.gbr}" alt="" loading="${utama ? 'eager' : 'lazy'}">${utama ? '<span class="nkartu__lencana">Sorotan</span>' : ''}</span>
+    <span class="nkartu__tx">
+      <span class="nkartu__meta"><time datetime="${b.tanggal}">${tglPanjang(b.tanggal)}</time><span>${esc(b.kategori)}</span></span>
+      <b>${esc(b.judul)}</b><span class="nkartu__ringkas">${esc(b.ringkas)}</span>
+      <span class="nkartu__aksi">Baca selengkapnya →</span>
+    </span>
+  </a>`;
+
 function gambarBerita() {
   const w = $('#beritaDaftar');
   if (!w) return;
-  w.innerHTML = DATA_BERITA.map(b => `
-    <article class="kotak">
-      <span class="kategori">${esc(b.kategori)} · ${new Date(b.tanggal).toLocaleDateString('id-ID', { day: 'numeric', month: 'long', year: 'numeric' })}</span>
-      <h3 style="margin-top:12px">${esc(b.judul)}</h3>
-      <p>${esc(b.ringkas)}</p>
-    </article>`).join('');
+  const urut = [...DATA_BERITA].sort((a, b) => b.tanggal.localeCompare(a.tanggal));
+  const utama = urut.find(b => b.utama) || urut[0];
+  const sisa = urut.filter(b => b !== utama);
+  $('#beritaUtama').innerHTML = kartuBerita(utama, true);
+  w.innerHTML = sisa.map(b => kartuBerita(b)).join('');
+  const kat = [...new Set(sisa.map(b => b.kategori))];
+  const saring = $('#beritaSaring');
+  saring.innerHTML = ['Semua', ...kat].map((k, i) =>
+    `<button type="button" class="tbl tbl--kedua" data-kat="${esc(k)}" aria-pressed="${i === 0}">${esc(k)}</button>`).join('');
+  saring.addEventListener('click', e => {
+    const b = e.target.closest('[data-kat]');
+    if (!b) return;
+    $$('[data-kat]', saring).forEach(x => x.setAttribute('aria-pressed', String(x === b)));
+    $$('.nkartu', w).forEach(c => { c.hidden = b.dataset.kat !== 'Semua' && c.dataset.kategori !== b.dataset.kat; });
+  });
 }
+
+function gambarArtikel() {
+  const w = $('#artikelIsi');
+  if (!w) return;
+  const b = DATA_BERITA.find(x => x.id === new URLSearchParams(location.search).get('id'));
+  if (!b) { w.innerHTML = tidakAda('Berita', 'berita.html', 'Lihat semua berita'); return; }
+  document.title = `${b.judul} — Rama Trimitra Development Group`;
+  w.innerHTML = `${heroKecil(b.gbr, `${esc(b.kategori)} · ${tglPanjang(b.tanggal)}`, esc(b.judul))}
+    <article class="bagian bagian--rapat"><div class="isi baca">
+      <a class="tbl tbl--halus" href="berita.html">← Semua berita</a>
+      <p class="baca__ringkas">${esc(b.ringkas)}</p>
+      ${b.isi.map(x => `<p>${esc(x)}</p>`).join('')}
+    </div></article>`;
+}
+
+const waLamar = k => `https://wa.me/${KONTAK.wa}?text=${encodeURIComponent('Halo RTD, saya ingin melamar posisi ' + k.posisi + '.')}`;
 
 function gambarKarier() {
   const w = $('#karierDaftar');
   if (!w) return;
-  w.innerHTML = DATA_KARIER.map(k => `
-    <article class="kotak">
-      <span class="kategori">${esc(k.tipe)} · ${esc(k.lokasi)}</span>
-      <h3 style="margin-top:12px">${esc(k.posisi)}</h3>
-      <p>${esc(k.ringkas)}</p>
-      <p style="margin-top:16px"><a class="tbl tbl--halus" href="https://wa.me/${KONTAK.wa}?text=${encodeURIComponent('Halo RTD, saya ingin melamar posisi ' + k.posisi + '.')}" target="_blank" rel="noopener">Lamar lewat WhatsApp →</a></p>
-    </article>`).join('');
+  const urut = [...DATA_KARIER].sort((a, b) => Number(b.buka) - Number(a.buka));
+  w.innerHTML = urut.map(k => `
+    <li><a class="lowongan" href="lowongan.html?id=${k.id}">
+      <span>
+        <span class="status${k.buka ? '' : ' status--tutup'}">${k.buka ? 'Dibuka' : 'Ditutup'}</span>
+        <b>${esc(k.posisi)}</b>
+        <span class="lowongan__meta">${esc(k.tipe)} · ${esc(k.lokasi)}</span>
+        <span class="lowongan__ringkas">${esc(k.ringkas)}</span>
+      </span>
+      <span class="lowongan__aksi">Lihat posisi →</span>
+    </a></li>`).join('');
+}
+
+function gambarLowongan() {
+  const w = $('#lowonganIsi');
+  if (!w) return;
+  const k = DATA_KARIER.find(x => x.id === new URLSearchParams(location.search).get('id'));
+  if (!k) { w.innerHTML = tidakAda('Karier', 'karier.html', 'Lihat semua lowongan'); return; }
+  document.title = `${k.posisi} — Karier RTD Group`;
+  const daftar = (j, xs) => xs.length ? `<h2>${j}</h2><ul class="poin">${xs.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : '';
+  w.innerHTML = `${heroKecil('hero/render-3.jpg', `Karier · ${k.buka ? 'Dibuka' : 'Ditutup'}`, esc(k.posisi), `${esc(k.tipe)} · ${esc(k.lokasi)}`)}
+    <section class="bagian bagian--rapat"><div class="isi baca">
+      <a class="tbl tbl--halus" href="karier.html">← Semua lowongan</a>
+      <p class="baca__ringkas">${esc(k.ringkas)}</p>
+      ${daftar('Tanggung jawab', k.tugas)}${daftar('Kualifikasi', k.syarat)}
+      ${k.buka ? `<p style="margin-top:40px"><a class="tbl tbl--utama" href="${waLamar(k)}" target="_blank" rel="noopener">Lamar lewat WhatsApp</a></p>`
+               : '<p class="catatan" style="margin-top:40px">Lowongan ini sudah ditutup.</p>'}
+      <p class="catatan">Contoh lowongan — ganti dengan materi asli sebelum ditayangkan.</p>
+    </div></section>`;
+}
+
+function gambarGaleriYayasan() {
+  const w = $('#yysGaleri');
+  if (!w) return;
+  const n = Math.max(3, DATA_YAYASAN_FOTO.length);
+  w.innerHTML = Array.from({ length: n }, (_, i) => DATA_YAYASAN_FOTO[i]
+    ? `<figure><img src="img/yayasan/${DATA_YAYASAN_FOTO[i].f}" alt="${esc(DATA_YAYASAN_FOTO[i].ket)}" loading="lazy"><figcaption>${esc(DATA_YAYASAN_FOTO[i].ket)}</figcaption></figure>`
+    : `<div class="pd-kosong">Foto kegiatan menyusul</div>`).join('');
 }
 
 /* ------------------------------------------------------- Halaman detail -- */
@@ -650,9 +827,7 @@ function gambarDetail() {
   const p = DATA_PROYEK.find(x => x.id === id);
 
   if (!p) {
-    wrap.innerHTML = `<div class="isi bagian"><h1>Proyek tidak ditemukan</h1>
-      <p style="margin-top:16px;color:var(--tinta-700)">Tautannya mungkin keliru.
-      <a href="${AKAR}proyek/">Lihat semua proyek</a>.</p></div>`;
+    wrap.innerHTML = tidakAda('Proyek', `${AKAR}proyek/`, 'Lihat semua proyek');
     return;
   }
 
@@ -668,7 +843,7 @@ function gambarDetail() {
       : `<div class="pd-kosong">Foto menyusul</div>`);
   }
 
-  wrap.innerHTML = `
+  wrap.innerHTML = `${heroKecil(p.gbr, p.kategori === 'subsidi' ? 'Rumah Subsidi' : 'Rumah Komersil', esc(p.nama), esc(p.lokasi) + (p.tahap ? ' · ' + esc(p.tahap) : ''))}
     <div class="isi">
       <nav class="remah" aria-label="Remah roti">
         <a href="${AKAR}">Beranda</a> › <a href="${AKAR}proyek/">Proyek</a> › ${esc(judulLengkap(p))}
@@ -679,11 +854,8 @@ function gambarDetail() {
       <div class="isi">
         <div class="pd-hero">
           <div>
-            <span class="kategori">${p.kategori === 'subsidi' ? 'Rumah Subsidi' : 'Rumah Komersil'}</span>
-            <h1 style="margin-top:12px">${esc(p.nama)}</h1>
-            <div class="kartu__garis" style="background:${p.warna};width:64px;height:4px;margin:16px 0 12px"></div>
-            <p style="color:var(--tinta-700);font-size:17px">${esc(p.lokasi)}${p.tahap ? ' · ' + esc(p.tahap) : ''}</p>
-            ${p.alamat ? `<p class="catatan" style="margin-top:8px">${esc(p.alamat)}</p>` : ''}
+            <div class="kartu__garis" style="background:${p.warna};width:64px;height:4px;margin:0 0 12px"></div>
+            ${p.alamat ? `<p style="color:var(--tinta-700)">${esc(p.alamat)}</p>` : ''}
 
             <div class="angka-grid" style="margin-top:32px">
               <div class="angka"><b>${p.tipe.split('/')[1]}</b><span>Luas tanah m²</span></div>
@@ -780,6 +952,7 @@ document.addEventListener('DOMContentLoaded', () => {
   gambarPenghargaan();
   gambarTestimoni();
   gambarTim();
+  gambarProfilTim();
   gambarLegalitas('#legalTubuh', DATA_LEGALITAS);
   gambarLegalitas('#legalYayasanTubuh', DATA_LEGALITAS_YAYASAN);
   gambarPortofolio();
@@ -788,6 +961,9 @@ document.addEventListener('DOMContentLoaded', () => {
   gambarYoutube();
   gambarBerita();
   gambarKarier();
+  gambarArtikel();
+  gambarLowongan();
+  gambarGaleriYayasan();
   gambarDetail();
   pasangForm();
   const th = $('#tahun');

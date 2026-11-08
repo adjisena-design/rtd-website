@@ -35,10 +35,10 @@
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
         </button>
         <ul class="nav__sub">
-<li><a href="tentang.html">Profil &amp; Tim</a></li>
+<li><a href="tentang.html">Profil &amp; Manajemen</a></li>
 <li><a href="legalitas.html">Legalitas</a></li>
 <li><a href="spesifikasi.html">Spesifikasi Standar</a></li>
-<li><a href="tentang.html#yayasan">Yayasan</a></li>
+<li><a href="yayasan.html">Yayasan</a></li>
         </ul>
       </li>
       <li><a href="berita.html" class="aktif">Berita &amp; Artikel</a></li>
@@ -49,15 +49,23 @@
 </header>
 <main id="utama">
 
-<section class="bagian bagian--rapat">
-  <div class="isi">
-    <div class="kepala">
+<section class="page-hero">
+  <img class="page-hero__gbr" src="img/hero/render-4.jpg" alt="" fetchpriority="high" style="object-position:center">
+  <div class="isi page-hero__isi">
+    <div class="page-hero__kotak">
       <span class="label">Berita &amp; Artikel</span>
-      <h2 style="font-size:clamp(34px,4.6vw,52px)">Kabar proyek <span class="redup">dan panduan membeli</span></h2>
+      <h1>Kabar proyek <span class="redup">dan panduan membeli</span></h1>
       <p>Perkembangan proyek, penghargaan, dan panduan praktis bagi pembeli rumah pertama.</p>
     </div>
-    <div class="kotak-grid" id="beritaDaftar"></div>
-    <p class="catatan" style="margin-top:32px">Isi pada halaman ini masih contoh. Ganti dengan berita dan
+  </div>
+</section>
+
+<section class="bagian bagian--rapat">
+  <div class="isi">
+    <div id="beritaUtama"></div>
+    <div class="saring" id="beritaSaring" role="group" aria-label="Saring menurut kategori"></div>
+    <div class="berita-grid" id="beritaDaftar" aria-live="polite"></div>
+    <p class="catatan" style="margin-top:40px">Isi pada halaman ini masih contoh. Ganti dengan berita dan
     artikel asli lewat konstanta <code>DATA_BERITA</code> di <code>assets/js/app.js</code>.</p>
   </div>
 </section>
@@ -83,10 +91,10 @@
       <div>
         <h4>Perusahaan</h4>
         <ul>
-          <li><a href="tentang.html">Profil &amp; Tim</a></li>
+          <li><a href="tentang.html">Profil &amp; Manajemen</a></li>
           <li><a href="legalitas.html">Legalitas</a></li>
           <li><a href="spesifikasi.html">Spesifikasi Standar</a></li>
-          <li><a href="tentang.html#yayasan">Yayasan</a></li>
+          <li><a href="yayasan.html">Yayasan</a></li>
           <li><a href="kontak.html">Kontak</a></li>
         </ul>
       </div>
