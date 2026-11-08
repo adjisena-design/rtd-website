@@ -879,23 +879,6 @@ input[type="range"] { width: 100%; accent-color: var(--navy-700); height: 44px; 
 .yys-kontak__daftar a { color: #fff; font-weight: 600; text-decoration: none; overflow-wrap: anywhere; }
 .yys-kontak__daftar a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
-/* Pita yayasan di beranda */
-.yys-banner {
-  position: relative; isolation: isolate; overflow: hidden; display: flex; align-items: center;
-  min-height: 300px; padding: var(--space-6); border-radius: var(--r-xl); text-decoration: none; color: #fff;
-  box-shadow: 0 30px 60px -34px rgba(29,90,158,.6);
-}
-.yys-banner > img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s cubic-bezier(.16,1,.3,1); }
-.yys-banner::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(29,90,158,.92) 0%, rgba(47,124,201,.6) 50%, rgba(47,124,201,.05) 100%); }
-.yys-banner:hover > img { transform: scale(1.04); }
-.yys-banner__isi { display: grid; gap: 8px; max-width: 520px; }
-.yys-banner .label { color: #cfe5fb; margin: 0; }
-.yys-banner b { font-size: clamp(24px, 3vw, 34px); font-weight: 800; letter-spacing: -.025em; line-height: 1.1; }
-.yys-banner__teks { font-size: 15.5px; color: rgba(255,255,255,.88); }
-.yys-banner__aksi { display: inline-flex; align-items: center; gap: 8px; margin-top: var(--space-3); font-weight: 700; font-size: 14.5px; color: #fff; }
-.yys-banner:hover .yys-banner__aksi svg { transform: translateX(3px); }
-.yys-banner__aksi svg { transition: transform .3s; }
-
 /* ====================================================== Responsif 2 -- */
 
 @media (max-width: 1040px) {
@@ -928,8 +911,6 @@ input[type="range"] { width: 100%; accent-color: var(--navy-700); height: 44px; 
   .rekam__angka { gap: var(--space-3); }
   .cv li { grid-template-columns: 1fr; gap: 2px; }
   .lowongan { flex-direction: column; align-items: flex-start; gap: var(--space-3); padding: var(--space-5); }
-  .yys-banner { min-height: 340px; align-items: flex-end; }
-  .yys-banner::before { background: linear-gradient(180deg, rgba(29,90,158,.15), rgba(29,90,158,.92) 70%); }
 }
 @media (prefers-reduced-motion: reduce) {
   .media-kartu img { transition: none; }
@@ -1057,16 +1038,6 @@ input[type="range"] { width: 100%; accent-color: var(--navy-700); height: 44px; 
 .kantor-info dd { margin: 2px 0 0; font-size: 15px; font-weight: 600; white-space: nowrap; }
 .kantor-info a { text-decoration: none; }
 
-/* Logo yayasan */
-/* Tanpa kotak: bayangan putih tipis yang mengikuti bentuk logo, agar biru logo tetap terbaca di atas latar biru. */
-.yys-logo, .yys-banner__logo img {
-  filter: drop-shadow(0 0 1px rgba(255,255,255,.95)) drop-shadow(0 0 2px rgba(255,255,255,.9)) drop-shadow(0 0 10px rgba(255,255,255,.7)) drop-shadow(0 6px 18px rgba(10,30,60,.35));
-}
-.yys-logo { display: block; width: 96px; height: auto; margin-bottom: var(--space-4); }
-.yys-banner { gap: var(--space-6); }
-.yys-banner__logo { order: 2; flex: none; margin-left: auto; margin-right: var(--space-5); }
-.yys-banner__logo img { display: block; width: 132px; height: auto; }
-
 /* Tabel yayasan: kedua tabel memakai kolom yang sama */
 .yys-tabel { table-layout: fixed; }
 .yys-tabel__k { width: 38%; }
@@ -1084,12 +1055,47 @@ input[type="range"] { width: 100%; accent-color: var(--navy-700); height: 44px; 
   .peta { display: flex; flex-direction: column; }
   .peta__kartu { position: static; max-width: none; border-radius: 0; border: 0; box-shadow: none; }
   .kantor-info { grid-template-columns: 1fr; }
-  .yys-logo { width: 76px; }
-  .yys-banner { flex-direction: column; align-items: flex-start; }
-  .yys-banner__logo { order: 0; margin: 0; }
-  .yys-banner__logo img { width: 64px; }
   .yys-tabel { table-layout: auto; }
   .yys-tabel colgroup { display: none; }
   .yys-tabel tr { display: block; padding: 12px 0; border-top: 1px solid #e1ecf7; }
   .yys-tabel tr:first-child { border-top: 0; }
+}
+
+/* ======================================= Logo yayasan dan pita beranda -- */
+/* Logo selalu di atas latar terang: warna aslinya terbaca tanpa efek tambahan. */
+
+.yys-banner {
+  display: grid; grid-template-columns: 300px 1fr; overflow: hidden; text-decoration: none; color: #fff;
+  border-radius: var(--r-xl); box-shadow: 0 30px 60px -34px rgba(29,90,158,.55); min-height: 300px;
+}
+.yys-banner__logo { display: grid; place-items: center; padding: var(--space-6); background: linear-gradient(160deg, #ffffff, #e8f2fc); }
+.yys-banner__logo img { width: 100%; max-width: 190px; height: auto; transition: transform .8s cubic-bezier(.16,1,.3,1); }
+.yys-banner__foto { position: relative; isolation: isolate; overflow: hidden; display: flex; align-items: center; padding: var(--space-7); }
+.yys-banner__foto > img { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; transition: transform 1.2s cubic-bezier(.16,1,.3,1); }
+.yys-banner__foto::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, rgba(29,90,158,.94) 0%, rgba(47,124,201,.72) 55%, rgba(47,124,201,.25) 100%); }
+.yys-banner:hover .yys-banner__foto > img { transform: scale(1.04); }
+.yys-banner:hover .yys-banner__logo img { transform: scale(1.03); }
+.yys-banner__isi { display: grid; gap: 8px; max-width: 520px; }
+.yys-banner .label { color: #cfe5fb; margin: 0; }
+.yys-banner b { font-size: clamp(24px, 3vw, 34px); font-weight: 800; letter-spacing: -.025em; line-height: 1.1; }
+.yys-banner__teks { font-size: 15.5px; color: rgba(255,255,255,.9); }
+.yys-banner__aksi { display: inline-flex; align-items: center; gap: 8px; margin-top: var(--space-3); font-weight: 700; font-size: 14.5px; color: #fff; }
+.yys-banner__aksi svg { transition: transform .3s; }
+.yys-banner:hover .yys-banner__aksi svg { transform: translateX(3px); }
+
+/* Kotak kepala halaman yayasan: kaca putih, agar logo dan teks biru terbaca */
+.tema-yayasan .page-hero__kotak { background: rgba(255,255,255,.8); border-color: #fff; box-shadow: 0 30px 60px -30px rgba(18,52,92,.55); }
+.tema-yayasan .page-hero h1 { color: var(--yys-tinta); }
+.tema-yayasan .page-hero h1 .redup { color: var(--yys-biru); }
+.tema-yayasan .page-hero p { color: #33506f; }
+.tema-yayasan .page-hero .label { color: var(--yys-biru); }
+.yys-logo { display: block; width: 104px; height: auto; margin-bottom: var(--space-4); }
+
+@media (max-width: 640px) {
+  .yys-banner { grid-template-columns: 1fr; }
+  .yys-banner__logo { padding: var(--space-5); }
+  .yys-banner__logo img { max-width: 120px; }
+  .yys-banner__foto { padding: var(--space-6) var(--space-5); min-height: 260px; }
+  .yys-banner__foto::before { background: linear-gradient(180deg, rgba(29,90,158,.55), rgba(29,90,158,.92) 75%); }
+  .yys-logo { width: 80px; }
 }
