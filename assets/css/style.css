@@ -1283,3 +1283,8 @@ input[type="range"] { width: 100%; accent-color: var(--navy-700); height: 44px; 
 @media (prefers-reduced-motion: reduce) {
   .sim-form input[type="range"]::-webkit-slider-thumb { transition: none; }
 }
+
+/* Lompatan menu: judul bagian mendarat tepat di bawah navigasi, bukan ruang kosong padding bagian. */
+.bagian[id], .rekam[id] { scroll-margin-top: calc(-1 * var(--space-9) + 24px); }
+.bagian--rapat[id] { scroll-margin-top: calc(-1 * var(--space-8) + 24px); }
+@media (max-width: 640px) { .bagian[id] { scroll-margin-top: calc(-1 * var(--space-8) + 16px); } }
