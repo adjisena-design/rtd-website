@@ -354,8 +354,18 @@ const DATA_KARIER = [
     tugas: ['Menyiapkan gambar kerja dan siteplan.'], syarat: ['Menguasai AutoCAD.'] }
 ];
 
-/* Foto kegiatan yayasan di img/yayasan/. Kosong = kotak "Foto menyusul". */
-const DATA_YAYASAN_FOTO = [];
+/* Foto kegiatan yayasan di img/yayasan/, dari Company Profile Yayasan. */
+const DATA_YAYASAN_FOTO = [
+  { f: 'belajar.jpg',    ket: 'Kegiatan belajar di LKSA Darul Falah' },
+  { f: 'sedekah-subuh.jpg', ket: 'Program Sedekah Subuh' },
+  { f: 'belajar-2.jpg',  ket: 'Belajar bersama anak asuh' },
+  { f: 'bakti-1.jpg',    ket: 'Bakti sosial yayasan' },
+  { f: 'wakaf.jpg',      ket: 'Wakaf Al-Qur’an' },
+  { f: 'belajar-3.jpg',  ket: 'Pembinaan agama' },
+  { f: 'bakti-2.jpg',    ket: 'Bakti sosial yayasan' },
+  { f: 'yatim.jpg',      ket: 'Belanja bersama anak yatim' },
+  { f: 'penutup.jpg',    ket: 'Anak asuh LKSA Darul Falah' }
+];
 
 const KONTAK = {
   wa: '6282384299234',
@@ -804,7 +814,7 @@ function gambarGaleriYayasan() {
   if (!w) return;
   const n = Math.max(3, DATA_YAYASAN_FOTO.length);
   w.innerHTML = Array.from({ length: n }, (_, i) => DATA_YAYASAN_FOTO[i]
-    ? `<img src="img/yayasan/${DATA_YAYASAN_FOTO[i]}" alt="Kegiatan Yayasan Al-Mukmin Darunnajah Center" loading="lazy">`
+    ? `<figure><img src="img/yayasan/${DATA_YAYASAN_FOTO[i].f}" alt="${esc(DATA_YAYASAN_FOTO[i].ket)}" loading="lazy"><figcaption>${esc(DATA_YAYASAN_FOTO[i].ket)}</figcaption></figure>`
     : `<div class="pd-kosong">Foto kegiatan menyusul</div>`).join('');
 }
 
