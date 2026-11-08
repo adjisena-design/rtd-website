@@ -564,28 +564,99 @@ function pasangSaring(sel) {
 
 /* ------------------------------------------------------------- Simulasi -- */
 
+// Harga memakai skala kuadrat: separuh lintasan pertama mencakup 150–300 jt,
+// rentang rumah subsidi dan komersil kecil, sehingga geseran pendek tetap berarti.
+const HARGA_MIN = 150e6, HARGA_RENTANG = 600e6;
+const hargaDariGeser = v => { const h = HARGA_MIN + HARGA_RENTANG * (v / 1000) ** 2; return Math.round(h / (h < 300e6 ? 1e6 : 5e6)) * (h < 300e6 ? 1e6 : 5e6); };
+const geserDariHarga = h => Math.round(Math.sqrt((h - HARGA_MIN) / HARGA_RENTANG) * 1000);
+const KURANG_GERAK = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* Angka bergulir: hanya digit yang berubah yang bergerak, naik bila nilainya
+   bertambah dan turun bila berkurang, dengan blur selama transisi. */
+function gulir(el, teks, naik) {
+  const lama = el.dataset.v;
+  if (lama === teks) return;
+  el.dataset.v = teks;
+  if (KURANG_GERAK || lama === undefined) { el.textContent = teks; return; }
+  const n = Math.max(lama.length, teks.length);
+  const a = lama.padStart(n, ' '), b = teks.padStart(n, ' ');
+  el.textContent = '';
+  const arah = naik ? 1 : -1;
+  for (let i = 0; i < n; i++) {
+    const sel = document.createElement('span');
+    sel.className = 'gulir__c';
+    sel.textContent = b[i] === ' ' ? '' : b[i];
+    el.appendChild(sel);
+    if (a[i] === b[i]) continue;
+    const t = (n - 1 - i) * 18; // digit kanan bergerak lebih dulu
+    sel.animate([{ transform: `translateY(${55 * arah}%)`, filter: 'blur(5px)', opacity: 0 }, { transform: 'none', filter: 'blur(0)', opacity: 1 }],
+      { duration: 420, delay: t, easing: 'cubic-bezier(.16,1,.3,1)', fill: 'backwards' });
+    if (a[i] !== ' ') {
+      const keluar = document.createElement('span');
+      keluar.className = 'gulir__keluar'; keluar.textContent = a[i];
+      sel.appendChild(keluar);
+      keluar.animate([{ transform: 'none', filter: 'blur(0)', opacity: 1 }, { transform: `translateY(${-55 * arah}%)`, filter: 'blur(5px)', opacity: 0 }],
+        { duration: 360, delay: t, easing: 'cubic-bezier(.4,0,.2,1)', fill: 'forwards' }).onfinish = () => keluar.remove();
+    }
+  }
+}
+
+/* Goyang kecil pada kenop: miring searah gerak saat digeser, memantul saat dilepas. */
+function pasangGoyang(input) {
+  let x0 = +input.value, diam;
+  const isi = () => input.style.setProperty('--isi', ((input.value - input.min) / (input.max - input.min) * 100) + '%');
+  input.addEventListener('input', () => {
+    isi();
+    if (KURANG_GERAK) return;
+    const d = +input.value - x0; x0 = +input.value;
+    const miring = Math.max(-14, Math.min(14, d / (input.max - input.min) * 900));
+    input.style.setProperty('--miring', miring.toFixed(1) + 'deg');
+    input.classList.add('digeser');
+    clearTimeout(diam);
+    diam = setTimeout(() => { input.style.setProperty('--miring', '0deg'); }, 90);
+  });
+  const lepas = () => {
+    if (!input.classList.contains('digeser')) return;
+    input.classList.remove('digeser');
+    input.classList.remove('memantul'); void input.offsetWidth; input.classList.add('memantul');
+  };
+  ['change', 'pointerup', 'touchend'].forEach(ev => input.addEventListener(ev, lepas));
+  input.addEventListener('animationend', () => input.classList.remove('memantul'));
+  isi();
+}
+
 function pasangSimulasi() {
   const iHarga = $('#simHarga'), iDp = $('#simDp'), iBunga = $('#simBunga');
   if (!iHarga) return;
-  let tenor = 20;
+  let tenor = 20, cicilLama = null;
+  const sebelum = {};
 
   function hitung() {
-    const harga = +iHarga.value, dpPersen = +iDp.value, bunga = +iBunga.value;
+    const harga = hargaDariGeser(+iHarga.value), dpPersen = +iDp.value, bunga = +iBunga.value;
     const dp = Math.round(harga * dpPersen / 100);
     const plafon = harga - dp;
-    const cicil = angsuranBulanan(plafon, bunga, tenor);
+    const cicil = Math.round(angsuranBulanan(plafon, bunga, tenor));
 
+    iHarga.setAttribute('aria-valuetext', rupiah(harga));
     $('#nilaiHarga').textContent = rupiah(harga);
     $('#nilaiDp').firstChild.nodeValue = rupiah(dp) + ' ';
     $('#nilaiDpPersen').textContent = dpPersen.toLocaleString('id-ID') + '%';
     $('#nilaiBunga').textContent = bunga.toLocaleString('id-ID') + '%';
-    $('#hasilAngsuran').innerHTML = rupiah(cicil) + '<span class="hasil__satuan"> / bulan</span>';
-    $('#rinciHarga').textContent = rupiah(harga);
-    $('#rinciDp').textContent = rupiah(dp);
-    $('#rinciPlafon').textContent = rupiah(plafon);
+
+    const nilai = { hasilAngsuran: cicil, rinciHarga: harga, rinciDp: dp, rinciPlafon: plafon };
+    for (const [id, v] of Object.entries(nilai)) {
+      gulir($('#' + id), rupiah(v), sebelum[id] === undefined || v >= sebelum[id]);
+      sebelum[id] = v;
+    }
     $('#rinciTenor').textContent = `${tenor} tahun · ${tenor * 12} angsuran`;
+    if (cicil !== cicilLama) {
+      cicilLama = cicil;
+      clearTimeout(hitung.sr);
+      hitung.sr = setTimeout(() => { $('#hasilSr').textContent = `Perkiraan angsuran ${rupiah(cicil)} per bulan`; }, 600);
+    }
   }
-  [iHarga, iDp, iBunga].forEach(el => el.addEventListener('input', hitung));
+  iHarga.value = geserDariHarga(166e6);
+  [iHarga, iDp, iBunga].forEach(el => { el.addEventListener('input', hitung); pasangGoyang(el); });
   $$('[data-tenor]').forEach(btn => btn.addEventListener('click', () => {
     $$('[data-tenor]').forEach(b => b.setAttribute('aria-pressed', 'false'));
     btn.setAttribute('aria-pressed', 'true');

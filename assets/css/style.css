@@ -1215,3 +1215,71 @@ input[type="range"] { width: 100%; accent-color: var(--navy-700); height: 44px; 
   .foto-grid__item { margin-bottom: 8px; }
   .kotak-foto__geser { display: none; }
 }
+
+/* ======================================================= Simulasi KPR -- */
+.sim-bagian { position: relative; isolation: isolate; overflow: hidden; }
+.sim-bagian__gbr { position: absolute; inset: 0; z-index: -2; width: 100%; height: 100%; object-fit: cover; }
+.sim-bagian::before {
+  content: ""; position: absolute; inset: 0; z-index: -1;
+  background: linear-gradient(180deg, rgba(250,246,238,.94) 0%, rgba(250,246,238,.78) 38%, rgba(250,246,238,.62) 100%);
+}
+.sim-kaca {
+  padding: var(--space-6); border-radius: var(--r-xl); gap: var(--space-7);
+  background: rgba(255,253,248,.62); border: 1px solid rgba(255,255,255,.8);
+  -webkit-backdrop-filter: blur(20px) saturate(160%); backdrop-filter: blur(20px) saturate(160%);
+  box-shadow: 0 1px 0 #fff inset, 0 40px 80px -40px rgba(15,32,51,.45);
+}
+.sim-kaca .sim-form { padding: var(--space-3) var(--space-2) 0; gap: var(--space-6); }
+.sim-kaca .kolom__nilai { font-variant-numeric: tabular-nums; }
+.sim-bagian .catatan { color: var(--tinta-700); }
+
+/* Penggeser: jalur terisi, kenop bulat yang miring dan memantul */
+.sim-form input[type="range"] {
+  -webkit-appearance: none; appearance: none; background: transparent; height: 40px; margin: 0; --isi: 0%; --miring: 0deg;
+}
+.sim-form input[type="range"]::-webkit-slider-runnable-track {
+  height: 8px; border-radius: 4px;
+  background: linear-gradient(90deg, var(--navy-700) 0 var(--isi), rgba(20,41,63,.12) var(--isi) 100%);
+}
+.sim-form input[type="range"]::-moz-range-track { height: 8px; border-radius: 4px; background: rgba(20,41,63,.12); }
+.sim-form input[type="range"]::-moz-range-progress { height: 8px; border-radius: 4px; background: var(--navy-700); }
+.sim-form input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; width: 28px; height: 28px; margin-top: -10px; border-radius: 50%;
+  background: #fff; border: 7px solid var(--navy-700); box-shadow: 0 6px 16px -4px rgba(15,32,51,.45);
+  transform: rotate(var(--miring)) scale(1); transition: transform .18s cubic-bezier(.34,1.56,.64,1), border-color .2s;
+}
+.sim-form input[type="range"]::-moz-range-thumb {
+  width: 14px; height: 14px; border-radius: 50%; background: #fff; border: 7px solid var(--navy-700);
+  box-shadow: 0 6px 16px -4px rgba(15,32,51,.45); transform: rotate(var(--miring)); transition: transform .18s cubic-bezier(.34,1.56,.64,1);
+}
+.sim-form input[type="range"]:hover::-webkit-slider-thumb { transform: scale(1.08); }
+.sim-form input[type="range"].digeser::-webkit-slider-thumb { transform: rotate(var(--miring)) scale(1.22) skewX(calc(var(--miring) * -.6)); border-color: var(--amber-500); }
+.sim-form input[type="range"].digeser::-moz-range-thumb { transform: rotate(var(--miring)) scale(1.22); border-color: var(--amber-500); }
+.sim-form input[type="range"].memantul::-webkit-slider-thumb { animation: kenop-pantul .55s cubic-bezier(.34,1.56,.64,1); }
+.sim-form input[type="range"].memantul::-moz-range-thumb { animation: kenop-pantul .55s cubic-bezier(.34,1.56,.64,1); }
+@keyframes kenop-pantul {
+  0% { transform: scale(1.22); } 30% { transform: scale(.88, 1.12); } 55% { transform: scale(1.08, .94); }
+  75% { transform: scale(.97, 1.03); } 100% { transform: scale(1); }
+}
+.sim-form input[type="range"]:focus-visible { outline: none; }
+.sim-form input[type="range"]:focus-visible::-webkit-slider-thumb { box-shadow: 0 0 0 4px rgba(185,118,26,.35), 0 6px 16px -4px rgba(15,32,51,.45); }
+
+.skala { position: relative; height: 18px; margin: 2px 14px 0; font-size: 11.5px; font-weight: 600; color: var(--tinta-500); font-variant-numeric: tabular-nums; }
+.skala span { position: absolute; top: 0; transform: translateX(-50%); white-space: nowrap; }
+.skala span:first-child { transform: none; }
+.skala span:last-child { transform: translateX(-100%); }
+
+/* Angka bergulir */
+.gulir { display: inline-flex; font-variant-numeric: tabular-nums; }
+.gulir__c { position: relative; display: inline-block; white-space: pre; will-change: transform, filter; }
+.gulir__keluar { position: absolute; left: 0; top: 0; pointer-events: none; }
+.hasil__besar { overflow: hidden; padding-block: .06em; }
+.hasil__baris b.gulir { overflow: hidden; }
+
+@media (max-width: 640px) {
+  .sim-kaca { padding: var(--space-4); margin-inline: calc(-1 * var(--space-2)); }
+  .sim-kaca .sim-form { padding: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .sim-form input[type="range"]::-webkit-slider-thumb { transition: none; }
+}
