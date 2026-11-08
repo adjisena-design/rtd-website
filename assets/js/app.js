@@ -1223,6 +1223,8 @@ document.addEventListener('DOMContentLoaded', () => {
   pasangForm();
   pasangKepala();
   pasangGeser();
+  // Konten yang dibangun JavaScript menggeser tata letak setelah peramban melompat ke #jangkar; lompat ulang sekali setelah semuanya dimuat.
+  if (location.hash.length > 1) addEventListener('load', () => { const t = document.getElementById(location.hash.slice(1)); if (t) t.scrollIntoView({ behavior: 'instant' }); }, { once: true });
   const th = $('#tahun');
   if (th) th.textContent = new Date().getFullYear();
 });
