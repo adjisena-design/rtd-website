@@ -1,0 +1,898 @@
+[
+ {
+  "kunci": "index-01",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Developer Rumah Subsidi · Palembang, Banyuasin & Ogan Ilir",
+  "jenis": "judul",
+  "bawaan": "Rumah pertama, | dikerjakan dengan benar."
+ },
+ {
+  "kunci": "index-02",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Developer Rumah Subsidi · Palembang, Banyuasin & Ogan Ilir",
+  "jenis": "paragraf",
+  "bawaan": "Dua puluh perumahan dan 3.808 unit sejak 2020. Spesifikasi kami tulis lengkap, angsuran kami tulis apa adanya — supaya Anda bisa menghitung sendiri sebelum memutuskan."
+ },
+ {
+  "kunci": "index-promo",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Promo",
+  "jenis": "judul",
+  "bawaan": "Penawaran | bulan ini"
+ },
+ {
+  "kunci": "index-03",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Proyek",
+  "jenis": "judul",
+  "bawaan": "Rumah dan perumahan | yang sedang kami jual"
+ },
+ {
+  "kunci": "index-04",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Proyek",
+  "jenis": "paragraf",
+  "bawaan": "Di Palembang, Banyuasin, dan Ogan Ilir. Angsuran yang tercantum adalah yang terendah, pada tenor 20 tahun."
+ },
+ {
+  "kunci": "index-05",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Penghargaan",
+  "jenis": "judul",
+  "bawaan": "Dinilai oleh pihak | yang menanggung risikonya"
+ },
+ {
+  "kunci": "index-06",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Penghargaan",
+  "jenis": "paragraf",
+  "bawaan": "Seluruh penghargaan ini diberikan Bank BTN dan BTN Syariah — lembaga yang memeriksa pembukuan, kualitas konstruksi, dan ketepatan realisasi kami setiap tahun."
+ },
+ {
+  "kunci": "index-07",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Testimoni",
+  "jenis": "judul",
+  "bawaan": "Apa kata | mitra dan bank penyalur"
+ },
+ {
+  "kunci": "index-08",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Simulasi KPR",
+  "jenis": "judul",
+  "bawaan": "Hitung dulu, | baru datang ke kantor"
+ },
+ {
+  "kunci": "index-09",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Simulasi KPR",
+  "jenis": "paragraf",
+  "bawaan": "Geser angkanya sampai ketemu cicilan yang sanggup Anda bayar tiap bulan selama bertahun-tahun."
+ },
+ {
+  "kunci": "index-10",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Simulasi KPR",
+  "jenis": "paragraf",
+  "bawaan": "Perhitungan memakai metode anuitas dan bersifat perkiraan. Angka final ditetapkan bank penyalur pada saat akad, dan belum termasuk biaya provisi, asuransi, notaris, dan pajak. Syarat dan ketentuan berlaku."
+ },
+ {
+  "kunci": "index-11",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Cara Membeli",
+  "jenis": "judul",
+  "bawaan": "Lima langkah | dari tanya sampai terima kunci"
+ },
+ {
+  "kunci": "index-12",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Cara Membeli",
+  "jenis": "paragraf",
+  "bawaan": "Untuk sebagian besar pembeli kami, ini rumah pertama. Berikut urutannya supaya tidak ada kejutan."
+ },
+ {
+  "kunci": "index-13",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Cara Membeli",
+  "jenis": "subjudul",
+  "bawaan": "Pilih unit"
+ },
+ {
+  "kunci": "index-14",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Cara Membeli",
+  "jenis": "paragraf",
+  "bawaan": "Datang ke lokasi atau hubungi pemasaran. Lihat rumah contoh, pilih blok dan nomor unit yang masih tersedia."
+ },
+ {
+  "kunci": "index-15",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Cara Membeli",
+  "jenis": "subjudul",
+  "bawaan": "Booking"
+ },
+ {
+  "kunci": "index-16",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Cara Membeli",
+  "jenis": "paragraf",
+  "bawaan": "Bayar tanda jadi. Unit dikunci atas nama Anda dan tidak ditawarkan ke pembeli lain."
+ },
+ {
+  "kunci": "index-17",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Cara Membeli",
+  "jenis": "subjudul",
+  "bawaan": "Berkas KPR"
+ },
+ {
+  "kunci": "index-18",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Cara Membeli",
+  "jenis": "paragraf",
+  "bawaan": "KTP, KK, surat nikah, slip gaji atau surat keterangan usaha, rekening koran, NPWP, dan surat keterangan belum memiliki rumah."
+ },
+ {
+  "kunci": "index-19",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Cara Membeli",
+  "jenis": "subjudul",
+  "bawaan": "Analisa bank"
+ },
+ {
+  "kunci": "index-20",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Cara Membeli",
+  "jenis": "paragraf",
+  "bawaan": "Bank penyalur memeriksa kelayakan. Hasilnya keluar dalam hitungan minggu, dan kami kabari apa pun hasilnya."
+ },
+ {
+  "kunci": "index-21",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Cara Membeli",
+  "jenis": "subjudul",
+  "bawaan": "Akad dan serah terima"
+ },
+ {
+  "kunci": "index-22",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Cara Membeli",
+  "jenis": "paragraf",
+  "bawaan": "Tanda tangan akad kredit di hadapan notaris, lalu serah terima kunci sesuai jadwal yang disepakati."
+ },
+ {
+  "kunci": "index-23",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Media Sosial",
+  "jenis": "judul",
+  "bawaan": "Lihat sendiri | perkembangan di lapangan"
+ },
+ {
+  "kunci": "index-24",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Media Sosial",
+  "jenis": "paragraf",
+  "bawaan": "Progres pembangunan, unit siap huni, dan keseharian tim kami di Instagram dan YouTube."
+ },
+ {
+  "kunci": "index-25",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "YouTube",
+  "jenis": "judul",
+  "bawaan": "Tur proyek | dalam video"
+ },
+ {
+  "kunci": "index-26",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Hubungi Kami",
+  "jenis": "judul",
+  "bawaan": "Hubungi pemasaran"
+ },
+ {
+  "kunci": "index-27",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Hubungi Kami",
+  "jenis": "paragraf",
+  "bawaan": "Tim kami menghubungi balik di hari kerja yang sama. Belum tahu proyek mana yang cocok juga tidak apa-apa — pilih saja “belum tahu”, nanti kami bantu dari penghasilan dan lokasi kerja Anda."
+ },
+ {
+  "kunci": "index-28",
+  "halaman": "Beranda",
+  "berkas": "index.html",
+  "bagian": "Kantor Pemasaran",
+  "jenis": "judul",
+  "bawaan": "Datang langsung | ke kantor kami"
+ },
+ {
+  "kunci": "tentang-01",
+  "halaman": "Profil & Manajemen",
+  "berkas": "tentang.html",
+  "bagian": "Profil & Manajemen",
+  "jenis": "judul",
+  "bawaan": "Satu induk, | dua puluh perumahan"
+ },
+ {
+  "kunci": "tentang-02",
+  "halaman": "Profil & Manajemen",
+  "berkas": "tentang.html",
+  "bagian": "Profil & Manajemen",
+  "jenis": "paragraf",
+  "bawaan": "Siapa kami, apa yang kami kejar, dan siapa yang bertanggung jawab atas setiap rumah yang kami serahkan."
+ },
+ {
+  "kunci": "tentang-03",
+  "halaman": "Profil & Manajemen",
+  "berkas": "tentang.html",
+  "bagian": "Profil & Manajemen",
+  "jenis": "paragraf",
+  "bawaan": "PT Rama Trimitra Development Group berdiri 15 Oktober 2020 dan berbasis di Palembang, Sumatera Selatan. Portofolio kami mencakup dua puluh perumahan dengan total 3.808 unit rumah dan 37 unit ruko, sebagian besar rumah subsidi untuk keluarga yang membeli rumah pertamanya."
+ },
+ {
+  "kunci": "tentang-04",
+  "halaman": "Profil & Manajemen",
+  "berkas": "tentang.html",
+  "bagian": "Tentang Kami",
+  "jenis": "judul",
+  "bawaan": "Membangun di Bumi Sriwijaya | sejak 2020"
+ },
+ {
+  "kunci": "tentang-05",
+  "halaman": "Profil & Manajemen",
+  "berkas": "tentang.html",
+  "bagian": "Tentang Kami",
+  "jenis": "paragraf",
+  "bawaan": "Rama Trimitra Development Group adalah perusahaan properti di Kota Palembang yang membangun ribuan unit rumah subsidi pemerintah. Desainnya minimalis dan terus diperbarui, konstruksinya kokoh dan berkualitas, sehingga nyaman ditempati — di lokasi yang strategis, dengan harga yang kompetitif di kelasnya."
+ },
+ {
+  "kunci": "tentang-06",
+  "halaman": "Profil & Manajemen",
+  "berkas": "tentang.html",
+  "bagian": "Tentang Kami",
+  "jenis": "paragraf",
+  "bawaan": "Setiap perumahan kami rancang dengan fasilitas terintegrasi (one stop living area) yang memudahkan aktivitas penghuninya. Sejak berdiri pada 2020, RTD Group terus membuktikan kiprahnya di bidang properti Sumatera Selatan dari tahun ke tahun."
+ },
+ {
+  "kunci": "tentang-07",
+  "halaman": "Profil & Manajemen",
+  "berkas": "tentang.html",
+  "bagian": "Tentang Kami",
+  "jenis": "paragraf",
+  "bawaan": "Kami akan terus berinovasi mengikuti perkembangan zaman dan masukan dari para mitra. Perumahan-perumahan kami adalah hasil kerja itu."
+ },
+ {
+  "kunci": "tentang-08",
+  "halaman": "Profil & Manajemen",
+  "berkas": "tentang.html",
+  "bagian": "Visi",
+  "jenis": "judul",
+  "bawaan": "Memberi peluang bagi seluruh masyarakat Sumatera Selatan, khususnya Kota Palembang, untuk mendapatkan kehidupan yang nyaman, aman, tenteram, dan sejahtera — memiliki hunian yang layak dengan lingkungan yang bersih, menyenangkan, dan berfasilitas terbaik."
+ },
+ {
+  "kunci": "tentang-09",
+  "halaman": "Profil & Manajemen",
+  "berkas": "tentang.html",
+  "bagian": "Misi",
+  "jenis": "butir",
+  "bawaan": "Menjadi pengembang properti yang transparan, tepercaya, dan penggagas tren terdepan; berkomitmen untuk berkembang dan meningkatkan keuntungan jangka panjang, serta berlaku adil terhadap semua pemangku kepentingan."
+ },
+ {
+  "kunci": "tentang-10",
+  "halaman": "Profil & Manajemen",
+  "berkas": "tentang.html",
+  "bagian": "Misi",
+  "jenis": "butir",
+  "bawaan": "Memenuhi kebutuhan pelanggan dengan produk dan pelayanan yang berkualitas dan inovatif."
+ },
+ {
+  "kunci": "tentang-11",
+  "halaman": "Profil & Manajemen",
+  "berkas": "tentang.html",
+  "bagian": "Misi",
+  "jenis": "butir",
+  "bawaan": "Menciptakan hubungan kerja sama yang kuat dengan pelanggan dan mitra kerja."
+ },
+ {
+  "kunci": "tentang-12",
+  "halaman": "Profil & Manajemen",
+  "berkas": "tentang.html",
+  "bagian": "Tim Manajemen",
+  "jenis": "judul",
+  "bawaan": "Orang-orang | yang menjalankannya"
+ },
+ {
+  "kunci": "tentang-13",
+  "halaman": "Profil & Manajemen",
+  "berkas": "tentang.html",
+  "bagian": "Tim Manajemen",
+  "jenis": "paragraf",
+  "bawaan": "Pilih nama untuk membuka profil dan riwayat lengkapnya."
+ },
+ {
+  "kunci": "tentang-14",
+  "halaman": "Profil & Manajemen",
+  "berkas": "tentang.html",
+  "bagian": "Tim Manajemen",
+  "jenis": "subjudul",
+  "bawaan": "Direksi dan pemilik"
+ },
+ {
+  "kunci": "tentang-15",
+  "halaman": "Profil & Manajemen",
+  "berkas": "tentang.html",
+  "bagian": "Tim Manajemen",
+  "jenis": "subjudul",
+  "bawaan": "Manajer dan supervisor"
+ },
+ {
+  "kunci": "tentang-16",
+  "halaman": "Profil & Manajemen",
+  "berkas": "tentang.html",
+  "bagian": "Tim Pemasaran",
+  "jenis": "judul",
+  "bawaan": "Yang mendampingi Anda | dari survei sampai akad"
+ },
+ {
+  "kunci": "tentang-17",
+  "halaman": "Profil & Manajemen",
+  "berkas": "tentang.html",
+  "bagian": "Tim Pemasaran",
+  "jenis": "paragraf",
+  "bawaan": "Hubungi kantor pemasaran dan kami sambungkan dengan salah satu dari mereka."
+ },
+ {
+  "kunci": "yayasan-01",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Yayasan",
+  "jenis": "judul",
+  "bawaan": "Yayasan Al-Mukmin | Darunnajah Center"
+ },
+ {
+  "kunci": "yayasan-02",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Yayasan",
+  "jenis": "paragraf",
+  "bawaan": "Rumah bagi anak-anak yatim, sekolah kehidupan bagi para penghafal Al-Qur’an, dan ladang amal bagi setiap insan yang peduli."
+ },
+ {
+  "kunci": "yayasan-03",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Yayasan",
+  "jenis": "judul",
+  "bawaan": "Generasi yang mandiri, | cerdas, dan sejahtera"
+ },
+ {
+  "kunci": "yayasan-04",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Yayasan",
+  "jenis": "paragraf",
+  "bawaan": "Yayasan Al-Mukmin Darunnajah Center adalah lembaga yang bergerak di bidang sosial, keagamaan, pendidikan, dan kemanusiaan, dan bertujuan membantu mewujudkan generasi yang mandiri, cerdas, sejahtera, dan berdaya saing tinggi di masa depan."
+ },
+ {
+  "kunci": "yayasan-05",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Yayasan",
+  "jenis": "paragraf",
+  "bawaan": "Melalui LKSA (Lembaga Kesejahteraan Sosial Anak) Darul Falah, yayasan memfasilitasi anak yatim dhuafa untuk memperoleh pendidikan formal, akhlak, dan agama yang baik. Jumlah anak asuh binaan akan terus bertambah seiring program yang digulirkan."
+ },
+ {
+  "kunci": "yayasan-06",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Visi",
+  "jenis": "subjudul",
+  "bawaan": "Legalitas yayasan"
+ },
+ {
+  "kunci": "yayasan-07",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Visi",
+  "jenis": "subjudul",
+  "bawaan": "Pengurus"
+ },
+ {
+  "kunci": "yayasan-08",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Visi",
+  "jenis": "judul",
+  "bawaan": "Misi"
+ },
+ {
+  "kunci": "yayasan-09",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Visi",
+  "jenis": "butir",
+  "bawaan": "Membina akhlak dan budi pekerti setiap insan sesuai pedoman Al-Qur’an dan As-Sunnah."
+ },
+ {
+  "kunci": "yayasan-10",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Visi",
+  "jenis": "butir",
+  "bawaan": "Melahirkan generasi unggul yang berakhlak mulia, berwawasan luas, dan mampu berdikari menghadapi kemajuan di era global."
+ },
+ {
+  "kunci": "yayasan-11",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Visi",
+  "jenis": "butir",
+  "bawaan": "Mewujudkan tercapainya kualitas mutu pendidikan yang tinggi."
+ },
+ {
+  "kunci": "yayasan-12",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Visi",
+  "jenis": "butir",
+  "bawaan": "Mengembangkan diri setiap insan sejalan dengan perkembangan ilmu pengetahuan, teknologi, dan kebudayaan."
+ },
+ {
+  "kunci": "yayasan-13",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Visi",
+  "jenis": "butir",
+  "bawaan": "Membantu mengentaskan permasalahan sosial kemanusiaan yang terjadi di masyarakat."
+ },
+ {
+  "kunci": "yayasan-14",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Program",
+  "jenis": "judul",
+  "bawaan": "Yang kami jalankan | setiap hari"
+ },
+ {
+  "kunci": "yayasan-15",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Program",
+  "jenis": "butir",
+  "bawaan": "Kebutuhan hidup dan beasiswaAnak asuh mendapat fasilitas kebutuhan sehari-hari dan bantuan pendidikan sampai jenjang yang lebih tinggi."
+ },
+ {
+  "kunci": "yayasan-16",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Program",
+  "jenis": "butir",
+  "bawaan": "Tahfidz Qur’anProgram menghafal Al-Qur’an untuk mewujudkan generasi Qur’ani yang berakhlak mulia."
+ },
+ {
+  "kunci": "yayasan-17",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Program",
+  "jenis": "butir",
+  "bawaan": "DiniyahAl-Qur’an, Hadits, Akidah & Akhlak, Fiqih, Sejarah Kebudayaan Islam, Bahasa Arab, hingga praktik ibadah."
+ },
+ {
+  "kunci": "yayasan-18",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Program",
+  "jenis": "butir",
+  "bawaan": "Bimbel pelajaran sekolahPelajaran tambahan di luar sekolah, meliputi Matematika dan Bahasa Inggris."
+ },
+ {
+  "kunci": "yayasan-19",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Program",
+  "jenis": "butir",
+  "bawaan": "Sedekah SubuhMengajak masyarakat berbagi untuk anak yatim, dhuafa, dan mereka yang membutuhkan."
+ },
+ {
+  "kunci": "yayasan-20",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Program",
+  "jenis": "butir",
+  "bawaan": "Nasi Jum’at BerkahBerbagi makanan setiap Jum’at kepada masyarakat di sekitar yayasan."
+ },
+ {
+  "kunci": "yayasan-21",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Pembangunan 2023",
+  "jenis": "judul",
+  "bawaan": "Rumah LKSA Darul Falah, | dari tanah kosong sampai siap huni"
+ },
+ {
+  "kunci": "yayasan-22",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Pembangunan 2023",
+  "jenis": "paragraf",
+  "bawaan": "Dibangun Januari sampai Juni 2023 sebagai rumah tinggal dan tempat belajar anak asuh."
+ },
+ {
+  "kunci": "yayasan-23",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Kegiatan",
+  "jenis": "judul",
+  "bawaan": "Dokumentasi | kegiatan yayasan"
+ },
+ {
+  "kunci": "yayasan-24",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Kegiatan",
+  "jenis": "judul",
+  "bawaan": "Mari berpartisipasi | membangun harapan anak negeri"
+ },
+ {
+  "kunci": "yayasan-25",
+  "halaman": "Yayasan",
+  "berkas": "yayasan.html",
+  "bagian": "Kegiatan",
+  "jenis": "paragraf",
+  "bawaan": "Untuk donasi, sedekah, atau kerja sama, hubungi pengurus yayasan langsung. Yayasan dikelola terpisah dari kegiatan usaha RTD Group."
+ },
+ {
+  "kunci": "legalitas-01",
+  "halaman": "Legalitas",
+  "berkas": "legalitas.html",
+  "bagian": "Legalitas",
+  "jenis": "judul",
+  "bawaan": "Nomornya | bisa Anda periksa sendiri"
+ },
+ {
+  "kunci": "legalitas-02",
+  "halaman": "Legalitas",
+  "berkas": "legalitas.html",
+  "bagian": "Legalitas",
+  "jenis": "paragraf",
+  "bawaan": "Legalitas holding, nomor izin, dan mitra perbankan yang memeriksa kami setiap tahun."
+ },
+ {
+  "kunci": "legalitas-03",
+  "halaman": "Legalitas",
+  "berkas": "legalitas.html",
+  "bagian": "Legalitas",
+  "jenis": "paragraf",
+  "bawaan": "PT Rama Trimitra Development Group berdiri 15 Oktober 2020. Berikut nomor legalitas holding kami."
+ },
+ {
+  "kunci": "legalitas-04",
+  "halaman": "Legalitas",
+  "berkas": "legalitas.html",
+  "bagian": "Legalitas",
+  "jenis": "paragraf",
+  "bawaan": "Setiap proyek juga punya legalitasnya sendiri — IMB, PBG, peil banjir, advice plan, SPPL, dan sertifikat yang sudah pecah per unit — dan bisa diminta ke kantor pemasaran sebelum Anda memutuskan."
+ },
+ {
+  "kunci": "legalitas-05",
+  "halaman": "Legalitas",
+  "berkas": "legalitas.html",
+  "bagian": "Legalitas",
+  "jenis": "paragraf",
+  "bawaan": "Rumah subsidi yang dijual tanpa legalitas jelas adalah risiko terbesar bagi pembeli pertama. Kami cantumkan nomornya supaya Anda bisa memeriksanya sendiri."
+ },
+ {
+  "kunci": "legalitas-06",
+  "halaman": "Legalitas",
+  "berkas": "legalitas.html",
+  "bagian": "Mitra Perbankan",
+  "jenis": "judul",
+  "bawaan": "Diperiksa setiap tahun | oleh bank penyalur"
+ },
+ {
+  "kunci": "legalitas-07",
+  "halaman": "Legalitas",
+  "berkas": "legalitas.html",
+  "bagian": "Mitra Perbankan",
+  "jenis": "paragraf",
+  "bawaan": "Pembiayaan konstruksi dan KPR proyek kami disalurkan melalui Bank BTN dan BTN Syariah. Keduanya memeriksa pembukuan, kualitas konstruksi, dan ketepatan realisasi sebelum pembiayaan dicairkan. Rating kami saat ini Platinum."
+ },
+ {
+  "kunci": "legalitas-08",
+  "halaman": "Legalitas",
+  "berkas": "legalitas.html",
+  "bagian": "Mitra Perbankan",
+  "jenis": "subjudul",
+  "bawaan": "Pembiayaan konstruksi"
+ },
+ {
+  "kunci": "legalitas-09",
+  "halaman": "Legalitas",
+  "berkas": "legalitas.html",
+  "bagian": "Mitra Perbankan",
+  "jenis": "paragraf",
+  "bawaan": "Dana pembangunan dicairkan bertahap mengikuti progres yang diverifikasi bank, bukan sekaligus di muka."
+ },
+ {
+  "kunci": "legalitas-10",
+  "halaman": "Legalitas",
+  "berkas": "legalitas.html",
+  "bagian": "Mitra Perbankan",
+  "jenis": "subjudul",
+  "bawaan": "KPR bersubsidi"
+ },
+ {
+  "kunci": "legalitas-11",
+  "halaman": "Legalitas",
+  "berkas": "legalitas.html",
+  "bagian": "Mitra Perbankan",
+  "jenis": "paragraf",
+  "bawaan": "Disalurkan lewat skema FLPP dengan bunga tetap 5% sepanjang tenor."
+ },
+ {
+  "kunci": "legalitas-12",
+  "halaman": "Legalitas",
+  "berkas": "legalitas.html",
+  "bagian": "Mitra Perbankan",
+  "jenis": "subjudul",
+  "bawaan": "Audit berkala"
+ },
+ {
+  "kunci": "legalitas-13",
+  "halaman": "Legalitas",
+  "berkas": "legalitas.html",
+  "bagian": "Mitra Perbankan",
+  "jenis": "paragraf",
+  "bawaan": "Kinerja kami dinilai tiap tahun — hasil penilaian itulah yang menjadi penghargaan di halaman beranda."
+ },
+ {
+  "kunci": "spesifikasi-01",
+  "halaman": "Spesifikasi",
+  "berkas": "spesifikasi.html",
+  "bagian": "Spesifikasi Standar",
+  "jenis": "judul",
+  "bawaan": "Dua belas baris | yang berlaku di semua proyek"
+ },
+ {
+  "kunci": "spesifikasi-02",
+  "halaman": "Spesifikasi",
+  "berkas": "spesifikasi.html",
+  "bagian": "Spesifikasi Standar",
+  "jenis": "paragraf",
+  "bawaan": "Material dan pengerjaan yang sama di setiap perumahan, ditulis lengkap supaya bisa Anda bandingkan."
+ },
+ {
+  "kunci": "spesifikasi-03",
+  "halaman": "Spesifikasi",
+  "berkas": "spesifikasi.html",
+  "bagian": "Spesifikasi Standar",
+  "jenis": "paragraf",
+  "bawaan": "Urutannya tidak kami ubah antarproyek, supaya Anda bisa membandingkan baris yang sama di posisi yang sama."
+ },
+ {
+  "kunci": "spesifikasi-04",
+  "halaman": "Spesifikasi",
+  "berkas": "spesifikasi.html",
+  "bagian": "Spesifikasi Standar",
+  "jenis": "paragraf",
+  "bawaan": "Bila sebuah proyek menyimpang dari standar ini, penyimpangannya kami tulis di halaman proyek tersebut — bukan kami hilangkan."
+ },
+ {
+  "kunci": "spesifikasi-05",
+  "halaman": "Spesifikasi",
+  "berkas": "spesifikasi.html",
+  "bagian": "Spesifikasi Standar",
+  "jenis": "paragraf",
+  "bawaan": "Spesifikasi yang disembunyikan adalah yang paling cepat merusak kepercayaan saat serah terima."
+ },
+ {
+  "kunci": "spesifikasi-06",
+  "halaman": "Spesifikasi",
+  "berkas": "spesifikasi.html",
+  "bagian": "Spesifikasi Standar",
+  "jenis": "paragraf",
+  "bawaan": "Denah tipe 36. Ukuran tercantum pada brosur masing-masing proyek."
+ },
+ {
+  "kunci": "berita-01",
+  "halaman": "Berita",
+  "berkas": "berita.html",
+  "bagian": "Berita & Artikel",
+  "jenis": "judul",
+  "bawaan": "Kabar proyek | dan panduan membeli"
+ },
+ {
+  "kunci": "berita-02",
+  "halaman": "Berita",
+  "berkas": "berita.html",
+  "bagian": "Berita & Artikel",
+  "jenis": "paragraf",
+  "bawaan": "Perkembangan proyek, penghargaan, dan panduan praktis bagi pembeli rumah pertama."
+ },
+ {
+  "kunci": "berita-03",
+  "halaman": "Berita",
+  "berkas": "berita.html",
+  "bagian": "Berita & Artikel",
+  "jenis": "paragraf",
+  "bawaan": "Isi pada halaman ini masih contoh. Ganti dengan berita dan artikel asli lewat konstanta DATA_BERITA di assets/js/app.js."
+ },
+ {
+  "kunci": "karier-01",
+  "halaman": "Karier",
+  "berkas": "karier.html",
+  "bagian": "Karier",
+  "jenis": "judul",
+  "bawaan": "Bekerja | di RTD Group"
+ },
+ {
+  "kunci": "karier-02",
+  "halaman": "Karier",
+  "berkas": "karier.html",
+  "bagian": "Karier",
+  "jenis": "paragraf",
+  "bawaan": "Kami membangun rumah pertama bagi ribuan keluarga di Sumatera Selatan. Kalau Anda ingin ikut mengerjakannya, berikut posisi yang sedang dibuka."
+ },
+ {
+  "kunci": "karier-03",
+  "halaman": "Karier",
+  "berkas": "karier.html",
+  "bagian": "Karier",
+  "jenis": "judul",
+  "bawaan": "Posisi yang dibuka"
+ },
+ {
+  "kunci": "karier-04",
+  "halaman": "Karier",
+  "berkas": "karier.html",
+  "bagian": "Karier",
+  "jenis": "paragraf",
+  "bawaan": "Daftar lowongan pada halaman ini masih contoh. Ganti dengan lowongan asli lewat konstanta DATA_KARIER di assets/js/app.js."
+ },
+ {
+  "kunci": "karier-05",
+  "halaman": "Karier",
+  "berkas": "karier.html",
+  "bagian": "Kenapa RTD Group",
+  "jenis": "butir",
+  "bawaan": "Pekerjaan yang hasilnya terlihat: rumah pertama bagi ribuan keluarga di Sumatera Selatan."
+ },
+ {
+  "kunci": "karier-06",
+  "halaman": "Karier",
+  "berkas": "karier.html",
+  "bagian": "Kenapa RTD Group",
+  "jenis": "butir",
+  "bawaan": "Proyek berjalan di tiga wilayah, jadi ruang belajarnya luas — dari lapangan sampai akad."
+ },
+ {
+  "kunci": "karier-07",
+  "halaman": "Karier",
+  "berkas": "karier.html",
+  "bagian": "Kenapa RTD Group",
+  "jenis": "butir",
+  "bawaan": "Tim kecil, keputusan cepat, dan atasan yang bisa Anda temui langsung."
+ },
+ {
+  "kunci": "karier-08",
+  "halaman": "Karier",
+  "berkas": "karier.html",
+  "bagian": "Kenapa RTD Group",
+  "jenis": "butir",
+  "bawaan": "Mitra perbankan nasional dengan rating Platinum."
+ },
+ {
+  "kunci": "galeri-01",
+  "halaman": "Galeri",
+  "berkas": "galeri.html",
+  "bagian": "Galeri Kegiatan",
+  "jenis": "judul",
+  "bawaan": "Di balik setiap rumah, | ada timnya"
+ },
+ {
+  "kunci": "galeri-02",
+  "halaman": "Galeri",
+  "berkas": "galeri.html",
+  "bagian": "Galeri Kegiatan",
+  "jenis": "paragraf",
+  "bawaan": "Grand opening, akad massal, pelatihan, dan perayaan bersama keluarga besar RTD Group."
+ },
+ {
+  "kunci": "kontak-01",
+  "halaman": "Kontak",
+  "berkas": "kontak.html",
+  "bagian": "Kontak",
+  "jenis": "judul",
+  "bawaan": "Hubungi | kami"
+ },
+ {
+  "kunci": "kontak-02",
+  "halaman": "Kontak",
+  "berkas": "kontak.html",
+  "bagian": "Kontak",
+  "jenis": "paragraf",
+  "bawaan": "Kantor pemasaran, WhatsApp, dan formulir. Kami membalas di hari kerja yang sama."
+ },
+ {
+  "kunci": "kontak-03",
+  "halaman": "Kontak",
+  "berkas": "kontak.html",
+  "bagian": "Kontak",
+  "jenis": "paragraf",
+  "bawaan": "Tim kami menghubungi balik di hari kerja yang sama. Belum tahu proyek mana yang cocok juga tidak apa-apa — pilih saja “belum tahu”, nanti kami bantu dari penghasilan dan lokasi kerja Anda."
+ },
+ {
+  "kunci": "kontak-04",
+  "halaman": "Kontak",
+  "berkas": "kontak.html",
+  "bagian": "Kantor Pemasaran",
+  "jenis": "judul",
+  "bawaan": "Datang langsung | ke kantor kami"
+ },
+ {
+  "kunci": "proyek-01",
+  "halaman": "Proyek",
+  "berkas": "proyek/index.html",
+  "bagian": "Proyek",
+  "jenis": "judul",
+  "bawaan": "Sepuluh perumahan | yang sedang dijual"
+ },
+ {
+  "kunci": "proyek-02",
+  "halaman": "Proyek",
+  "berkas": "proyek/index.html",
+  "bagian": "Proyek",
+  "jenis": "paragraf",
+  "bawaan": "Di Palembang, Banyuasin, dan Ogan Ilir. Pilih salah satu untuk melihat foto unit, siteplan, spesifikasi, dan fasilitasnya."
+ },
+ {
+  "kunci": "proyek-03",
+  "halaman": "Proyek",
+  "berkas": "proyek/index.html",
+  "bagian": "Rekam Jejak",
+  "jenis": "judul",
+  "bawaan": "Sepuluh perumahan lagi | yang sudah terbangun"
+ },
+ {
+  "kunci": "proyek-04",
+  "halaman": "Proyek",
+  "berkas": "proyek/index.html",
+  "bagian": "Rekam Jejak",
+  "jenis": "paragraf",
+  "bawaan": "Di luar sepuluh proyek yang sedang dijual, berikut perumahan yang sudah kami bangun dan serahkan sejak 2020."
+ },
+ {
+  "kunci": "proyek-05",
+  "halaman": "Proyek",
+  "berkas": "proyek/index.html",
+  "bagian": "Rekam Jejak",
+  "jenis": "paragraf",
+  "bawaan": "Alam Hijau 3 dibangun dalam dua tahap. Sumber: Company Profile RTD Group 2026."
+ }
+]

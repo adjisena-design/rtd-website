@@ -1,0 +1,1623 @@
+{
+ "versi": 0,
+ "diterbitkan": null,
+ "proyek": [
+  {
+   "id": "green-nature",
+   "peta": {
+    "lat": -2.8927718,
+    "lng": 104.6681867,
+    "id": "ChIJadlSWQBzOy4R3dPW1PWr-WA"
+   },
+   "nama": "The Green Nature",
+   "tahap": null,
+   "kategori": "subsidi",
+   "warna": "var(--proyek-hutan)",
+   "lokasi": "Pangkalan Benteng",
+   "alamat": "Jl. Pangkalan Benteng, Sukamoro, Kec. Talang Kelapa, Kab. Banyuasin, Sumatera Selatan",
+   "daerah": "banyuasin",
+   "tipe": "36/84",
+   "kt": 2,
+   "km": 1,
+   "unit": 106,
+   "harga": 166000000,
+   "dp": 5700000,
+   "angsuran20": 1072000,
+   "klaim": null,
+   "status": "tersedia",
+   "gbr": "green-nature.jpg",
+   "galeri": [
+    "proyek/green-nature-1.jpg",
+    "proyek/green-nature-2.jpg",
+    "proyek/green-nature-3.jpg"
+   ],
+   "siteplan": "proyek/green-nature-siteplan.jpg",
+   "fasilitas": [
+    "Musholla",
+    "Taman",
+    "Jalan cor beton",
+    "One gate system"
+   ],
+   "spekBeda": {}
+  },
+  {
+   "id": "tag-tahap-3",
+   "peta": {
+    "lat": -2.9952323,
+    "lng": 104.6713739,
+    "id": "ChIJy7dJKwCfOy4Rnf7UuAKL49U"
+   },
+   "nama": "Taman Asri Gandus 2",
+   "tahap": "Tahap 3",
+   "kategori": "subsidi",
+   "warna": "var(--proyek-laut)",
+   "lokasi": "Gandus, Palembang",
+   "alamat": "Jl. Talang Kemang RT 22 RW 06, Kel. Gandus, Kec. Gandus, Kota Palembang, Sumatera Selatan",
+   "daerah": "gandus",
+   "tipe": "36/84",
+   "kt": 2,
+   "km": 1,
+   "unit": 249,
+   "harga": null,
+   "dp": 3000000,
+   "angsuran20": null,
+   "klaim": "DP all in 3 juta",
+   "status": "tersedia",
+   "gbr": "tag-tahap-3.jpg",
+   "galeri": [
+    "proyek/tag-1.jpg",
+    "proyek/tag-2.jpg",
+    "proyek/tag-3.jpg"
+   ],
+   "siteplan": "proyek/tag-siteplan.jpg",
+   "fasilitas": [
+    "Kolam renang",
+    "Jogging track",
+    "Masjid",
+    "Lapangan olahraga",
+    "One gate system",
+    "Security 24 jam"
+   ],
+   "spekBeda": {}
+  },
+  {
+   "id": "tag-tahap-4",
+   "peta": {
+    "lat": -2.9952323,
+    "lng": 104.6713739,
+    "id": "ChIJy7dJKwCfOy4Rnf7UuAKL49U"
+   },
+   "nama": "Taman Asri Gandus 2",
+   "tahap": "Tahap 4",
+   "kategori": "subsidi",
+   "warna": "var(--proyek-laut)",
+   "lokasi": "Gandus, Palembang",
+   "alamat": "Jl. Talang Kemang RT 22 RW 06, Kel. Gandus, Kec. Gandus, Kota Palembang, Sumatera Selatan",
+   "daerah": "gandus",
+   "tipe": "36/84",
+   "kt": 2,
+   "km": 1,
+   "unit": 251,
+   "harga": null,
+   "dp": 3000000,
+   "angsuran20": null,
+   "klaim": "DP all in 3 juta",
+   "status": "tersedia",
+   "gbr": "tag-tahap-4.jpg",
+   "galeri": [
+    "proyek/tag-1.jpg",
+    "proyek/tag-2.jpg",
+    "proyek/tag-3.jpg"
+   ],
+   "siteplan": "proyek/tag-siteplan.jpg",
+   "fasilitas": [
+    "Kolam renang",
+    "Jogging track",
+    "Masjid",
+    "Lapangan olahraga",
+    "One gate system",
+    "Security 24 jam"
+   ],
+   "spekBeda": {}
+  },
+  {
+   "id": "tag-tahap-5",
+   "peta": {
+    "lat": -2.9952323,
+    "lng": 104.6713739,
+    "id": "ChIJy7dJKwCfOy4Rnf7UuAKL49U"
+   },
+   "nama": "Taman Asri Gandus 2",
+   "tahap": "Tahap 5",
+   "kategori": "subsidi",
+   "warna": "var(--proyek-laut)",
+   "lokasi": "Gandus, Palembang",
+   "alamat": "Jl. Talang Kemang RT 22 RW 06, Kel. Gandus, Kec. Gandus, Kota Palembang, Sumatera Selatan",
+   "daerah": "gandus",
+   "tipe": "36/84",
+   "kt": 2,
+   "km": 1,
+   "unit": 334,
+   "harga": null,
+   "dp": null,
+   "angsuran20": null,
+   "klaim": "Angsuran mulai 1 jutaan",
+   "status": "tersedia",
+   "gbr": "tag-tahap-5.jpg",
+   "galeri": [
+    "proyek/tag-1.jpg",
+    "proyek/tag-2.jpg",
+    "proyek/tag-3.jpg"
+   ],
+   "siteplan": "proyek/tag-siteplan.jpg",
+   "fasilitas": [
+    "Kolam renang",
+    "Jogging track",
+    "Masjid",
+    "Lapangan olahraga",
+    "One gate system",
+    "Security 24 jam"
+   ],
+   "spekBeda": {}
+  },
+  {
+   "id": "tag-signature",
+   "peta": {
+    "lat": -3.0018211,
+    "lng": 104.6738991,
+    "id": "ChIJ3VVtBwCfOy4RhLZBPIoFUr4"
+   },
+   "nama": "TAG Signature",
+   "tahap": null,
+   "kategori": "komersil",
+   "warna": "var(--proyek-batu)",
+   "lokasi": "Gandus, Palembang",
+   "alamat": "Jl. Sofyan Kenawas RT 21 RW 06, Kel. Gandus, Kec. Gandus, Kota Palembang, Sumatera Selatan",
+   "daerah": "gandus",
+   "tipe": "36/84",
+   "kt": 2,
+   "km": 1,
+   "unit": 126,
+   "harga": null,
+   "dp": null,
+   "angsuran20": null,
+   "klaim": "Hubungi pemasaran untuk harga",
+   "status": "tersedia",
+   "gbr": "tag-signature.jpg",
+   "galeri": [
+    "proyek/tag-signature-1.jpg"
+   ],
+   "siteplan": null,
+   "fasilitas": [
+    "Lampu taman",
+    "Playground",
+    "Jogging track",
+    "Lapangan olahraga",
+    "One gate system",
+    "Security 24 jam"
+   ],
+   "spekBeda": {}
+  },
+  {
+   "id": "green-village",
+   "peta": {
+    "lat": -2.9198997,
+    "lng": 104.8536817,
+    "id": "ChIJid9RfyN5Oy4RVZHMmQasqaY"
+   },
+   "nama": "The Green Village",
+   "tahap": null,
+   "kategori": "subsidi",
+   "warna": "var(--proyek-daun)",
+   "lokasi": "Merah Mata, Banyuasin",
+   "alamat": "3VJ3+2FV, Lorong Belitung, Perajen, Kec. Banyuasin I, Kab. Banyuasin, Sumatera Selatan",
+   "daerah": "banyuasin",
+   "tipe": "36/99",
+   "kt": 2,
+   "km": 1,
+   "unit": 270,
+   "harga": null,
+   "dp": null,
+   "angsuran20": null,
+   "klaim": "Angsuran mulai 1 juta, langsung huni",
+   "status": "tersedia",
+   "gbr": "green-village.jpg",
+   "galeri": [
+    "proyek/green-village-1.jpg",
+    "proyek/green-village-2.jpg"
+   ],
+   "siteplan": "proyek/green-village-siteplan.jpg",
+   "fasilitas": [
+    "Musholla",
+    "Taman",
+    "Playground"
+   ],
+   "spekBeda": {}
+  },
+  {
+   "id": "grand-athmar-indralaya",
+   "peta": {
+    "lat": -3.2040328,
+    "lng": 104.6178108,
+    "id": "ChIJ8YP2AAC9Oy4RYtZt0xDbQ7A"
+   },
+   "nama": "Grand Athmar Indralaya",
+   "tahap": null,
+   "kategori": "subsidi",
+   "warna": "var(--proyek-kayu)",
+   "lokasi": "Indralaya Utara, Ogan Ilir",
+   "alamat": "Dusun II, Desa Tanjung Baru, Kec. Indralaya Utara, Kab. Ogan Ilir, Sumatera Selatan",
+   "daerah": "ogan-ilir",
+   "tipe": "36/96",
+   "kt": 2,
+   "km": 1,
+   "unit": 298,
+   "harga": null,
+   "dp": 1000000,
+   "angsuran20": null,
+   "klaim": "DP mulai 1 juta",
+   "status": "tersedia",
+   "gbr": "grand-athmar-indralaya.jpg",
+   "galeri": [
+    "proyek/grand-athmar-indralaya-1.jpg",
+    "proyek/grand-athmar-indralaya-2.jpg",
+    "proyek/grand-athmar-indralaya-3.jpg"
+   ],
+   "siteplan": null,
+   "fasilitas": [
+    "Masjid",
+    "Taman",
+    "Kios",
+    "Jogging track",
+    "Playground",
+    "Pos security"
+   ],
+   "spekBeda": {}
+  },
+  {
+   "id": "grand-athmar-sematang",
+   "peta": {
+    "lat": -2.9122111,
+    "lng": 104.8194526,
+    "id": "ChIJVfsGFKlxOy4R7eBf_eUW8Zg"
+   },
+   "nama": "Grand Athmar Sematang Borang",
+   "tahap": null,
+   "kategori": "subsidi",
+   "warna": "var(--proyek-kayu)",
+   "lokasi": "Sematang Borang, Palembang",
+   "alamat": "Jl. Keramat Belido, Jl. Lumban Meranti, Mariana Ilir, Kec. Banyuasin I, Kab. Banyuasin, Sumatera Selatan",
+   "daerah": "palembang-lain",
+   "tipe": "36/98",
+   "kt": 2,
+   "km": 1,
+   "unit": 206,
+   "harga": null,
+   "dp": null,
+   "angsuran20": null,
+   "klaim": "Gratis pemasangan air PDAM",
+   "status": "tersedia",
+   "gbr": "grand-athmar-sematang.jpg",
+   "galeri": [
+    "proyek/grand-athmar-sematang-1.jpg",
+    "proyek/grand-athmar-sematang-2.jpg",
+    "proyek/grand-athmar-sematang-3.jpg"
+   ],
+   "siteplan": null,
+   "fasilitas": [
+    "Musholla",
+    "Taman",
+    "One gate system",
+    "PDAM"
+   ],
+   "spekBeda": {
+    "Air": "PDAM, gratis biaya pemasangan"
+   }
+  },
+  {
+   "id": "kartika-mataram",
+   "peta": {
+    "lat": -2.8664404,
+    "lng": 104.7095115,
+    "id": "ChIJ61BNFntzOy4RYsLfLzguqro"
+   },
+   "nama": "Kartika Mataram Residence",
+   "tahap": "Tahap 2",
+   "kategori": "subsidi",
+   "warna": "var(--proyek-bata)",
+   "lokasi": "Talang Kelapa, Banyuasin",
+   "alamat": "Jl. Mataram 2, Kec. Talang Kelapa, Kab. Banyuasin, Sumatera Selatan",
+   "daerah": "banyuasin",
+   "tipe": "36/84",
+   "kt": 2,
+   "km": 1,
+   "unit": 570,
+   "harga": null,
+   "dp": null,
+   "angsuran20": null,
+   "klaim": "Angsuran mulai 1 jutaan",
+   "status": "tersedia",
+   "gbr": "kartika-mataram.jpg",
+   "galeri": [
+    "proyek/kartika-mataram-1.jpg",
+    "proyek/kartika-mataram-2.jpg"
+   ],
+   "siteplan": null,
+   "fasilitas": [
+    "Masjid",
+    "Taman",
+    "Jogging track"
+   ],
+   "spekBeda": {}
+  },
+  {
+   "id": "casa-adiva",
+   "peta": {
+    "lat": -2.9260484,
+    "lng": 104.7572331,
+    "id": "ChIJKwXYawB3Oy4RdY5Fy6Wujxs"
+   },
+   "nama": "Casa Adiva",
+   "tahap": null,
+   "kategori": "komersil",
+   "warna": "var(--proyek-tanah)",
+   "lokasi": "Suka Maju, Kenten",
+   "alamat": "Jl. Puspa Negara, Suka Maju, Kec. Sako, Kota Palembang, Sumatera Selatan",
+   "daerah": "palembang-lain",
+   "tipe": "65/85",
+   "kt": 3,
+   "km": 2,
+   "unit": 17,
+   "harga": null,
+   "dp": 0,
+   "angsuran20": null,
+   "klaim": "Town house 2 lantai · DP 0, booking 5 juta",
+   "status": "tersedia",
+   "gbr": "casa-adiva.jpg",
+   "galeri": [
+    "proyek/casa-adiva-2.jpg",
+    "proyek/casa-adiva-3.jpg",
+    "proyek/casa-adiva-4.jpg"
+   ],
+   "siteplan": "proyek/casa-adiva-siteplan.jpg",
+   "fasilitas": [
+    "Taman",
+    "Town house 2 lantai"
+   ],
+   "spekBeda": {}
+  }
+ ],
+ "portofolio": [
+  {
+   "id": "kartika-mataram-residence-tahap-1",
+   "jenis": "perumahan",
+   "nama": "Kartika Mataram Residence",
+   "tahap": "Tahap 1",
+   "area": "Talang Kelapa, Banyuasin",
+   "tipe": "36/91",
+   "unit": 150,
+   "proyek": 1
+  },
+  {
+   "id": "taman-asri-gandus-2-tahap-1",
+   "jenis": "perumahan",
+   "nama": "Taman Asri Gandus 2",
+   "tahap": "Tahap 1",
+   "area": "Gandus, Palembang",
+   "tipe": "36/96",
+   "unit": 150,
+   "proyek": 1
+  },
+  {
+   "id": "taman-asri-gandus-2-tahap-2",
+   "jenis": "perumahan",
+   "nama": "Taman Asri Gandus 2",
+   "tahap": "Tahap 2",
+   "area": "Gandus, Palembang",
+   "tipe": "36/84",
+   "unit": 267,
+   "proyek": 1
+  },
+  {
+   "id": "surya-akbar-gemilang",
+   "jenis": "perumahan",
+   "nama": "Surya Akbar Gemilang",
+   "tahap": null,
+   "area": "Demang Lebar Daun, Palembang",
+   "tipe": "36/91",
+   "unit": 317,
+   "proyek": 1
+  },
+  {
+   "id": "grand-talang-betutu-indah",
+   "jenis": "perumahan",
+   "nama": "Grand Talang Betutu Indah",
+   "tahap": null,
+   "area": "Talang Betutu, Palembang",
+   "tipe": "36/84",
+   "unit": 108,
+   "proyek": 1
+  },
+  {
+   "id": "palem-emas-1",
+   "jenis": "perumahan",
+   "nama": "Palem Emas 1",
+   "tahap": null,
+   "area": "Talang Betutu, Palembang",
+   "tipe": "36/84",
+   "unit": 61,
+   "proyek": 1
+  },
+  {
+   "id": "palem-emas-2",
+   "jenis": "perumahan",
+   "nama": "Palem Emas 2",
+   "tahap": null,
+   "area": "Talang Betutu, Palembang",
+   "tipe": "36/90",
+   "unit": 108,
+   "proyek": 1
+  },
+  {
+   "id": "grand-pangkalan-benteng-indah",
+   "jenis": "perumahan",
+   "nama": "Grand Pangkalan Benteng Indah",
+   "tahap": null,
+   "area": "Talang Kelapa, Banyuasin",
+   "tipe": "36/84",
+   "unit": 103,
+   "proyek": 1
+  },
+  {
+   "id": "alam-hijau-3-dua-tahap",
+   "jenis": "perumahan",
+   "nama": "Alam Hijau 3",
+   "tahap": "dua tahap",
+   "area": "Gandus, Palembang",
+   "tipe": "36/84",
+   "unit": 117,
+   "proyek": 2
+  },
+  {
+   "id": "ruko-grand-athmar-indralaya",
+   "jenis": "ruko",
+   "nama": "Ruko Grand Athmar Indralaya",
+   "tahap": null,
+   "area": "Indralaya Utara, Ogan Ilir",
+   "tipe": "4×12 / 4×20 m",
+   "unit": 37,
+   "proyek": 1
+  }
+ ],
+ "spesifikasi": [
+  {
+   "id": "pondasi",
+   "baris": "Pondasi",
+   "nilai": "Bata merah + plat setempat"
+  },
+  {
+   "id": "struktur",
+   "baris": "Struktur",
+   "nilai": "Beton bertulang"
+  },
+  {
+   "id": "dinding",
+   "baris": "Dinding",
+   "nilai": "Bata merah diplester, plamir, finishing cat"
+  },
+  {
+   "id": "lantai",
+   "baris": "Lantai",
+   "nilai": "Keramik 40 × 40, kamar mandi keramik 20 × 20"
+  },
+  {
+   "id": "daun-pintu",
+   "baris": "Daun pintu",
+   "nilai": "Kayu kelas II"
+  },
+  {
+   "id": "pintu-kamar-mandi",
+   "baris": "Pintu kamar mandi",
+   "nilai": "PVC standar"
+  },
+  {
+   "id": "daun-jendela",
+   "baris": "Daun jendela",
+   "nilai": "Aluminium + kaca 5 mm"
+  },
+  {
+   "id": "penutup-atap",
+   "baris": "Penutup atap",
+   "nilai": "Genteng metal polos"
+  },
+  {
+   "id": "plafon",
+   "baris": "Plafon",
+   "nilai": "Rangka hollow + silica board"
+  },
+  {
+   "id": "listrik",
+   "baris": "Listrik",
+   "nilai": "1.300 watt"
+  },
+  {
+   "id": "air",
+   "baris": "Air",
+   "nilai": "Sumur gali atau PDAM, sesuai proyek"
+  },
+  {
+   "id": "jalan-komplek",
+   "baris": "Jalan komplek",
+   "nilai": "Cor beton"
+  }
+ ],
+ "legalitas": [
+  {
+   "id": "holding-akta-pendirian-perusahaan",
+   "kelompok": "holding",
+   "label": "Akta Pendirian Perusahaan",
+   "nilai": "No. 27",
+   "tgl": "15 Oktober 2020"
+  },
+  {
+   "id": "holding-sk-kemenkumham",
+   "kelompok": "holding",
+   "label": "SK Kemenkumham",
+   "nilai": "AHU-0054067.AH.01.01.TAHUN 2020",
+   "tgl": "19 Oktober 2020"
+  },
+  {
+   "id": "holding-nib",
+   "kelompok": "holding",
+   "label": "NIB",
+   "nilai": "0220510240235",
+   "tgl": "3 Desember 2020"
+  },
+  {
+   "id": "holding-tdp",
+   "kelompok": "holding",
+   "label": "TDP",
+   "nilai": "060614601853",
+   "tgl": "1 Oktober 2023"
+  },
+  {
+   "id": "holding-npwp",
+   "kelompok": "holding",
+   "label": "NPWP",
+   "nilai": "86.139.188.6-301.000",
+   "tgl": null
+  },
+  {
+   "id": "holding-siujk",
+   "kelompok": "holding",
+   "label": "SIUJK",
+   "nilai": "1-1671-2-00156-324222",
+   "tgl": "19 April 2024"
+  },
+  {
+   "id": "holding-sertifikat-keanggotaan-pi",
+   "kelompok": "holding",
+   "label": "Sertifikat Keanggotaan PI",
+   "nilai": "02.03.2020.102",
+   "tgl": "21 November 2024"
+  },
+  {
+   "id": "holding-direktur",
+   "kelompok": "holding",
+   "label": "Direktur",
+   "nilai": "M. Junestrada Diem",
+   "tgl": null
+  },
+  {
+   "id": "holding-komisaris",
+   "kelompok": "holding",
+   "label": "Komisaris",
+   "nilai": "Hj. Meriana Arsyad",
+   "tgl": null
+  },
+  {
+   "id": "yayasan-akta-pendirian-yayasan",
+   "kelompok": "yayasan",
+   "label": "Akta Pendirian Yayasan",
+   "nilai": "No. 21",
+   "tgl": "10 Maret 2023"
+  },
+  {
+   "id": "yayasan-sk-kemenkumham",
+   "kelompok": "yayasan",
+   "label": "SK Kemenkumham",
+   "nilai": "AHU-0004527.AH.01.04.Tahun 2023",
+   "tgl": "15 Maret 2023"
+  },
+  {
+   "id": "yayasan-npwp",
+   "kelompok": "yayasan",
+   "label": "NPWP",
+   "nilai": "40.264.000.7-307.000",
+   "tgl": "16 Maret 2023"
+  },
+  {
+   "id": "yayasan-pendiri-pembina",
+   "kelompok": "yayasan",
+   "label": "Pendiri / Pembina",
+   "nilai": "Huda Assalam · M. Junestrada Diem",
+   "tgl": null
+  },
+  {
+   "id": "yayasan-pengawas",
+   "kelompok": "yayasan",
+   "label": "Pengawas",
+   "nilai": "M. Hafizudin",
+   "tgl": null
+  },
+  {
+   "id": "yayasan-ketua",
+   "kelompok": "yayasan",
+   "label": "Ketua",
+   "nilai": "Ahmad Shiddiq",
+   "tgl": null
+  }
+ ],
+ "penghargaan": [
+  {
+   "id": "the-best-developer-subsidi-2025",
+   "sorot": true,
+   "tahun": "2025",
+   "nama": "The Best Developer Subsidi",
+   "ket": "Penilaian Bank BTN atas kinerja penyaluran KPR bersubsidi sepanjang tahun."
+  },
+  {
+   "id": "the-best-developer-yasa-griya-2025",
+   "sorot": true,
+   "tahun": "2025",
+   "nama": "The Best Developer Yasa Griya",
+   "ket": "Untuk kinerja pembiayaan konstruksi perumahan — menilai cara kami membangun, bukan cara kami menjual."
+  },
+  {
+   "id": "the-best-commercial-financing-developer-2024",
+   "sorot": true,
+   "tahun": "2024",
+   "nama": "The Best Commercial Financing Developer",
+   "ket": "Diberikan atas kualitas pembiayaan komersial dan ketepatan realisasi proyek."
+  },
+  {
+   "id": "pengembang-realisasi-terbanyak-kcps-2024",
+   "sorot": false,
+   "ket": null,
+   "tahun": "2024",
+   "nama": "Pengembang Realisasi Terbanyak KCPS"
+  },
+  {
+   "id": "performance-pengembang-pembiayaan-konstruksi-btn-ib-di-atas-15-m-2024",
+   "sorot": false,
+   "ket": null,
+   "tahun": "2024",
+   "nama": "Performance Pengembang Pembiayaan Konstruksi BTN iB di atas 15 M"
+  },
+  {
+   "id": "pengembang-terloyal-2024",
+   "sorot": false,
+   "ket": null,
+   "tahun": "2024",
+   "nama": "Pengembang Terloyal"
+  },
+  {
+   "id": "investor-recovery-asset-btn-kc-syariah-palembang-2024",
+   "sorot": false,
+   "ket": null,
+   "tahun": "2024",
+   "nama": "Investor Recovery Asset BTN KC Syariah Palembang"
+  },
+  {
+   "id": "penghargaan-akad-terbanyak-peringkat-3-2024",
+   "sorot": false,
+   "ket": null,
+   "tahun": "2024",
+   "nama": "Penghargaan Akad Terbanyak Peringkat 3"
+  },
+  {
+   "id": "mitra-pengembang-perumahan-dengan-sarana-dan-prasarana-terbaik-2023",
+   "sorot": false,
+   "ket": null,
+   "tahun": "2023",
+   "nama": "Mitra Pengembang — Perumahan dengan Sarana dan Prasarana Terbaik"
+  },
+  {
+   "id": "mitra-pengembang-kinerja-pembiayaan-konstruksi-terbaik-2023",
+   "sorot": false,
+   "ket": null,
+   "tahun": "2023",
+   "nama": "Mitra Pengembang — Kinerja Pembiayaan Konstruksi Terbaik"
+  },
+  {
+   "id": "mitra-pengembang-kontribusi-realisasi-pembiayaan-konstruksi-terbaik-2023",
+   "sorot": false,
+   "ket": null,
+   "tahun": "2023",
+   "nama": "Mitra Pengembang — Kontribusi Realisasi Pembiayaan Konstruksi Terbaik"
+  },
+  {
+   "id": "mitra-pengembang-kontribusi-realisasi-kcps-2023",
+   "sorot": false,
+   "ket": null,
+   "tahun": "2023",
+   "nama": "Mitra Pengembang — Kontribusi Realisasi KCPS"
+  },
+  {
+   "id": "mitra-pengembang-realisasi-akad-terbanyak-kpr-btn-bersubsidi-ib-2023",
+   "sorot": false,
+   "ket": null,
+   "tahun": "2023",
+   "nama": "Mitra Pengembang — Realisasi Akad Terbanyak KPR BTN Bersubsidi iB"
+  },
+  {
+   "id": "mitra-pengembang-terkolaboratif-2023",
+   "sorot": false,
+   "ket": null,
+   "tahun": "2023",
+   "nama": "Mitra Pengembang — Terkolaboratif"
+  },
+  {
+   "id": "developer-dengan-kontribusi-untuk-bank-btn-syariah",
+   "sorot": false,
+   "ket": null,
+   "tahun": null,
+   "nama": "Developer dengan kontribusi untuk Bank BTN Syariah"
+  }
+ ],
+ "testimoni": [
+  {
+   "id": "asti-kumala-sari",
+   "isi": "Sebagai salah satu pengembang properti terdepan di Kota Palembang, RTD Group telah membuktikan diri tidak hanya sebagai developer yang membangun hunian, tetapi juga sebagai market leader dalam pengembangan kawasan yang berkelanjutan. Kepercayaan perbankan, termasuk rating Platinum dari Bank BTN dan BTN Syariah, menjadi bukti nyata atas kapabilitas mereka dalam manajemen keuangan.",
+   "nama": "Asti Kumala Sari",
+   "jabatan": "Branch Manager PT Bank Syariah Nasional Tbk, Kantor Cabang Palembang"
+  },
+  {
+   "id": "m-saktiardy-wijaya",
+   "isi": "Kekuatan sinergi dan kolaborasi yang tinggi, itulah kalimat yang tepat menggambarkan budaya kerja RTD Group. RTD Group sangat fokus terhadap kualitas bangunan dan filtering konsumen, sehingga mampu menciptakan kawasan hunian yang baik dan lingkungan yang harmonis.",
+   "nama": "M. Saktiardy Wijaya",
+   "jabatan": "Commercial, Small and Medium Financing Head, Bank BTN Kantor Cabang Syariah Palembang"
+  },
+  {
+   "id": "ferdiyan-ganesha-s-h-m-h-c-m",
+   "isi": "RTD Group adalah pengembang rumah subsidi yang menawarkan skema pembelian sesuai kebutuhan konsumen dengan kualitas bangunan yang melebihi standar.",
+   "nama": "Ferdiyan Ganesha, S.H., M.H., C.M.",
+   "jabatan": "Kreator Kelacare Hukum"
+  },
+  {
+   "id": "dr-firmansyah-arifin-s-e-m-m-ak-c-a-c-s-r-s",
+   "isi": "RTD Group merupakan solusi investasi properti bagi semua konsumen yang ingin memiliki investasi properti yang berkualitas dan amanah.",
+   "nama": "Dr. Firmansyah Arifin, S.E., M.M., Ak., C.A., C.S.R.S.",
+   "jabatan": "Direktur CV Ghanim Amanah · Anggota IAI"
+  }
+ ],
+ "tim": [
+  {
+   "id": "junestrada-diem",
+   "nama": "Dr. M. Junestrada Diem, A.Md.Par., S.E., M.Si.",
+   "panggil": "M. Junestrada Diem",
+   "jabatan": "Direktur dan Pemilik",
+   "direksi": true,
+   "foto": null,
+   "bio": [
+    "Mendirikan dan memimpin RTD Group sejak 2020. Sebelumnya hampir sepuluh tahun di Bank Tabungan Negara Kantor Cabang Syariah Palembang, memimpin unit pembiayaan konsumer KPR, pendanaan komersial, dan mutu layanan.",
+    "Sejak 2018 menjadi dosen tetap di FEBI UIN Raden Fatah Palembang. Pendidikannya berlapis dari perhotelan, manajemen pemasaran, sampai doktor ilmu manajemen sumber daya manusia. Juga pendiri dan pembina Yayasan Al-Mukmin Darunnajah Center."
+   ],
+   "cv": [
+    {
+     "judul": "Pendidikan",
+     "isi": [
+      {
+       "tahun": "2026",
+       "ket": "Program Doktor Ilmu Manajemen (SDM), Pascasarjana Universitas Sriwijaya"
+      },
+      {
+       "tahun": "2014",
+       "ket": "Magister Ilmu Manajemen (SDM), Pascasarjana Universitas Sriwijaya"
+      },
+      {
+       "tahun": "2004",
+       "ket": "Sarjana Manajemen Pemasaran, Fakultas Ekonomi Universitas Sriwijaya"
+      },
+      {
+       "tahun": "2000",
+       "ket": "Perhotelan, Sekolah Tinggi Pariwisata Bandung (NHI)"
+      }
+     ]
+    },
+    {
+     "judul": "Pengalaman kerja",
+     "isi": [
+      {
+       "tahun": "2020 – sekarang",
+       "ket": "Direktur, PT Rama Trimitra Development"
+      },
+      {
+       "tahun": "2018 – sekarang",
+       "ket": "Dosen Tetap Non-ASN, FEBI UIN Raden Fatah Palembang"
+      },
+      {
+       "tahun": "2019 – 2020",
+       "ket": "Operational Manager, PT Sumatera Agung Perkasa dan PT Lestari Propertindo Mandiri"
+      },
+      {
+       "tahun": "2008 – 2017",
+       "ket": "Mortgage Consumer Financing Unit Head, Consumer Commercial Funding Unit Head, dan Service Quality Unit Head, PT Bank Tabungan Negara (Persero) Tbk KC Syariah Palembang"
+      },
+      {
+       "tahun": "2007 – 2008",
+       "ket": "Operational Manager, PT Dwi Pantara Tour & Travel Palembang"
+      },
+      {
+       "tahun": "2005 – 2008",
+       "ket": "Supervisor, PT Sriwijaya Air Palembang"
+      },
+      {
+       "tahun": "2005 – 2022",
+       "ket": "Pengajar Kepariwisataan dan Motivasi Kerja, LKPP Palembang"
+      }
+     ]
+    },
+    {
+     "judul": "Organisasi",
+     "isi": [
+      {
+       "tahun": "2018 – 2024",
+       "ket": "Pembina DEMAF, KORSA, IPPF, LABS, dan PAKIES FEBI UIN Raden Fatah Palembang"
+      },
+      {
+       "tahun": "2011 – 2015",
+       "ket": "Bidang Diklat, HPI DPC Sumatera Selatan"
+      },
+      {
+       "tahun": "2007 – 2010",
+       "ket": "Koordinator Bidang Organisasi, HPI DPC Sumatera Selatan"
+      },
+      {
+       "tahun": "2007 – 2009",
+       "ket": "Ketua Umum Ikatan Bujang Gadis Kampus Sumatera Selatan"
+      },
+      {
+       "tahun": "2011, 2013",
+       "ket": "Juri Duta Bahasa Sumatera Selatan"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "huda-assalam",
+   "nama": "Huda Assalam",
+   "panggil": null,
+   "jabatan": "Direktur dan Pemilik",
+   "direksi": true,
+   "foto": null,
+   "bio": [
+    "Bersama M. Junestrada Diem memiliki dan memimpin RTD Group. Juga pendiri dan pembina Yayasan Al-Mukmin Darunnajah Center."
+   ],
+   "cv": []
+  },
+  {
+   "id": "ade-saputra",
+   "nama": "Ade Saputra",
+   "panggil": null,
+   "jabatan": "Operational Manager",
+   "direksi": false,
+   "foto": null,
+   "bio": [],
+   "cv": []
+  },
+  {
+   "id": "teddy-wijaya",
+   "nama": "Teddy Wijaya",
+   "panggil": null,
+   "jabatan": "Field Manager",
+   "direksi": false,
+   "foto": null,
+   "bio": [],
+   "cv": []
+  },
+  {
+   "id": "romi-febriansyah",
+   "nama": "Romi Febriansyah",
+   "panggil": null,
+   "jabatan": "Marketing Manager",
+   "direksi": false,
+   "foto": null,
+   "bio": [],
+   "cv": []
+  },
+  {
+   "id": "putra-ady-kesuma",
+   "nama": "Putra Ady Kesuma",
+   "panggil": null,
+   "jabatan": "Finance Manager",
+   "direksi": false,
+   "foto": null,
+   "bio": [],
+   "cv": []
+  },
+  {
+   "id": "yoga-juniansyah",
+   "nama": "Yoga Juniansyah",
+   "panggil": null,
+   "jabatan": "HRGA Manager",
+   "direksi": false,
+   "foto": null,
+   "bio": [],
+   "cv": []
+  },
+  {
+   "id": "nosvita-sari",
+   "nama": "Nosvita Sari",
+   "panggil": null,
+   "jabatan": "Administrasi Supervisor",
+   "direksi": false,
+   "foto": null,
+   "bio": [],
+   "cv": []
+  },
+  {
+   "id": "m-tio-amartha",
+   "nama": "M. Tio Amartha",
+   "panggil": null,
+   "jabatan": "Field Supervisor",
+   "direksi": false,
+   "foto": null,
+   "bio": [],
+   "cv": []
+  }
+ ],
+ "pemasaran": [
+  {
+   "id": "yuyun-safitri",
+   "nama": "Yuyun Safitri",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "amirul-mukminin",
+   "nama": "Amirul Mukminin",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "airin-pratiwi",
+   "nama": "Airin Pratiwi",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "melin-herlina",
+   "nama": "Melin Herlina",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "m-taufiq",
+   "nama": "M. Taufiq",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "eka-pajar-sari",
+   "nama": "Eka Pajar Sari",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "herdudi",
+   "nama": "Herdudi",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "amiril-teng",
+   "nama": "Amiril Teng",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "haydar-putra",
+   "nama": "Haydar Putra",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "ratzarwin-agusmen",
+   "nama": "Ratzarwin Agusmen",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "deus-muhaimin",
+   "nama": "Deus Muhaimin",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "midis-purnando",
+   "nama": "Midis Purnando",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "rian-pratama",
+   "nama": "Rian Pratama",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "m-rommi-adi-dinata",
+   "nama": "M. Rommi Adi Dinata",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "anjas-asmara",
+   "nama": "Anjas Asmara",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "imam-samudra",
+   "nama": "Imam Samudra",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "m-sofyan-atsauri",
+   "nama": "M. Sofyan Atsauri",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "dina-nindi-yanti",
+   "nama": "Dina Nindi Yanti",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "rofiko",
+   "nama": "Rofiko",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "arfiaga-prabus",
+   "nama": "Arfiaga Prabus",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "reca-wulansari",
+   "nama": "Reca Wulansari",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "esthie-avrillia-anggrieni",
+   "nama": "Esthie Avrillia Anggrieni",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "ricky-haris-munandar",
+   "nama": "Ricky Haris Munandar",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  },
+  {
+   "id": "yudha-pramona",
+   "nama": "Yudha Pramona",
+   "jabatan": "Marketing",
+   "foto": null,
+   "wa": null
+  }
+ ],
+ "bank": [
+  {
+   "id": "btn",
+   "nama": "Bank BTN",
+   "logo": null,
+   "peran": "keduanya",
+   "tautan": "https://www.btn.co.id",
+   "ket": "KPR bersubsidi dan pembiayaan konstruksi"
+  },
+  {
+   "id": "btn-syariah",
+   "nama": "BTN Syariah",
+   "logo": null,
+   "peran": "keduanya",
+   "tautan": "https://www.btn.co.id/id/Syariah",
+   "ket": "KPR syariah dan pembiayaan konstruksi"
+  }
+ ],
+ "hero": [
+  {
+   "id": "render-1",
+   "gbr": "hero/render-1.jpg",
+   "alt": "Render jalan utama dan deret rumah TAG Signature, Gandus"
+  },
+  {
+   "id": "render-2",
+   "gbr": "hero/render-2.jpg",
+   "alt": "Render deret rumah dan taman di TAG Signature"
+  },
+  {
+   "id": "render-3",
+   "gbr": "hero/render-3.jpg",
+   "alt": "Render deret rumah tipe 36 berfasad motif biru"
+  },
+  {
+   "id": "render-4",
+   "gbr": "hero/render-4.jpg",
+   "alt": "Render jalan lingkungan dan taman berderet pohon palem"
+  },
+  {
+   "id": "render-5",
+   "gbr": "hero/render-5.jpg",
+   "alt": "Render gerbang Taman Asri Gandus 2"
+  },
+  {
+   "id": "render-6",
+   "gbr": "hero/render-6.jpg",
+   "alt": "Render deret rumah dengan masjid lingkungan"
+  }
+ ],
+ "promo": [],
+ "berita": [
+  {
+   "id": "green-village-serah-terima",
+   "tanggal": "2026-10-28",
+   "kategori": "Proyek",
+   "utama": true,
+   "gbr": "hero/render-3.jpg",
+   "judul": "The Green Village memasuki tahap serah terima pertama",
+   "ringkas": "Unit tahap pertama di Merah Mata mulai diserahkan kepada pembeli.",
+   "isi": [
+    "Contoh isi — ganti dengan berita asli. Unit tahap pertama di The Green Village, Merah Mata, mulai diserahkan kepada pembeli bulan ini.",
+    "Serah terima dilakukan setelah akad kredit dan pemeriksaan unit bersama pembeli."
+   ]
+  },
+  {
+   "id": "best-developer-subsidi-2025",
+   "tanggal": "2026-09-15",
+   "kategori": "Penghargaan",
+   "gbr": "hero/render-1.jpg",
+   "judul": "RTD Group menerima The Best Developer Subsidi 2025",
+   "ringkas": "Penghargaan diberikan Bank BTN atas kinerja penyaluran KPR bersubsidi.",
+   "isi": [
+    "Contoh isi — ganti dengan berita asli. Bank BTN memberikan penghargaan The Best Developer Subsidi 2025 kepada RTD Group."
+   ],
+   "utama": false
+  },
+  {
+   "id": "syarat-kpr-subsidi",
+   "tanggal": "2026-08-02",
+   "kategori": "Panduan",
+   "gbr": "hero/render-4.jpg",
+   "judul": "Syarat dan berkas KPR subsidi yang perlu disiapkan",
+   "ringkas": "Panduan singkat bagi pembeli rumah pertama.",
+   "isi": [
+    "Contoh isi — ganti dengan artikel asli. Siapkan KTP, KK, surat nikah, slip gaji atau surat keterangan usaha, rekening koran, NPWP, dan surat keterangan belum memiliki rumah."
+   ],
+   "utama": false
+  },
+  {
+   "id": "gerbang-tag-2",
+   "tanggal": "2026-07-10",
+   "kategori": "Proyek",
+   "gbr": "hero/render-5.jpg",
+   "judul": "Gerbang baru Taman Asri Gandus 2 mulai dibangun",
+   "ringkas": "Gerbang utama dan pos keamanan untuk tahap 3 dan 4.",
+   "isi": [
+    "Contoh isi — ganti dengan berita asli."
+   ],
+   "utama": false
+  }
+ ],
+ "karier": [
+  {
+   "id": "marketing-executive",
+   "posisi": "Marketing Executive",
+   "tipe": "Penuh waktu",
+   "lokasi": "Palembang",
+   "buka": true,
+   "ringkas": "Memasarkan unit di proyek Gandus dan Banyuasin, mendampingi pembeli sampai akad.",
+   "tugas": [
+    "Menindaklanjuti calon pembeli dari pameran, media sosial, dan kantor pemasaran.",
+    "Mendampingi pembeli menyiapkan berkas KPR sampai akad."
+   ],
+   "syarat": [
+    "Minimal SMA/SMK sederajat.",
+    "Berpengalaman di penjualan properti menjadi nilai tambah.",
+    "Memiliki kendaraan sendiri."
+   ]
+  },
+  {
+   "id": "site-supervisor",
+   "posisi": "Site Supervisor",
+   "tipe": "Penuh waktu",
+   "lokasi": "Indralaya, Ogan Ilir",
+   "buka": true,
+   "ringkas": "Mengawasi mutu pekerjaan dan ketepatan jadwal di lapangan.",
+   "tugas": [
+    "Mengawasi pekerjaan kontraktor sesuai spesifikasi standar RTD.",
+    "Menyusun laporan progres mingguan."
+   ],
+   "syarat": [
+    "Minimal D3 Teknik Sipil.",
+    "Bersedia ditempatkan di lokasi proyek."
+   ]
+  },
+  {
+   "id": "drafter",
+   "posisi": "Drafter",
+   "tipe": "Penuh waktu",
+   "lokasi": "Palembang",
+   "buka": false,
+   "ringkas": "Menyiapkan gambar kerja, denah, dan siteplan untuk proyek berjalan.",
+   "tugas": [
+    "Menyiapkan gambar kerja dan siteplan."
+   ],
+   "syarat": [
+    "Menguasai AutoCAD."
+   ]
+  }
+ ],
+ "galeri": [
+  {
+   "id": "akad-massal-2023",
+   "judul": "Akad KPR Massal 2023",
+   "waktu": "27 September 2023",
+   "isi": [
+    "Akad KPR massal bersama RTD Group di Grand Atyasa Convention Center Palembang berjalan lancar, berkat antusiasme dan ketertiban #SobatRTDGroup dalam mengikuti prosedur.",
+    "Terima kasih kepada Bank BTN, BTN Syariah, Bank BJB, dan para notaris yang ikut menyukseskan acara ini. Sampai bertemu di akad massal berikutnya."
+   ],
+   "foto": [
+    "galeri/akad-massal-2023-8.jpg",
+    "galeri/akad-massal-2023-1.jpg",
+    "galeri/akad-massal-2023-2.jpg",
+    "galeri/akad-massal-2023-3.jpg",
+    "galeri/akad-massal-2023-4.jpg",
+    "galeri/akad-massal-2023-5.jpg",
+    "galeri/akad-massal-2023-6.jpg",
+    "galeri/akad-massal-2023-7.jpg"
+   ]
+  },
+  {
+   "id": "hut-ri-78",
+   "judul": "HUT RI ke-78",
+   "waktu": "Agustus 2023",
+   "isi": [
+    "Keseruan tim RTD Group menyambut Hari Kemerdekaan Indonesia ke-78 dengan lomba dan senam bersama di kantor."
+   ],
+   "foto": [
+    "galeri/hut-ri-78-4.jpg",
+    "galeri/hut-ri-78-1.jpg",
+    "galeri/hut-ri-78-2.jpg",
+    "galeri/hut-ri-78-3.jpg",
+    "galeri/hut-ri-78-5.jpg",
+    "galeri/hut-ri-78-6.jpg",
+    "galeri/hut-ri-78-7.jpg",
+    "galeri/hut-ri-78-8.jpg",
+    "galeri/hut-ri-78-9.jpg",
+    "galeri/hut-ri-78-10.jpg",
+    "galeri/hut-ri-78-11.jpg",
+    "galeri/hut-ri-78-12.jpg",
+    "galeri/hut-ri-78-13.jpg",
+    "galeri/hut-ri-78-14.jpg",
+    "galeri/hut-ri-78-15.jpg",
+    "galeri/hut-ri-78-16.jpg",
+    "galeri/hut-ri-78-17.jpg",
+    "galeri/hut-ri-78-18.jpg",
+    "galeri/hut-ri-78-19.jpg",
+    "galeri/hut-ri-78-20.jpg",
+    "galeri/hut-ri-78-21.jpg",
+    "galeri/hut-ri-78-22.jpg",
+    "galeri/hut-ri-78-23.jpg",
+    "galeri/hut-ri-78-24.jpg"
+   ]
+  },
+  {
+   "id": "grand-opening-tag2-tahap2",
+   "judul": "Grand Opening Taman Asri Gandus 2 Tahap 2",
+   "waktu": "Juli 2023",
+   "isi": [
+    "Peresmian Perumahan Taman Asri Gandus 2 Tahap 2 dihadiri Bapak H. Herman Deru, Gubernur Sumatera Selatan.",
+    "Bersamaan dengan itu diresmikan pula Yayasan Al-Mukmin Darunnajah Center di Jl. TPH. Sofyan Kenawas, Perumahan Taman Asri Gandus 2 Tahap 2, Blok EA 04–EA 05."
+   ],
+   "foto": [
+    "galeri/grand-opening-tag2-tahap2-1.jpg",
+    "galeri/grand-opening-tag2-tahap2-2.jpg",
+    "galeri/grand-opening-tag2-tahap2-3.jpg",
+    "galeri/grand-opening-tag2-tahap2-4.jpg",
+    "galeri/grand-opening-tag2-tahap2-5.jpg",
+    "galeri/grand-opening-tag2-tahap2-6.jpg",
+    "galeri/grand-opening-tag2-tahap2-7.jpg",
+    "galeri/grand-opening-tag2-tahap2-8.jpg"
+   ]
+  },
+  {
+   "id": "employee-gathering-jogja-bandung",
+   "judul": "Employee Gathering Jogja–Bandung",
+   "waktu": null,
+   "isi": [
+    "Perjalanan tim RTD Group: Candi Prambanan, arung jeram di Sungai Elo, Museum Mini Sisa Hartaku, Pantai Parangtritis, Puncak Becici, HeHa Sky View, belanja oleh-oleh khas Jogja, lalu ke Bandung dan D’Castello."
+   ],
+   "foto": [
+    "galeri/employee-gathering-jogja-bandung-1.jpg",
+    "galeri/employee-gathering-jogja-bandung-2.jpg",
+    "galeri/employee-gathering-jogja-bandung-3.jpg",
+    "galeri/employee-gathering-jogja-bandung-4.jpg",
+    "galeri/employee-gathering-jogja-bandung-5.jpg",
+    "galeri/employee-gathering-jogja-bandung-6.jpg",
+    "galeri/employee-gathering-jogja-bandung-7.jpg",
+    "galeri/employee-gathering-jogja-bandung-8.jpg",
+    "galeri/employee-gathering-jogja-bandung-9.jpg",
+    "galeri/employee-gathering-jogja-bandung-10.jpg",
+    "galeri/employee-gathering-jogja-bandung-11.jpg",
+    "galeri/employee-gathering-jogja-bandung-12.jpg",
+    "galeri/employee-gathering-jogja-bandung-13.jpg",
+    "galeri/employee-gathering-jogja-bandung-14.jpg",
+    "galeri/employee-gathering-jogja-bandung-15.jpg",
+    "galeri/employee-gathering-jogja-bandung-16.jpg",
+    "galeri/employee-gathering-jogja-bandung-17.jpg",
+    "galeri/employee-gathering-jogja-bandung-18.jpg",
+    "galeri/employee-gathering-jogja-bandung-19.jpg",
+    "galeri/employee-gathering-jogja-bandung-20.jpg",
+    "galeri/employee-gathering-jogja-bandung-21.jpg",
+    "galeri/employee-gathering-jogja-bandung-22.jpg",
+    "galeri/employee-gathering-jogja-bandung-23.jpg",
+    "galeri/employee-gathering-jogja-bandung-24.jpg",
+    "galeri/employee-gathering-jogja-bandung-25.jpg",
+    "galeri/employee-gathering-jogja-bandung-26.jpg",
+    "galeri/employee-gathering-jogja-bandung-27.jpg",
+    "galeri/employee-gathering-jogja-bandung-28.jpg",
+    "galeri/employee-gathering-jogja-bandung-29.jpg",
+    "galeri/employee-gathering-jogja-bandung-30.jpg",
+    "galeri/employee-gathering-jogja-bandung-31.jpg",
+    "galeri/employee-gathering-jogja-bandung-32.jpg",
+    "galeri/employee-gathering-jogja-bandung-33.jpg",
+    "galeri/employee-gathering-jogja-bandung-34.jpg",
+    "galeri/employee-gathering-jogja-bandung-35.jpg"
+   ]
+  },
+  {
+   "id": "eda-leadership",
+   "judul": "EDA: Leadership & Service Excellence Training",
+   "waktu": null,
+   "isi": [
+    "Employee Development Academy RTD Group: kelas service excellence oleh Carisna Aprianti, S.T.; public speaking & personal branding oleh M. Anggi Dwijaya, S.I.Kom.; asesmen psikologi oleh Gonny T. Wicaksono & tim Alugada; dan kelas kepemimpinan oleh Akhmad Gozali."
+   ],
+   "foto": [
+    "galeri/eda-leadership-1.jpg",
+    "galeri/eda-leadership-2.jpg",
+    "galeri/eda-leadership-3.jpg",
+    "galeri/eda-leadership-4.jpg",
+    "galeri/eda-leadership-5.jpg",
+    "galeri/eda-leadership-6.jpg",
+    "galeri/eda-leadership-7.jpg",
+    "galeri/eda-leadership-8.jpg",
+    "galeri/eda-leadership-9.jpg",
+    "galeri/eda-leadership-10.jpg",
+    "galeri/eda-leadership-11.jpg",
+    "galeri/eda-leadership-12.jpg",
+    "galeri/eda-leadership-13.jpg",
+    "galeri/eda-leadership-14.jpg",
+    "galeri/eda-leadership-15.jpg",
+    "galeri/eda-leadership-16.jpg"
+   ]
+  },
+  {
+   "id": "eda-damkar",
+   "judul": "EDA: Pelatihan K3 bersama Damkar",
+   "waktu": null,
+   "isi": [
+    "Pelatihan K3 dasar keadaan darurat dan penggunaan APAR bersama Dinas Pemadam Kebakaran Kota Palembang."
+   ],
+   "foto": [
+    "galeri/eda-damkar-1.jpg",
+    "galeri/eda-damkar-2.jpg",
+    "galeri/eda-damkar-3.jpg"
+   ]
+  },
+  {
+   "id": "hut-ri-77",
+   "judul": "HUT RI ke-77",
+   "waktu": "17 Agustus 2022",
+   "isi": [
+    "Peringatan Hari Kemerdekaan Indonesia ke-77 bersama tim RTD Group."
+   ],
+   "foto": [
+    "galeri/hut-ri-77-1.jpg",
+    "galeri/hut-ri-77-2.jpg",
+    "galeri/hut-ri-77-3.jpg"
+   ]
+  },
+  {
+   "id": "marketing-gathering-saungbambu",
+   "judul": "Marketing Gathering di Saung Bambu",
+   "waktu": null,
+   "isi": [],
+   "foto": [
+    "galeri/marketing-gathering-saungbambu-1.jpg",
+    "galeri/marketing-gathering-saungbambu-2.jpg"
+   ]
+  },
+  {
+   "id": "employee-gathering-bandung",
+   "judul": "Employee Gathering Bandung",
+   "waktu": null,
+   "isi": [],
+   "foto": [
+    "galeri/employee-gathering-bandung-1.jpg"
+   ]
+  }
+ ],
+ "yayasan_foto": [
+  {
+   "id": "belajar",
+   "gbr": "yayasan/belajar.jpg",
+   "ket": "Kegiatan belajar di LKSA Darul Falah"
+  },
+  {
+   "id": "sedekah-subuh",
+   "gbr": "yayasan/sedekah-subuh.jpg",
+   "ket": "Program Sedekah Subuh"
+  },
+  {
+   "id": "belajar-2",
+   "gbr": "yayasan/belajar-2.jpg",
+   "ket": "Belajar bersama anak asuh"
+  },
+  {
+   "id": "bakti-1",
+   "gbr": "yayasan/bakti-1.jpg",
+   "ket": "Bakti sosial yayasan"
+  },
+  {
+   "id": "wakaf",
+   "gbr": "yayasan/wakaf.jpg",
+   "ket": "Wakaf Al-Qur’an"
+  },
+  {
+   "id": "belajar-3",
+   "gbr": "yayasan/belajar-3.jpg",
+   "ket": "Pembinaan agama"
+  },
+  {
+   "id": "bakti-2",
+   "gbr": "yayasan/bakti-2.jpg",
+   "ket": "Bakti sosial yayasan"
+  },
+  {
+   "id": "yatim",
+   "gbr": "yayasan/yatim.jpg",
+   "ket": "Belanja bersama anak yatim"
+  },
+  {
+   "id": "penutup",
+   "gbr": "yayasan/penutup.jpg",
+   "ket": "Anak asuh LKSA Darul Falah"
+  }
+ ],
+ "reel": [
+  {
+   "id": "DfZQnz0TMTq",
+   "url": "https://www.instagram.com/reel/DfZQnz0TMTq/",
+   "judul": "Pindah ke rumah baru",
+   "akun": "ramadevelopmentplg",
+   "gbr": "sosial/reel-1.jpg"
+  },
+  {
+   "id": "DfWkUTDTqxS",
+   "url": "https://www.instagram.com/reel/DfWkUTDTqxS/",
+   "judul": "Kerja, kerja, kerja",
+   "akun": "ramadevelopmentplg",
+   "gbr": "sosial/reel-2.jpg"
+  },
+  {
+   "id": "DfPEaIcT2hV",
+   "url": "https://www.instagram.com/reel/DfPEaIcT2hV/",
+   "judul": "Townhouse Casa Adiva",
+   "akun": "rumahbaguspalembang",
+   "gbr": "sosial/reel-3.jpg"
+  },
+  {
+   "id": "DfHq5ijTEKy",
+   "url": "https://www.instagram.com/reel/DfHq5ijTEKy/",
+   "judul": "Cerita dari kantor",
+   "akun": "ramadevelopmentplg",
+   "gbr": "sosial/reel-4.jpg"
+  }
+ ],
+ "youtube": [
+  {
+   "id": "55C3YPLk1eI",
+   "judul": "Profil proyek RTD Group"
+  },
+  {
+   "id": "ELZ0bAsGNLI",
+   "judul": "Tur perumahan RTD Group"
+  },
+  {
+   "id": "SiczRu4PT9Y",
+   "judul": "Progres pembangunan RTD Group"
+  }
+ ],
+ "pengaturan": {
+  "kontak": {
+   "wa": "6282384299234",
+   "waTampil": "0823-8429-9234",
+   "email": "trimitrarama@gmail.com",
+   "ig": "ramadevelopmentplg",
+   "alamat": [
+    "Komplek Pergudangan Palembang Star",
+    "Jl. Letjen Harun Sohar No. AA02 Blok AA01",
+    "Kel. Kebun Bunga, Kec. Sukarami",
+    "Kota Palembang, Sumatera Selatan 30961"
+   ],
+   "jam": "Senin–Sabtu, 08.00–16.00 WIB",
+   "youtube": "https://www.youtube.com/channel/UCeFYjZ3-2V6sVQ38RNnYJ2Q",
+   "maps": "https://www.google.com/maps/search/?api=1&query=PT.+Rama+Trimitra+Development&query_place_id=ChIJVzLFImhzOy4RXGhRtoqhl6g"
+  },
+  "angka": {
+   "unit": null,
+   "unit_label": "Unit dalam portofolio",
+   "proyek": null,
+   "proyek_label": "Perumahan sejak 2020",
+   "dijual": null,
+   "dijual_label": "Proyek aktif dijual",
+   "btn": "15",
+   "btn_label": "Penghargaan Bank BTN",
+   "wilayah": "3",
+   "wilayah_label": "Kota dan kabupaten",
+   "rating": "Platinum",
+   "rating_label": "Rating Bank BTN & BTN Syariah",
+   "rentang": "2023–2025",
+   "rentang_label": "Tiga tahun berturut-turut"
+  },
+  "kpr": {
+   "bunga": 5,
+   "bunga_min": 5,
+   "bunga_maks": 12,
+   "tenor": [
+    10,
+    15,
+    20
+   ],
+   "tenor_awal": 20,
+   "harga_awal": 166000000,
+   "dp_awal": 3.5,
+   "dp_maks": 20,
+   "harga_min": 150000000,
+   "harga_maks": 750000000
+  },
+  "teks": {}
+ }
+}

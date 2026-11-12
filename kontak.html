@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=f8026bfd">
+<link rel="stylesheet" href="assets/css/style.css?v=ff31f2fb">
 </head>
 <body>
 <a class="lewati" href="#utama">Lompat ke isi utama</a>
@@ -57,8 +57,8 @@
   <div class="isi page-hero__isi">
     <div class="page-hero__kotak">
       <span class="label">Kontak</span>
-      <h1>Hubungi <span class="redup">kami</span></h1>
-      <p>Kantor pemasaran, WhatsApp, dan formulir. Kami membalas di hari kerja yang sama.</p>
+      <h1 data-teks="kontak-01">Hubungi <span class="redup">kami</span></h1>
+      <p data-teks="kontak-02">Kantor pemasaran, WhatsApp, dan formulir. Kami membalas di hari kerja yang sama.</p>
     </div>
   </div>
 </section>
@@ -67,7 +67,7 @@
   <div class="isi">
     <div class="kontak-grid">
       <div>
-        <p style="color:var(--tinta-700);font-size:17px;max-width:46ch">Tim kami menghubungi
+        <p style="color:var(--tinta-700);font-size:17px;max-width:46ch" data-teks="kontak-03">Tim kami menghubungi
         balik di hari kerja yang sama. Belum tahu proyek mana yang cocok juga tidak apa-apa — pilih saja
         “belum tahu”, nanti kami bantu dari penghasilan dan lokasi kerja Anda.</p>
         <div style="margin-top:36px;display:grid;gap:24px">
@@ -88,6 +88,7 @@
           <p class="bantu">Dipakai hanya untuk membalas pertanyaan Anda.</p></div>
         <div><label for="fProyek">Proyek yang diminati</label><select id="fProyek"></select></div>
         <div><label for="fPesan">Pesan (opsional)</label><textarea id="fPesan" placeholder="Pertanyaan atau kebutuhan Anda"></textarea></div>
+        <div class="lewati" aria-hidden="true"><label for="fSitus">Jangan diisi</label><input type="text" id="fSitus" tabindex="-1" autocomplete="off"></div>
         <button class="tbl tbl--utama" type="submit">Kirim</button>
         <p class="sukses" id="pesanSukses" hidden role="status">Terima kasih. Tim kami menghubungi Anda di hari kerja yang sama.</p>
         <p class="bantu">Data Anda tidak dibagikan ke pihak lain dan tidak dipakai untuk menawarkan produk di luar RTD.</p>
@@ -100,7 +101,7 @@
   <div class="isi">
     <div class="kepala">
       <span class="label">Kantor Pemasaran</span>
-      <h2 id="kantorJudul">Datang langsung <span class="redup">ke kantor kami</span></h2>
+      <h2 id="kantorJudul" data-teks="kontak-04">Datang langsung <span class="redup">ke kantor kami</span></h2>
     </div>
     <div class="peta-tata">
       <div class="peta">
@@ -114,7 +115,7 @@
       <aside class="kantor-info">
         <img src="img/kantor.jpg" alt="Gedung kantor RTD Group di Komplek Pergudangan Palembang Star" loading="lazy">
         <dl>
-          <div><dt>Jam buka</dt><dd>Senin–Sabtu, 08.00–16.00 WIB</dd></div>
+          <div><dt>Jam buka</dt><dd data-kontak="jam">Senin–Sabtu, 08.00–16.00 WIB</dd></div>
           <div><dt>WhatsApp</dt><dd><a href="https://wa.me/6282384299234">0823-8429-9234</a></dd></div>
           <div><dt>Email</dt><dd><a href="mailto:trimitrarama@gmail.com">trimitrarama@gmail.com</a></dd></div>
         </dl>
@@ -130,7 +131,7 @@
     <div class="footer__grid">
       <div>
         <img src="img/rtd-logo-emas-navy.png" alt="Rama Trimitra Development Group" width="180" height="56">
-        <p>Komplek Pergudangan Palembang Star,<br>Jl. Letjen Harun Sohar No. AA02 Blok AA01,<br>Kel. Kebun Bunga, Kec. Sukarami,<br>Kota Palembang, Sumatera Selatan 30961</p>
+        <p data-kontak="alamat">Komplek Pergudangan Palembang Star,<br>Jl. Letjen Harun Sohar No. AA02 Blok AA01,<br>Kel. Kebun Bunga, Kec. Sukarami,<br>Kota Palembang, Sumatera Selatan 30961</p>
         <p style="margin-top:12px"><a href="https://www.google.com/maps/search/?api=1&query=PT.+Rama+Trimitra+Development&query_place_id=ChIJVzLFImhzOy4RXGhRtoqhl6g" target="_blank" rel="noopener">Lihat di Google Maps →</a></p>
       </div>
       <div>
@@ -172,6 +173,7 @@
     </div>
   </div>
 </footer>
-<script src="assets/js/app.js?v=f8026bfd"></script>
+<script src="assets/js/konfigurasi.js?v=ff31f2fb"></script>
+<script src="assets/js/app.js?v=ff31f2fb"></script>
 </body>
 </html>

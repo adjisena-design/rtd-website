@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=f8026bfd">
+<link rel="stylesheet" href="assets/css/style.css?v=ff31f2fb">
 </head>
 <body>
 <a class="lewati" href="#utama">Lompat ke isi utama</a>
@@ -64,8 +64,8 @@
   </div>
   <div class="hero__isi">
     <span class="label">Developer Rumah Subsidi · Palembang, Banyuasin &amp; Ogan Ilir</span>
-    <h1>Rumah pertama, <span class="redup">dikerjakan dengan benar.</span></h1>
-    <p class="hero__sub">Dua puluh perumahan dan 3.808 unit sejak 2020. Spesifikasi kami tulis lengkap,
+    <h1 data-teks="index-01">Rumah pertama, <span class="redup">dikerjakan dengan benar.</span></h1>
+    <p class="hero__sub" data-teks="index-02">Dua puluh perumahan dan 3.808 unit sejak 2020. Spesifikasi kami tulis lengkap,
     angsuran kami tulis apa adanya — supaya Anda bisa menghitung sendiri sebelum memutuskan.</p>
     <div class="hero__aksi">
       <a class="tbl tbl--emas" href="proyek/">Lihat Proyek</a>
@@ -81,11 +81,21 @@
 <section class="bagian bagian--rapat">
   <div class="isi">
     <div class="angka-grid">
-      <div class="angka"><b id="angkaUnit">3.808</b><span>Unit dalam portofolio</span></div>
-      <div class="angka"><b id="angkaProyek">20</b><span>Perumahan sejak 2020</span></div>
-      <div class="angka"><b id="angkaDijual">10</b><span>Proyek aktif dijual</span></div>
-      <div class="angka"><b>15</b><span>Penghargaan Bank BTN</span></div>
+      <div class="angka" data-angka="unit"><b id="angkaUnit">3.808</b><span>Unit dalam portofolio</span></div>
+      <div class="angka" data-angka="proyek"><b id="angkaProyek">20</b><span>Perumahan sejak 2020</span></div>
+      <div class="angka" data-angka="dijual"><b id="angkaDijual">10</b><span>Proyek aktif dijual</span></div>
+      <div class="angka" data-angka="btn"><b>15</b><span>Penghargaan Bank BTN</span></div>
     </div>
+  </div>
+</section>
+
+<section class="bagian bagian--rapat promo-bagian" id="promo" aria-labelledby="promoJudul" hidden>
+  <div class="isi">
+    <div class="kepala kepala--rapat">
+      <span class="label">Promo</span>
+      <h2 id="promoJudul" data-teks="index-promo">Penawaran <span class="redup">bulan ini</span></h2>
+    </div>
+    <div class="promo-grid" id="promoDaftar"></div>
   </div>
 </section>
 
@@ -93,8 +103,8 @@
   <div class="isi">
     <div class="kepala">
       <span class="label">Proyek</span>
-      <h2 id="proyekJudul">Rumah dan perumahan <span class="redup">yang sedang kami jual</span></h2>
-      <p>Di Palembang, Banyuasin, dan Ogan Ilir. Angsuran yang tercantum adalah yang terendah, pada tenor 20 tahun.</p>
+      <h2 id="proyekJudul" data-teks="index-03">Rumah dan perumahan <span class="redup">yang sedang kami jual</span></h2>
+      <p data-teks="index-04">Di Palembang, Banyuasin, dan Ogan Ilir. Angsuran yang tercantum adalah yang terendah, pada tenor 20 tahun.</p>
     </div>
     <div class="saring" role="group" aria-label="Saring proyek">
       <button type="button" class="tbl tbl--kedua" data-saring="semua" aria-pressed="true">Semua</button>
@@ -114,13 +124,13 @@
   <div class="isi">
     <div class="angka-grid angka-grid--3" style="margin-bottom:56px">
       <div class="angka"><b id="pgJumlah">15</b><span>Penghargaan diterima</span></div>
-      <div class="angka"><b>Platinum</b><span>Rating Bank BTN &amp; BTN Syariah</span></div>
-      <div class="angka"><b>2023–2025</b><span>Tiga tahun berturut-turut</span></div>
+      <div class="angka" data-angka="rating"><b>Platinum</b><span>Rating Bank BTN &amp; BTN Syariah</span></div>
+      <div class="angka" data-angka="rentang"><b>2023–2025</b><span>Tiga tahun berturut-turut</span></div>
     </div>
     <div class="kepala" style="margin-bottom:0">
       <span class="label">Penghargaan</span>
-      <h2 id="pgJudul">Dinilai oleh pihak <span class="redup">yang menanggung risikonya</span></h2>
-      <p>Seluruh penghargaan ini diberikan Bank BTN dan BTN Syariah — lembaga yang memeriksa pembukuan,
+      <h2 id="pgJudul" data-teks="index-05">Dinilai oleh pihak <span class="redup">yang menanggung risikonya</span></h2>
+      <p data-teks="index-06">Seluruh penghargaan ini diberikan Bank BTN dan BTN Syariah — lembaga yang memeriksa pembukuan,
       kualitas konstruksi, dan ketepatan realisasi kami setiap tahun.</p>
     </div>
     <div class="pg-sorot" id="pgSorot"></div>
@@ -135,7 +145,11 @@
   <div class="isi">
     <div class="kepala">
       <span class="label">Testimoni</span>
-      <h2 id="tsJudul">Apa kata <span class="redup">mitra dan bank penyalur</span></h2>
+      <h2 id="tsJudul" data-teks="index-07">Apa kata <span class="redup">mitra dan bank penyalur</span></h2>
+    </div>
+    <div class="bank-pita" data-bank-bagian hidden>
+      <span class="label">Mitra perbankan</span>
+      <div class="bank-baris bank-baris--gelap" data-bank="ringkas"></div>
     </div>
     <div class="testi-grid" id="testimoniDaftar"></div>
   </div>
@@ -146,8 +160,8 @@
   <div class="isi">
     <div class="kepala">
       <span class="label">Simulasi KPR</span>
-      <h2 id="simJudul">Hitung dulu, <span class="redup">baru datang ke kantor</span></h2>
-      <p>Geser angkanya sampai ketemu cicilan yang sanggup Anda bayar tiap bulan selama bertahun-tahun.</p>
+      <h2 id="simJudul" data-teks="index-08">Hitung dulu, <span class="redup">baru datang ke kantor</span></h2>
+      <p data-teks="index-09">Geser angkanya sampai ketemu cicilan yang sanggup Anda bayar tiap bulan selama bertahun-tahun.</p>
     </div>
     <div class="sim-grid sim-kaca">
       <form class="sim-form" id="formSim" onsubmit="return false">
@@ -192,7 +206,7 @@
         <a class="tbl" href="kontak.html">Tanyakan kelayakan KPR saya</a>
       </div>
     </div>
-    <p class="catatan">Perhitungan memakai metode anuitas dan bersifat perkiraan. Angka final ditetapkan bank
+    <p class="catatan" data-teks="index-10">Perhitungan memakai metode anuitas dan bersifat perkiraan. Angka final ditetapkan bank
     penyalur pada saat akad, dan belum termasuk biaya provisi, asuransi, notaris, dan pajak. Syarat dan ketentuan berlaku.</p>
   </div>
 </section>
@@ -201,15 +215,15 @@
   <div class="isi">
     <div class="kepala">
       <span class="label">Cara Membeli</span>
-      <h2 id="caraJudul">Lima langkah <span class="redup">dari tanya sampai terima kunci</span></h2>
-      <p>Untuk sebagian besar pembeli kami, ini rumah pertama. Berikut urutannya supaya tidak ada kejutan.</p>
+      <h2 id="caraJudul" data-teks="index-11">Lima langkah <span class="redup">dari tanya sampai terima kunci</span></h2>
+      <p data-teks="index-12">Untuk sebagian besar pembeli kami, ini rumah pertama. Berikut urutannya supaya tidak ada kejutan.</p>
     </div>
     <div class="langkah-grid">
-      <article class="langkah"><div class="langkah__no" aria-hidden="true"></div><h3>Pilih unit</h3><p>Datang ke lokasi atau hubungi pemasaran. Lihat rumah contoh, pilih blok dan nomor unit yang masih tersedia.</p></article>
-      <article class="langkah"><div class="langkah__no" aria-hidden="true"></div><h3>Booking</h3><p>Bayar tanda jadi. Unit dikunci atas nama Anda dan tidak ditawarkan ke pembeli lain.</p></article>
-      <article class="langkah"><div class="langkah__no" aria-hidden="true"></div><h3>Berkas KPR</h3><p>KTP, KK, surat nikah, slip gaji atau surat keterangan usaha, rekening koran, NPWP, dan surat keterangan belum memiliki rumah.</p></article>
-      <article class="langkah"><div class="langkah__no" aria-hidden="true"></div><h3>Analisa bank</h3><p>Bank penyalur memeriksa kelayakan. Hasilnya keluar dalam hitungan minggu, dan kami kabari apa pun hasilnya.</p></article>
-      <article class="langkah"><div class="langkah__no" aria-hidden="true"></div><h3>Akad dan serah terima</h3><p>Tanda tangan akad kredit di hadapan notaris, lalu serah terima kunci sesuai jadwal yang disepakati.</p></article>
+      <article class="langkah"><div class="langkah__no" aria-hidden="true"></div><h3 data-teks="index-13">Pilih unit</h3><p data-teks="index-14">Datang ke lokasi atau hubungi pemasaran. Lihat rumah contoh, pilih blok dan nomor unit yang masih tersedia.</p></article>
+      <article class="langkah"><div class="langkah__no" aria-hidden="true"></div><h3 data-teks="index-15">Booking</h3><p data-teks="index-16">Bayar tanda jadi. Unit dikunci atas nama Anda dan tidak ditawarkan ke pembeli lain.</p></article>
+      <article class="langkah"><div class="langkah__no" aria-hidden="true"></div><h3 data-teks="index-17">Berkas KPR</h3><p data-teks="index-18">KTP, KK, surat nikah, slip gaji atau surat keterangan usaha, rekening koran, NPWP, dan surat keterangan belum memiliki rumah.</p></article>
+      <article class="langkah"><div class="langkah__no" aria-hidden="true"></div><h3 data-teks="index-19">Analisa bank</h3><p data-teks="index-20">Bank penyalur memeriksa kelayakan. Hasilnya keluar dalam hitungan minggu, dan kami kabari apa pun hasilnya.</p></article>
+      <article class="langkah"><div class="langkah__no" aria-hidden="true"></div><h3 data-teks="index-21">Akad dan serah terima</h3><p data-teks="index-22">Tanda tangan akad kredit di hadapan notaris, lalu serah terima kunci sesuai jadwal yang disepakati.</p></article>
     </div>
   </div>
 </section>
@@ -219,8 +233,8 @@
     <div class="sos-kepala">
       <div class="kepala" style="margin-bottom:0">
         <span class="label">Media Sosial</span>
-        <h2 id="sosJudul">Lihat sendiri <span class="redup">perkembangan di lapangan</span></h2>
-        <p>Progres pembangunan, unit siap huni, dan keseharian tim kami di Instagram dan YouTube.</p>
+        <h2 id="sosJudul" data-teks="index-23">Lihat sendiri <span class="redup">perkembangan di lapangan</span></h2>
+        <p data-teks="index-24">Progres pembangunan, unit siap huni, dan keseharian tim kami di Instagram dan YouTube.</p>
       </div>
       <a class="tbl tbl--kedua" href="https://instagram.com/ramadevelopmentplg" target="_blank" rel="noopener">Instagram @ramadevelopmentplg</a>
     </div>
@@ -229,7 +243,7 @@
     <div class="sos-kepala" style="margin-top:88px">
       <div>
         <span class="label">YouTube</span>
-        <h2 class="sos-sub">Tur proyek <span class="redup">dalam video</span></h2>
+        <h2 class="sos-sub" data-teks="index-25">Tur proyek <span class="redup">dalam video</span></h2>
       </div>
       <a class="tbl tbl--kedua" id="ytKanal" href="https://www.youtube.com/channel/UCeFYjZ3-2V6sVQ38RNnYJ2Q" target="_blank" rel="noopener">Kanal YouTube RTD Group</a>
     </div>
@@ -259,8 +273,8 @@
     <div class="kontak-grid">
       <div>
         <span class="label">Hubungi Kami</span>
-        <h2 id="hubJudul" style="font-size:clamp(30px,4vw,44px)">Hubungi pemasaran</h2>
-        <p style="margin-top:16px;color:var(--tinta-700);max-width:46ch">Tim kami menghubungi balik di hari
+        <h2 id="hubJudul" style="font-size:clamp(30px,4vw,44px)" data-teks="index-26">Hubungi pemasaran</h2>
+        <p style="margin-top:16px;color:var(--tinta-700);max-width:46ch" data-teks="index-27">Tim kami menghubungi balik di hari
         kerja yang sama. Belum tahu proyek mana yang cocok juga tidak apa-apa — pilih saja “belum tahu”,
         nanti kami bantu dari penghasilan dan lokasi kerja Anda.</p>
         <div style="margin-top:32px;display:grid;gap:20px">
@@ -277,6 +291,7 @@
         <div><label for="fWa">Nomor WhatsApp</label><input type="tel" id="fWa" inputmode="numeric" placeholder="0812-0000-0000" required autocomplete="tel">
           <p class="bantu">Dipakai hanya untuk membalas pertanyaan Anda.</p></div>
         <div><label for="fProyek">Proyek yang diminati</label><select id="fProyek"></select></div>
+        <div class="lewati" aria-hidden="true"><label for="fSitus">Jangan diisi</label><input type="text" id="fSitus" tabindex="-1" autocomplete="off"></div>
         <button class="tbl tbl--utama" type="submit">Kirim</button>
         <p class="sukses" id="pesanSukses" hidden role="status">Terima kasih. Tim kami menghubungi Anda di hari kerja yang sama.</p>
         <p class="bantu">Data Anda tidak dibagikan ke pihak lain dan tidak dipakai untuk menawarkan produk di luar RTD.</p>
@@ -289,7 +304,7 @@
   <div class="isi">
     <div class="kepala">
       <span class="label">Kantor Pemasaran</span>
-      <h2 id="kantorJudul">Datang langsung <span class="redup">ke kantor kami</span></h2>
+      <h2 id="kantorJudul" data-teks="index-28">Datang langsung <span class="redup">ke kantor kami</span></h2>
     </div>
     <div class="peta-tata">
       <div class="peta">
@@ -303,7 +318,7 @@
       <aside class="kantor-info">
         <img src="img/kantor.jpg" alt="Gedung kantor RTD Group di Komplek Pergudangan Palembang Star" loading="lazy">
         <dl>
-          <div><dt>Jam buka</dt><dd>Senin–Sabtu, 08.00–16.00 WIB</dd></div>
+          <div><dt>Jam buka</dt><dd data-kontak="jam">Senin–Sabtu, 08.00–16.00 WIB</dd></div>
           <div><dt>WhatsApp</dt><dd><a href="https://wa.me/6282384299234">0823-8429-9234</a></dd></div>
           <div><dt>Email</dt><dd><a href="mailto:trimitrarama@gmail.com">trimitrarama@gmail.com</a></dd></div>
         </dl>
@@ -319,7 +334,7 @@
     <div class="footer__grid">
       <div>
         <img src="img/rtd-logo-emas-navy.png" alt="Rama Trimitra Development Group" width="180" height="56">
-        <p>Komplek Pergudangan Palembang Star,<br>Jl. Letjen Harun Sohar No. AA02 Blok AA01,<br>Kel. Kebun Bunga, Kec. Sukarami,<br>Kota Palembang, Sumatera Selatan 30961</p>
+        <p data-kontak="alamat">Komplek Pergudangan Palembang Star,<br>Jl. Letjen Harun Sohar No. AA02 Blok AA01,<br>Kel. Kebun Bunga, Kec. Sukarami,<br>Kota Palembang, Sumatera Selatan 30961</p>
         <p style="margin-top:12px"><a href="https://www.google.com/maps/search/?api=1&query=PT.+Rama+Trimitra+Development&query_place_id=ChIJVzLFImhzOy4RXGhRtoqhl6g" target="_blank" rel="noopener">Lihat di Google Maps →</a></p>
       </div>
       <div>
@@ -361,6 +376,7 @@
     </div>
   </div>
 </footer>
-<script src="assets/js/app.js?v=f8026bfd"></script>
+<script src="assets/js/konfigurasi.js?v=ff31f2fb"></script>
+<script src="assets/js/app.js?v=ff31f2fb"></script>
 </body>
 </html>

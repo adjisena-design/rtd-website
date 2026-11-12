@@ -17,7 +17,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css?v=f8026bfd">
+<link rel="stylesheet" href="assets/css/style.css?v=ff31f2fb">
 </head>
 <body>
 <a class="lewati" href="#utama">Lompat ke isi utama</a>
@@ -57,8 +57,8 @@
   <div class="isi page-hero__isi">
     <div class="page-hero__kotak">
       <span class="label">Karier</span>
-      <h1>Bekerja <span class="redup">di RTD Group</span></h1>
-      <p>Kami membangun rumah pertama bagi ribuan keluarga di Sumatera Selatan. Kalau Anda ingin ikut mengerjakannya, berikut posisi yang sedang dibuka.</p>
+      <h1 data-teks="karier-01">Bekerja <span class="redup">di RTD Group</span></h1>
+      <p data-teks="karier-02">Kami membangun rumah pertama bagi ribuan keluarga di Sumatera Selatan. Kalau Anda ingin ikut mengerjakannya, berikut posisi yang sedang dibuka.</p>
     </div>
   </div>
 </section>
@@ -66,18 +66,18 @@
 <section class="bagian bagian--rapat">
   <div class="isi karier-tata">
     <div>
-      <h2 class="karier-judul">Posisi yang dibuka</h2>
+      <h2 class="karier-judul" data-teks="karier-03">Posisi yang dibuka</h2>
       <ul class="lowongan-daftar" id="karierDaftar"></ul>
-      <p class="catatan" style="margin-top:24px">Daftar lowongan pada halaman ini masih contoh. Ganti dengan
+      <p class="catatan" style="margin-top:24px" data-teks="karier-04">Daftar lowongan pada halaman ini masih contoh. Ganti dengan
       lowongan asli lewat konstanta <code>DATA_KARIER</code> di <code>assets/js/app.js</code>.</p>
     </div>
     <aside class="karier-alasan">
       <span class="label">Kenapa RTD Group</span>
       <ul>
-        <li>Pekerjaan yang hasilnya terlihat: rumah pertama bagi ribuan keluarga di Sumatera Selatan.</li>
-        <li>Proyek berjalan di tiga wilayah, jadi ruang belajarnya luas — dari lapangan sampai akad.</li>
-        <li>Tim kecil, keputusan cepat, dan atasan yang bisa Anda temui langsung.</li>
-        <li>Mitra perbankan nasional dengan rating Platinum.</li>
+        <li data-teks="karier-05">Pekerjaan yang hasilnya terlihat: rumah pertama bagi ribuan keluarga di Sumatera Selatan.</li>
+        <li data-teks="karier-06">Proyek berjalan di tiga wilayah, jadi ruang belajarnya luas — dari lapangan sampai akad.</li>
+        <li data-teks="karier-07">Tim kecil, keputusan cepat, dan atasan yang bisa Anda temui langsung.</li>
+        <li data-teks="karier-08">Mitra perbankan nasional dengan rating Platinum.</li>
       </ul>
       <p>Tidak menemukan posisi yang cocok? <a href="mailto:trimitrarama@gmail.com?subject=Lamaran%20Terbuka">Kirim lamaran terbuka</a> — kami simpan dan hubungi ketika ada posisi yang sesuai.</p>
     </aside>
@@ -90,7 +90,7 @@
     <div class="footer__grid">
       <div>
         <img src="img/rtd-logo-emas-navy.png" alt="Rama Trimitra Development Group" width="180" height="56">
-        <p>Komplek Pergudangan Palembang Star,<br>Jl. Letjen Harun Sohar No. AA02 Blok AA01,<br>Kel. Kebun Bunga, Kec. Sukarami,<br>Kota Palembang, Sumatera Selatan 30961</p>
+        <p data-kontak="alamat">Komplek Pergudangan Palembang Star,<br>Jl. Letjen Harun Sohar No. AA02 Blok AA01,<br>Kel. Kebun Bunga, Kec. Sukarami,<br>Kota Palembang, Sumatera Selatan 30961</p>
         <p style="margin-top:12px"><a href="https://www.google.com/maps/search/?api=1&query=PT.+Rama+Trimitra+Development&query_place_id=ChIJVzLFImhzOy4RXGhRtoqhl6g" target="_blank" rel="noopener">Lihat di Google Maps →</a></p>
       </div>
       <div>
@@ -132,6 +132,7 @@
     </div>
   </div>
 </footer>
-<script src="assets/js/app.js?v=f8026bfd"></script>
+<script src="assets/js/konfigurasi.js?v=ff31f2fb"></script>
+<script src="assets/js/app.js?v=ff31f2fb"></script>
 </body>
 </html>

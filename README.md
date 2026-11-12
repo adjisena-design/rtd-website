@@ -4,6 +4,7 @@ Situs PT Rama Trimitra Development Group — pengembang perumahan di Palembang,
 Banyuasin, dan Ogan Ilir.
 
 HTML, CSS, dan JavaScript biasa. Tanpa kerangka kerja, tanpa dependensi, tanpa proses build.
+Isinya dikelola tim lewat konsol di `/konsol/` (Supabase).
 
 ## Menjalankan
 
@@ -35,70 +36,116 @@ Halaman detail proyek membaca `?id=` dari URL, jadi gunakan peladen lokal — bu
 | `karier.html` | Daftar lowongan + kenapa RTD |
 | `lowongan.html?id=<id>` | Satu lowongan |
 | `kontak.html` | Formulir dan alamat |
+| `konsol/` | Konsol tim: semua isi, foto, pesan, lamaran, kode akses, log, penerbitan |
 
 ## Struktur
 
 ```
-assets/css/style.css    token dan gaya
-assets/js/app.js        semua data dan perilaku
-img/                    logo, render sampul, denah, favicon
-img/hero/               render 3D dari Drive (Foto Proyek 3D), dipakai di semua kepala halaman
-img/sosial/             poster reel Instagram
-img/tim/                foto tim (isi `foto` di DATA_TIM)
-img/yayasan/            foto kegiatan yayasan (isi DATA_YAYASAN_FOTO)
-img/proyek/             foto unit dan siteplan per proyek
+assets/css/style.css      token dan gaya
+assets/js/app.js          perilaku situs; membaca data dari Supabase atau data/situs.json
+assets/js/konfigurasi.js  alamat dan kunci anon Supabase (kosong = tanpa Supabase)
+data/situs.json           salinan isi situs di repo, dipakai bila Supabase belum siap atau tidak terjangkau
+data/teks-halaman.json    daftar teks halaman yang bisa disunting konsol (dibuat alat/teks-halaman.mjs)
+konsol/                   konsol tim di /konsol/ (HTML, CSS, JS biasa; supabase-js disertakan di vendor/)
+supabase/migrations/      skema, keamanan, dan fungsi database konsol
+supabase/seed.sql         isi awal konsol dari data/situs.json (dibuat alat/buat-seed.mjs)
+alat/                     skrip Node kecil tanpa dependensi
+img/                      logo, render sampul, denah, favicon, foto lama
 ```
 
 ## Data
 
-Semua data ada sebagai konstanta di bagian atas `assets/js/app.js`.
+Isi situs tidak lagi ditulis di `app.js`. Saat halaman dibuka, `app.js` mengambil isi dari:
 
-| Konstanta | Isi |
+1. **Pratinjau** (`?pratinjau=1`, hanya untuk pemegang sesi konsol): isi konsol yang belum diterbitkan.
+2. **Supabase**, fungsi `situs()`: versi terakhir yang diterbitkan lewat konsol.
+3. **`data/situs.json`** di repo: bila `konfigurasi.js` kosong atau Supabase tidak menjawab dalam 4 detik.
+
+Bentuk `data/situs.json` sama dengan yang dihasilkan konsol:
+
+| Kunci | Isi |
 | --- | --- |
-| `DATA_PROYEK` | Proyek yang dijual, termasuk galeri dan siteplan |
-| `DATA_PORTOFOLIO`, `DATA_RUKO` | Perumahan yang sudah terbangun |
-| `DATA_SPEK` | Dua belas baris spesifikasi standar |
-| `DATA_LEGALITAS`, `DATA_LEGALITAS_YAYASAN` | Legalitas holding dan yayasan |
-| `DATA_PENGHARGAAN_SOROT`, `DATA_PENGHARGAAN_LAIN` | Penghargaan |
-| `DATA_TESTIMONI`, `DATA_TIM` | Testimoni dan tim manajemen |
-| `DATA_REEL`, `DATA_YOUTUBE` | Tautan Instagram dan YouTube |
-| `DATA_BERITA`, `DATA_KARIER` | Berita dan lowongan |
-| `KONTAK` | Nomor WhatsApp, email, alamat |
+| `proyek` | Proyek yang dijual: angka pemasaran, foto, siteplan, fasilitas, spesifikasi berbeda, titik peta |
+| `portofolio` | Rekam jejak, `jenis: 'perumahan' \| 'ruko'` |
+| `hero`, `promo` | Slide hero beranda; banner promo (tampil sesuai tanggal mulai/selesai) |
+| `bank` | Mitra perbankan dengan logo, di beranda dan Legalitas |
+| `penghargaan`, `testimoni`, `spesifikasi`, `legalitas` | Isi perusahaan (`sorot`, `kelompok: 'holding' \| 'yayasan'`) |
+| `tim`, `pemasaran` | Manajemen dengan CV; tim pemasaran dengan foto dan WhatsApp |
+| `berita`, `karier`, `galeri`, `yayasan_foto`, `reel`, `youtube` | Kabar dan media |
+| `pengaturan.kontak` | WhatsApp, email, Instagram, YouTube, alamat, jam buka; dipakai di semua halaman |
+| `pengaturan.angka` | Angka pemasaran. Kosong = dihitung dari proyek dan rekam jejak |
+| `pengaturan.kpr` | Bunga, tenor, batas harga dan DP simulasi |
+| `pengaturan.teks` | Teks halaman yang diubah dari bawaan HTML, per kunci `data-teks` |
 
-Angka pada pita hero dihitung dari `DATA_PROYEK` dan `DATA_PORTOFOLIO`, tidak ditulis manual.
+Gambar: nilai seperti `proyek/tag-1.jpg` berarti berkas di `img/`; alamat `https://…` berarti
+unggahan konsol di Supabase Storage. Unggahan konsol diperkecil di peramban ke WebP (1600 px,
+siteplan 2600 px) dan disertai versi `-sm.webp` 820 px untuk `srcset`.
 
-### Menambah proyek
+Teks halaman: setiap judul dan paragraf statis bertanda `data-teks="…"`. Menambah elemen
+bertanda baru di HTML lalu menjalankan `node alat/teks-halaman.mjs` membuatnya muncul di konsol.
+Pada teks judul, `|` memisahkan bagian yang tampil redup.
 
-Tambahkan objek ke `DATA_PROYEK`, letakkan render sampul di `img/`, dan foto unit
-di `img/proyek/`.
+## Konsol tim
 
-```js
-{
-  id: 'green-nature',              // dipakai di ?id= dan nama berkas
-  nama: 'The Green Nature',
-  tahap: null,                     // "Tahap 3" bila ada
-  kategori: 'subsidi',             // 'subsidi' | 'komersil'
-  warna: 'var(--proyek-hutan)',
-  lokasi: 'Pangkalan Benteng',
-  alamat: 'Jl. ...',               // null bila belum dikonfirmasi
-  daerah: 'banyuasin',             // 'gandus' | 'ogan-ilir' | 'banyuasin' | 'palembang-lain'
-  tipe: '36/84', kt: 2, km: 1, unit: 106,
-  harga: 166000000, dp: 5700000,
-  angsuran20: 1072000,             // angka brosur; dipakai apa adanya bila diisi
-  klaim: null,                     // dipakai bila harga masih null
-  status: 'tersedia',              // 'tersedia' | 'booking' | 'terjual'
-  gbr: 'green-nature.jpg',
-  galeri: ['green-nature-1.jpg'],  // di img/proyek/; kosongkan bila belum ada
-  siteplan: 'green-nature-siteplan.jpg',
-  fasilitas: ['Musholla', 'Taman'],
-  spekBeda: { 'Air': 'PDAM' }      // hanya yang berbeda dari standar
-}
-```
+`/konsol/` adalah halaman statis yang berbicara langsung dengan Supabase. Cara kerjanya sama
+dengan konsol IEEF:
 
-`harga` diisi hanya dengan angka yang sudah dikonfirmasi pemasaran. Selama `null`,
-kartu menampilkan `klaim` dan ajakan menghubungi pemasaran.
+- Peramban mendapat sesi anonim Supabase; memasukkan kode akses (`RTD-XXXX-XXXX`) menautkan
+  sesi itu ke satu orang selama 12 jam.
+- Peran: **pemilik** (satu, tidak bisa dicabut, mengelola kode admin), **admin** (menghapus isi,
+  memulihkan versi, mengelola kode editor dan kontributor), **editor** (mengubah isi, membaca pesan
+  dan lamaran, menyetujui draf, menerbitkan), **kontributor** (mengirim usulan yang ditinjau editor).
+- Kode disimpan sebagai hash SHA-256 dan hanya tampil sekali. Mencabut kode langsung mengakhiri sesinya.
+  Delapan kode salah dalam 15 menit dari satu peramban atau IP memblokir percobaan berikutnya.
+- Semua tabel ada di skema `rtd` yang tidak diekspos API. Peramban hanya bisa memanggil fungsi
+  `konsol_*` (memeriksa peran di setiap panggilan), `situs()`, `kirim_pesan()`, dan `kirim_lamaran()`.
+- Setiap perubahan tercatat di log aktivitas dengan nama pemegang kode.
+- **Terbitkan** menyimpan seluruh isi konsol sebagai satu versi di `rtd.terbitan`; situs selalu memakai
+  versi teratas. Versi lama bisa diunduh sebagai JSON atau dipulihkan (admin).
+- Formulir kontak dan lamaran menyimpan ke `rtd.pesan` dan `rtd.lamaran` (dibatasi per IP, dengan
+  jebakan bot). CV PDF masuk bucket privat `lamaran`; konsol membukanya lewat tautan dua menit.
+  Pengirim kontak tetap ditawari melanjutkan lewat WhatsApp.
 
-Galeri yang kosong otomatis menampilkan kotak "Foto menyusul", bukan ruang kosong.
+Menu konsol: Ringkasan · Proyek · Rekam jejak · Angka pemasaran · Simulasi KPR · Hero beranda ·
+Promo · Manajemen (dengan CV) · Tim pemasaran · Mitra perbankan · Penghargaan · Testimoni ·
+Spesifikasi standar · Legalitas · Berita · Karier · Galeri · Foto yayasan · Reel Instagram ·
+Video YouTube · Teks halaman · Kontak & media sosial · Pesan · Lamaran kerja · Tinjau draf ·
+Aktivitas · Versi terbit · Kode akses.
+
+**Mode demo.** Selama `konfigurasi.js` kosong, `/konsol/` berjalan sepenuhnya di peramban atas
+salinan `data/situs.json`, dengan kode contoh di layar masuk (`RTD-DEMO-PMLK`, `-ADMN`, `-EDTR`,
+`-KTRB`). Perubahan hanya tersimpan di tab itu; Pratinjau menampilkannya di situs pada peramban
+yang sama. Tidak ada yang sampai ke pengunjung lain.
+
+### Menyambungkan ke Supabase
+
+1. Buat proyek Supabase (region Singapore paling dekat).
+2. **Authentication → Sign In / Providers**: aktifkan **Allow anonymous sign-ins**.
+3. **SQL Editor**: jalankan berurutan `supabase/migrations/20261112000001_konsol.sql`,
+   `20261112000002_penyimpanan.sql`, lalu `supabase/seed.sql`. Seed mengisi konsol dengan isi
+   `data/situs.json` dan menerbitkannya sebagai versi 1. Bila `data/situs.json` berubah sebelum
+   langkah ini, buat ulang seed dengan `node alat/buat-seed.mjs`.
+4. Masih di SQL Editor: `select rtd.buat_pemilik('Daffa Adjisena');` — kode pemilik tampil sekali.
+   Simpan di pengelola kata sandi.
+5. **Project Settings → API**: salin Project URL dan kunci anon/publishable ke
+   `assets/js/konfigurasi.js`, jalankan `sh versi.sh`, lalu commit. Kunci ini memang untuk peramban; jangan pernah
+   menaruh `service_role` di repo.
+6. Biarkan **Data API → Exposed schemas** tetap `public` saja. Skema `rtd` tidak boleh diekspos.
+7. Buka `/konsol/`, masuk dengan kode pemilik, buat kode untuk tim di menu Kode akses.
+
+Situs tetap statis, jadi bisa ditayangkan di GitHub Pages atau Cloudflare Pages tanpa perubahan;
+keduanya membaca isi dari Supabase yang sama.
+
+Proyek Supabase gratis dijeda setelah seminggu tanpa aktivitas. Selama dijeda, situs memakai
+`data/situs.json`. Sesekali unduh versi terbaru dari **Versi terbit** dan simpan sebagai
+`data/situs.json` agar salinan cadangan tidak tertinggal jauh.
+
+### Menguji database secara lokal
+
+Migrasi diuji pada PostgreSQL 16 dengan tiruan kecil skema `auth` dan `storage` Supabase:
+pemilik pertama, kode salah, pembuatan kode, simpan dan urutkan isi, pratinjau, terbit, draf
+kontributor dan persetujuan, pesan dan lamaran (termasuk lowongan tertutup dan jebakan bot),
+penolakan akses untuk peran yang tidak berhak dan untuk anon, pencabutan kode, dan pemulihan versi.
 
 ## Simulasi KPR
 
@@ -144,7 +191,9 @@ menghentikan putaran hero.
 - Harga dan angsuran sembilan proyek masih `null`, menunggu konfirmasi pemasaran.
 - Angka 3.808 unit adalah total portofolio, bukan jumlah serah terima.
 - Isi `berita.html` dan `karier.html` masih contoh.
-- Formulir kontak belum punya peladen; sementara meneruskan ke WhatsApp.
+- Formulir kontak dan lamaran baru menyimpan ke database setelah Supabase disambungkan; sampai itu, keduanya meneruskan ke WhatsApp.
+- Pemberitahuan pesan dan lamaran baru hanya lewat konsol (lencana di menu), belum lewat email.
+- Logo bank BTN dan BTN Syariah belum diunggah; kartu menampilkan nama bank.
 - Logo masih PNG, perlu diganti SVG.
 - Render sampul dipotong dari PDF brosur, resolusinya terbatas. Render asli dari
   tim desain akan jauh lebih tajam.

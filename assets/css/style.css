@@ -1288,3 +1288,53 @@ input[type="range"] { width: 100%; accent-color: var(--navy-700); height: 44px; 
 .bagian[id], .rekam[id] { scroll-margin-top: calc(-1 * var(--space-9) + 24px); }
 .bagian--rapat[id] { scroll-margin-top: calc(-1 * var(--space-8) + 24px); }
 @media (max-width: 640px) { .bagian[id] { scroll-margin-top: calc(-1 * var(--space-8) + 16px); } }
+
+/* ===================================================== Dari konsol ====== */
+
+/* Pita mode pratinjau (isi konsol yang belum diterbitkan) */
+.pita-pratinjau { position: sticky; top: 0; z-index: 200; background: var(--amber-400); color: var(--navy-900); text-align: center;
+  font-size: 14px; font-weight: 600; padding: 10px var(--space-4); }
+.pita-pratinjau a { color: inherit; text-decoration: underline; margin-left: var(--space-2); }
+
+/* Status proyek di kartu */
+.kartu__status { display: inline-block; margin-left: var(--space-2); font-size: 11px; font-weight: 800; letter-spacing: .08em;
+  text-transform: uppercase; padding: 3px 8px; border-radius: var(--r-pill); color: #fff; vertical-align: 1px; }
+.kartu__status--booking { background: var(--status-booking); }
+.kartu__status--terjual { background: var(--status-terjual); }
+
+/* Promo */
+.kepala--rapat { margin-bottom: var(--space-5); }
+.promo-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr)); gap: var(--space-5); }
+.promo { display: flex; flex-direction: column; border-radius: var(--r-lg); overflow: hidden; background: var(--kanvas-000);
+  box-shadow: var(--shadow-2); color: inherit; text-decoration: none; transition: transform .25s, box-shadow .25s; }
+a.promo:hover { transform: translateY(-3px); box-shadow: var(--shadow-3); }
+.promo img { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--kanvas-200); }
+.promo__tx { display: grid; gap: var(--space-2); padding: var(--space-5); }
+.promo__tx b { font-size: 19px; color: var(--tinta-900); }
+.promo__tx > span { color: var(--tinta-700); font-size: 15px; }
+.promo__aksi { color: var(--amber-600) !important; font-weight: 700; font-size: 14.5px !important; }
+
+/* Mitra perbankan */
+.bank-baris { display: flex; flex-wrap: wrap; gap: var(--space-4); margin-bottom: var(--space-6); }
+.bank { display: grid; gap: var(--space-2); align-content: center; min-width: 200px; min-height: 96px; padding: var(--space-4) var(--space-5);
+  background: var(--kanvas-000); border: 1px solid var(--garis-halus); border-radius: var(--r-md); color: var(--tinta-900); text-decoration: none; }
+.bank img { max-height: 44px; max-width: 180px; object-fit: contain; }
+.bank b { font-size: 18px; }
+.bank span { font-size: 13.5px; color: var(--tinta-500); }
+a.bank:hover { border-color: var(--garis-tegas); }
+.bank-pita { margin: var(--space-7) 0 0; }
+.bank-baris--gelap { margin-bottom: 0; }
+.bank-baris--gelap .bank { min-width: 150px; min-height: 72px; background: rgba(250,246,238,.94); border-color: transparent; justify-items: center; }
+
+/* Formulir lamaran */
+.form--lamar { max-width: 640px; margin-top: var(--space-5); }
+.form__dua { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); }
+@media (max-width: 600px) { .form__dua { grid-template-columns: 1fr; } }
+.form input[type=file] { padding: 12px; background: var(--kanvas-000); }
+.galat { background: #fbe9e7; border: 1px solid #b3412f; color: #7a2416; border-radius: var(--r-md); padding: var(--space-3) var(--space-4); font-size: 14.5px; }
+.sukses-kotak { margin-top: var(--space-5); background: var(--amber-100); border: 1px solid var(--amber-500); border-radius: var(--r-lg); padding: var(--space-5); }
+.sukses-kotak b { display: block; font-size: 18px; margin-bottom: var(--space-2); }
+.sukses .tbl { margin-top: var(--space-3); display: inline-flex; }
+a.pemasaran__orang { color: inherit; text-decoration: none; }
+a.pemasaran__orang:hover b { text-decoration: underline; }
+img.pemasaran__inisial { object-fit: cover; padding: 0; }
