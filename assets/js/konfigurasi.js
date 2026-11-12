@@ -7,6 +7,6 @@
    yang melindungi data adalah aturan RLS dan fungsi di supabase/migrations/.
    JANGAN pernah menaruh service_role key di sini. */
 window.RTD_KONFIG = {
-  supabaseUrl: '',
-  supabaseAnonKey: ''
+  supabaseUrl: 'https://qmxjfrxmkecolszacggr.supabase.co',
+  supabaseAnonKey: 'sb_publishable_Fjm-Xn01IxInTpKF8_ltpw_O-fQ_Xs0'
 };
